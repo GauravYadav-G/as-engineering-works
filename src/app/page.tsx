@@ -473,14 +473,14 @@ export default async function HomePage() {
               <div
                 key={`${client.region}-${client.name}`}
                 title={client.name}
-                className="flex min-h-36 items-center justify-center border-r border-b border-forest/[0.07] p-4 transition-all duration-200 hover:bg-forest/[0.03] sm:min-h-40 sm:p-5"
+                className="flex min-h-28 items-center justify-center border-r border-b border-forest/[0.07] p-3.5 transition-all duration-200 hover:bg-forest/[0.03] sm:min-h-32 sm:p-4"
               >
                 <img
                   src={getClientLogo(client.name)}
                   alt={client.name}
-                  width={180}
-                  height={80}
-                  className="max-h-16 w-auto max-w-[88%] object-contain transition-transform duration-200 hover:scale-105 sm:max-h-20"
+                  width={160}
+                  height={70}
+                  className="max-h-14 w-auto max-w-[85%] object-contain transition-transform duration-200 hover:scale-105 sm:max-h-16"
                   loading="lazy"
                 />
               </div>
