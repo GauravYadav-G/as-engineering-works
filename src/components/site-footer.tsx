@@ -125,13 +125,10 @@ export function SiteFooter({ categories }: { categories: FooterCategory[] }) {
       </div>
 
       <div className="border-t border-white/[0.08] pb-16 lg:pb-0">
-        <div className="wrap flex flex-col gap-3 py-6 text-[11px] text-white/40 sm:flex-row sm:items-center sm:justify-between">
+        <div className="wrap py-6 text-[11px] text-white/40">
           <p className="leading-relaxed">
             © {new Date().getFullYear()} {site.name}. All rights reserved.
           </p>
-          <div className="flex shrink-0 flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[10px] tracking-[0.06em] text-white/35">
-            <span>Noida · Uttar Pradesh · India</span>
-          </div>
         </div>
       </div>
     </footer>
