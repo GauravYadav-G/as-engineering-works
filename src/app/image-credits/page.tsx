@@ -11,6 +11,15 @@ export const metadata: Metadata = {
 
 const licence = "https://creativecommons.org/licenses/by-sa/3.0/";
 
+const heroCredits = [
+  { title: "Hero — automated food production line", author: "ravencrow BI", id: "38336747" },
+  { title: "Hero — puffed grain snack", author: "Rahul Sonawane", id: "27959285" },
+  { title: "Hero — golden fried snacks", author: "Rahul Sonawane", id: "27515043" },
+  { title: "Hero — stainless steel machinery", author: "Policarpo Brito", id: "33514501" },
+  { title: "Hero — pasta extruding from a machine", author: "Xavier Messina", id: "40118104" },
+  { title: "Hero — Indian spice blends", author: "Kamakshi", id: "31280796" },
+];
+
 const credits = [
   {
     title: "Frying — potato chips in a fryer",
@@ -79,6 +88,30 @@ export default function ImageCreditsPage() {
                 </div>
               </article>
             ))}
+          </div>
+
+          <div className="mt-8 rounded-2xl border border-forest/[0.08] bg-white p-6 text-sm leading-[1.8] text-sage">
+            <h2 className="text-base font-medium text-forest">Hero photography</h2>
+            <p className="mt-2">
+              The homepage slider and inner-page headers use high-resolution photography from Pexels
+              (free to use, no attribution required; credited here as a courtesy). Each was resized to
+              2400 px wide and re-encoded for the web.
+            </p>
+            <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+              {heroCredits.map((item) => (
+                <li key={item.id}>
+                  <a
+                    href={`https://www.pexels.com/photo/${item.id}/`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-medium text-forest underline underline-offset-2 hover:opacity-70"
+                  >
+                    {item.title}
+                  </a>{" "}
+                  <span className="text-sage">— {item.author}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div className="mt-8 rounded-2xl border border-forest/[0.08] bg-white p-6 text-sm leading-[1.8] text-sage">
