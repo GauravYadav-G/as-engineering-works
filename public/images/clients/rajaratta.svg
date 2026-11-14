@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" width="160" height="60">
+  <rect x="2" y="2" width="156" height="56" rx="8" fill="#4c0519"/>
+  <circle cx="28" cy="30" r="18" fill="#be123c"/>
+  <path d="M19 33l3-8 6 5 6-5 3 8H19z" fill="#fecdd3"/>
+  <text x="54" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="14" letter-spacing="0.5">RAJARATTA</text>
+  <text x="54" y="43" fill="#fecdd3" font-family="system-ui, sans-serif" font-weight="600" font-size="9" letter-spacing="1">MANUFACTURERS</text>
+</svg>

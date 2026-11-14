@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" width="160" height="60">
+  <rect x="2" y="2" width="156" height="56" rx="8" fill="#0f172a"/>
+  <path d="M28 16l12 7v14l-12 7-12-7V23l12-7z" fill="#334155"/>
+  <text x="28" y="34.5" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="11" text-anchor="middle">RE</text>
+  <text x="52" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="15" letter-spacing="0.5">ROCHE</text>
+  <text x="52" y="43" fill="#94a3b8" font-family="system-ui, sans-serif" font-weight="600" font-size="9" letter-spacing="1.2">ENTERPRISES</text>
+</svg>

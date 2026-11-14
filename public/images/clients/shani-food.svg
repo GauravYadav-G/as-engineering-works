@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" width="160" height="60">
+  <rect x="2" y="2" width="156" height="56" rx="8" fill="#1e3a8a"/>
+  <path d="M28 16l3.5 8.5L40 28l-8.5 3.5L28 40l-3.5-8.5L16 28l8.5-3.5L28 16z" fill="#60a5fa"/>
+  <text x="54" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="16" letter-spacing="0.5">SHANI</text>
+  <text x="54" y="43" fill="#bfdbfe" font-family="system-ui, sans-serif" font-weight="600" font-size="9" letter-spacing="1.5">FOOD PRODUCTS</text>
+</svg>

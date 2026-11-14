@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" width="160" height="60">
+  <rect x="2" y="2" width="156" height="56" rx="8" fill="#701a75"/>
+  <circle cx="28" cy="30" r="18" fill="#86198f"/>
+  <path d="M28 20c-3-3-7 1-5 5l5 5 5-5c2-4-2-8-5-5z" fill="#fdf4ff"/>
+  <text x="54" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="15" letter-spacing="0.5">MAA FOOD</text>
+  <text x="54" y="43" fill="#f5d0fe" font-family="system-ui, sans-serif" font-weight="600" font-size="9" letter-spacing="1.2">PRODUCTS</text>
+</svg>
