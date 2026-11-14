@@ -5,6 +5,7 @@ import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { IconArrowUpRight, IconGlobe } from "@/components/icons";
+import { ClientLogo, extractClientBrand } from "@/components/client-logo";
 import { getClients, getTestimonials } from "@/lib/data";
 import { site } from "@/lib/site";
 
@@ -126,14 +127,25 @@ export default async function ClientsPage() {
               <div className="h-full rounded-xl border border-forest/[0.07] bg-bone p-6">
                 <p className="eyebrow text-sage">{region}</p>
                 <ul className="mt-4 space-y-2.5">
-                  {grouped[region].map((name) => (
-                    <li
-                      key={name}
-                      className="text-[13px] leading-snug text-forest/80"
-                    >
-                      {name}
-                    </li>
-                  ))}
+                  {grouped[region].map((name) => {
+                    const brand = extractClientBrand(name);
+                    return (
+                      <li
+                        key={name}
+                        className="flex items-center gap-2.5 rounded-lg border border-forest/[0.05] bg-white p-2.5 shadow-2xs transition-colors hover:border-forest/20"
+                      >
+                        <ClientLogo name={name} size={32} className="shrink-0" />
+                        <div className="min-w-0 flex-1">
+                          <span className="block truncate text-[12.5px] font-semibold text-forest">
+                            {brand.brandName}
+                          </span>
+                          <span className="block truncate text-[10.5px] text-sage">
+                            {name}
+                          </span>
+                        </div>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
               </Reveal>

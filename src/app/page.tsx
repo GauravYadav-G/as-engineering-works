@@ -8,6 +8,7 @@ import { ProductCard } from "@/components/product-card";
 import { CountUp } from "@/components/count-up";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
+import { ClientCard } from "@/components/client-logo";
 import {
   IconArrowRight,
   IconArrowUpRight,
@@ -469,15 +470,13 @@ export default async function HomePage() {
             link={{ href: "/clients", label: "Clients & reviews" }}
             align="between"
           />
-          <Reveal className="mt-12 grid grid-cols-2 overflow-hidden rounded-2xl border border-forest/[0.07] sm:grid-cols-3 lg:grid-cols-6">
+          <Reveal className="mt-12 grid grid-cols-1 overflow-hidden rounded-2xl border-t border-l border-forest/[0.07] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {clientNames.map((client) => (
-              <div
+              <ClientCard
                 key={`${client.region}-${client.name}`}
-                className="flex min-h-24 flex-col justify-center border-r border-b border-forest/[0.07] px-5 py-4"
-              >
-                <span className="text-[12.5px] leading-snug font-medium text-forest">{client.name}</span>
-                <span className="mt-1 font-mono text-[9.5px] text-sage">{client.region}</span>
-              </div>
+                name={client.name}
+                region={client.region}
+              />
             ))}
           </Reveal>
 
