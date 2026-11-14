@@ -58,17 +58,17 @@ const stages = [
   {
     number: "07",
     name: "Weighing",
-    note: "Illustrative multihead weighing equipment for portioning and filling.",
+    note: "Multihead combination weigher system for precision portioning.",
     image: "/images/stages/weighing.jpg",
-    alt: "Multihead weigher of a VFFS packaging system — illustrative stage photograph",
+    alt: "Multihead combination weigher system — illustrative stage photograph",
     href: "/solutions",
   },
   {
     number: "08",
     name: "Packaging",
-    note: "Illustrative vertical form fill seal equipment for pouch packing.",
+    note: "Automated pouch packaging system for finished snack goods.",
     image: "/images/stages/packaging.jpg",
-    alt: "VFFS pouch packaging machine — illustrative stage photograph",
+    alt: "Automated pouch packaging machine — illustrative stage photograph",
     href: "/solutions",
   },
 ] as const;
