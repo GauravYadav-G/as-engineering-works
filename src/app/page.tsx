@@ -472,21 +472,17 @@ export default async function HomePage() {
             {clientNames.map((client) => (
               <div
                 key={`${client.region}-${client.name}`}
-                className="flex min-h-32 flex-col items-center justify-center border-r border-b border-forest/[0.07] p-5 text-center transition-colors hover:bg-forest/[0.02]"
+                title={client.name}
+                className="flex min-h-28 items-center justify-center border-r border-b border-forest/[0.07] p-6 transition-all duration-200 hover:bg-forest/[0.03]"
               >
-                <div className="flex h-12 w-full items-center justify-center">
-                  <img
-                    src={getClientLogo(client.name)}
-                    alt={client.name}
-                    width={48}
-                    height={48}
-                    className="max-h-11 max-w-[85%] object-contain"
-                    loading="lazy"
-                  />
-                </div>
-                <span className="mt-3 text-[12px] font-medium leading-snug text-forest">
-                  {client.name}
-                </span>
+                <img
+                  src={getClientLogo(client.name)}
+                  alt={client.name}
+                  width={140}
+                  height={60}
+                  className="max-h-12 w-auto max-w-[85%] object-contain transition-transform duration-200 hover:scale-105"
+                  loading="lazy"
+                />
               </div>
             ))}
           </Reveal>
