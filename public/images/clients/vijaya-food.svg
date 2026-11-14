@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" width="160" height="60">
-  <rect x="2" y="2" width="156" height="56" rx="8" fill="#4c1d95"/>
-  <circle cx="28" cy="30" r="18" fill="#7c3aed"/>
-  <path d="M20 22l8 16 8-16" stroke="#ede9fe" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="54" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="15" letter-spacing="0.5">VIJAYA</text>
-  <text x="54" y="43" fill="#ddd6fe" font-family="system-ui, sans-serif" font-weight="600" font-size="9" letter-spacing="1.2">FOOD PRODUCTS</text>
-</svg>

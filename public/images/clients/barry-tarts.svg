@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" width="160" height="60">
-  <rect x="2" y="2" width="156" height="56" rx="8" fill="#78350f"/>
-  <circle cx="28" cy="28" r="16" fill="#d97706"/>
-  <path d="M18 32h20l-2 6H20l-2-6z" fill="#fef3c7"/>
-  <circle cx="28" cy="24" r="3.5" fill="#fef3c7"/>
-  <text x="54" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="14" letter-spacing="0.5">BARRY TARTS</text>
-  <text x="54" y="43" fill="#fde68a" font-family="system-ui, sans-serif" font-weight="600" font-size="9" letter-spacing="1.5">FOODS LLP</text>
-</svg>

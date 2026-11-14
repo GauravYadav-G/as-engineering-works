@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" width="160" height="60">
-  <rect x="2" y="2" width="156" height="56" rx="8" fill="#0e7490"/>
-  <rect x="16" y="18" width="24" height="24" rx="4" transform="rotate(45 28 30)" fill="#06b6d4"/>
-  <text x="28" y="34.5" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="13" text-anchor="middle">RJ</text>
-  <text x="54" y="29" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="16" letter-spacing="0.5">R.J. FOOD</text>
-  <text x="54" y="43" fill="#a5f3fc" font-family="system-ui, sans-serif" font-weight="600" font-size="9" letter-spacing="1.5">KANPUR</text>
-</svg>

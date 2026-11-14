@@ -135,9 +135,9 @@ export default async function ClientsPage() {
                       <img
                         src={getClientLogo(name)}
                         alt={name}
-                        width={24}
-                        height={24}
-                        className="h-6 w-6 shrink-0 object-contain"
+                        width={28}
+                        height={28}
+                        className="h-7 w-7 shrink-0 object-contain"
                         loading="lazy"
                       />
                       <span>{name}</span>

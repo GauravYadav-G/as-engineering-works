@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" width="160" height="60">
-  <rect x="2" y="2" width="156" height="56" rx="8" fill="#4338ca"/>
-  <circle cx="28" cy="30" r="18" fill="#4f46e5"/>
-  <path d="M28 17v26M15 30h26" stroke="#a5b4fc" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="28" cy="30" r="10" fill="#312e81"/>
-  <text x="28" y="34.5" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="13" text-anchor="middle">FC</text>
-  <text x="54" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="15" letter-spacing="-0.2">FUN CHOICE</text>
-  <text x="54" y="43" fill="#c7d2fe" font-family="system-ui, sans-serif" font-weight="600" font-size="9" letter-spacing="1.5">SNACKS PVT LTD</text>
-</svg>

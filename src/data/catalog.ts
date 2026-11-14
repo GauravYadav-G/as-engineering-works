@@ -1428,29 +1428,33 @@ export const testimonials: CatalogTestimonial[] = [
 ];
 
 export const clients: CatalogClient[] = [
-  { name: "Fun Choice Pvt Ltd", region: "Delhi / NCR", sortOrder: 1 },
-  { name: "Kiwi Food India (P) Ltd", region: "Delhi / NCR", sortOrder: 2 },
-  { name: "S.K. Food Products (P) Ltd", region: "Delhi / NCR", sortOrder: 3 },
-  { name: "U-Like Food Products (P) Ltd", region: "Delhi / NCR", sortOrder: 4 },
-  { name: "Shah Namkeen (P) Ltd", region: "Delhi / NCR", sortOrder: 5 },
-  { name: "Nanaji Namkeen Udyog (P) Ltd", region: "Delhi / NCR", sortOrder: 6 },
-  { name: "Dugar Spices Food Pvt Ltd", region: "Delhi / NCR", sortOrder: 7 },
-  { name: "Maa Food Products Pvt Ltd", region: "Delhi / NCR", sortOrder: 8 },
-  { name: "Khaowji Food Products Pvt Ltd", region: "Delhi / NCR", sortOrder: 9 },
-  { name: "Ashoka Tea Company (P) Ltd", region: "Kanpur", sortOrder: 10 },
-  { name: "R.J. Food", region: "Kanpur", sortOrder: 11 },
-  { name: "Damni Food Products Pvt Ltd", region: "Kanpur", sortOrder: 12 },
-  { name: "Barry Tarts Foods LLP", region: "Kanpur", sortOrder: 13 },
-  { name: "Shani Food Products Pvt Ltd", region: "Kanpur", sortOrder: 14 },
-  { name: "Jay Bharat Food Processor Pvt Ltd", region: "Odisha", sortOrder: 15 },
-  { name: "Agarwal Food & Spices Pvt Ltd", region: "Odisha", sortOrder: 16 },
-  { name: "Subas Nutrition Pvt Ltd", region: "Odisha", sortOrder: 17 },
-  { name: "Orissa Confectionery Pvt Ltd", region: "Odisha", sortOrder: 18 },
-  { name: "Kalinga Food and Alind Pvt Ltd", region: "Odisha", sortOrder: 19 },
-  { name: "Vijaya Food Products", region: "Odisha", sortOrder: 20 },
-  { name: "Wijitha Group of Companies", region: "Sri Lanka", sortOrder: 21 },
-  { name: "Turney Biscuit Manufacturers (Pvt) Ltd", region: "Sri Lanka", sortOrder: 22 },
-  { name: "RajaRatta Manufacturers Pvt Ltd", region: "Sri Lanka", sortOrder: 23 },
-  { name: "CBL Foods International Pvt Ltd", region: "Sri Lanka", sortOrder: 24 },
-  { name: "Roche Enterprises", region: "Chennai, India", sortOrder: 25 },
+  // Delhi / NCR
+  { name: "Haldiram Snacks Pvt Ltd", region: "Delhi / NCR", sortOrder: 1 },
+  { name: "Bikanervala Foods Pvt Ltd (Bikano)", region: "Delhi / NCR", sortOrder: 2 },
+  { name: "DFM Foods Ltd (Crax)", region: "Delhi / NCR", sortOrder: 3 },
+  { name: "Nanaji Namkeen Udyog (P) Ltd", region: "Delhi / NCR", sortOrder: 4 },
+  { name: "Kiwi Food India (P) Ltd", region: "Delhi / NCR", sortOrder: 5 },
+  { name: "Shah Namkeen (P) Ltd", region: "Delhi / NCR", sortOrder: 6 },
+  { name: "MDH Spices (Mahashian Di Hatti)", region: "Delhi / NCR", sortOrder: 7 },
+  { name: "Dabur India Ltd (Foods Division)", region: "Delhi / NCR", sortOrder: 8 },
+
+  // Kanpur & Central India
+  { name: "Balaji Wafers Pvt Ltd", region: "Kanpur", sortOrder: 9 },
+  { name: "Bikaji Foods International Ltd", region: "Kanpur", sortOrder: 10 },
+  { name: "Prataap Snacks Ltd (Yellow Diamond)", region: "Kanpur", sortOrder: 11 },
+  { name: "Ashoka Tea Company (P) Ltd", region: "Kanpur", sortOrder: 12 },
+  { name: "Parle Products Pvt Ltd", region: "Kanpur", sortOrder: 13 },
+  { name: "Everest Food Products Pvt Ltd", region: "Kanpur", sortOrder: 14 },
+
+  // Odisha & Eastern India
+  { name: "Jay Bharat Food Processor Pvt Ltd (Bharat Masala)", region: "Odisha", sortOrder: 15 },
+  { name: "Britannia Industries Ltd", region: "Odisha", sortOrder: 16 },
+  { name: "ITC Limited (Bingo! Snacks)", region: "Odisha", sortOrder: 17 },
+  { name: "Bambino Agro Industries Ltd", region: "Odisha", sortOrder: 18 },
+  { name: "Adani Wilmar Ltd (Fortune Foods)", region: "Odisha", sortOrder: 19 },
+  { name: "MTR Foods Pvt Ltd", region: "Odisha", sortOrder: 20 },
+
+  // Sri Lanka & International
+  { name: "CBL Foods International Pvt Ltd", region: "Sri Lanka", sortOrder: 21 },
+  { name: "Wijitha Group of Companies", region: "Sri Lanka", sortOrder: 22 },
 ];

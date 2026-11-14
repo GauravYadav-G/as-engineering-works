@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" width="160" height="60">
-  <rect x="2" y="2" width="156" height="56" rx="8" fill="#9f1239"/>
-  <circle cx="28" cy="30" r="18" fill="#be123c"/>
-  <path d="M28 17c3 5 7 7 7 13 0 4-3 7-7 7s-7-3-7-7c0-6 4-8 7-13z" fill="#ffe4e6"/>
-  <text x="54" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="15" letter-spacing="0.5">DUGAR</text>
-  <text x="54" y="43" fill="#fecdd3" font-family="system-ui, sans-serif" font-weight="700" font-size="9" letter-spacing="1.5">SPICES &amp; FOOD</text>
-</svg>
