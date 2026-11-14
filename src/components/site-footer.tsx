@@ -126,9 +126,8 @@ export function SiteFooter({ categories }: { categories: FooterCategory[] }) {
 
       <div className="border-t border-white/[0.08] pb-16 lg:pb-0">
         <div className="wrap flex flex-col gap-3 py-6 text-[11px] text-white/40 sm:flex-row sm:items-center sm:justify-between">
-          <p className="max-w-xl leading-relaxed">
-            © {new Date().getFullYear()} {site.name}. All rights reserved.{" "}
-            <span className="block pt-1 text-white/30">{site.imageNote}</span>
+          <p className="leading-relaxed">
+            © {new Date().getFullYear()} {site.name}. All rights reserved.
           </p>
           <div className="flex shrink-0 flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[10px] tracking-[0.06em] text-white/35">
             <span>Noida · Uttar Pradesh · India</span>
