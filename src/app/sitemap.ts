@@ -15,7 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/infrastructure", priority: 0.6 },
     { path: "/clients", priority: 0.6 },
     { path: "/contact", priority: 0.8 },
-    { path: "/image-credits", priority: 0.2 },
   ];
 
   return [

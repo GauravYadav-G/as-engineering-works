@@ -132,7 +132,6 @@ export function SiteFooter({ categories }: { categories: FooterCategory[] }) {
           </p>
           <div className="flex shrink-0 flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[10px] tracking-[0.06em] text-white/35">
             <span>Noida · Uttar Pradesh · India</span>
-            <Link href="/image-credits" className="transition hover:text-white/70">Image credits</Link>
           </div>
         </div>
       </div>

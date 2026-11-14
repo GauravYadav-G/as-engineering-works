@@ -5,7 +5,6 @@ import { IconArrowUpRight } from "@/components/icons";
 
 /* All eight stages have an image. The three additional stage photographs are
  * illustrative stock, not machines represented in the A.S. Engineering catalogue.
- * Source and licence details are linked in the caption and on /image-credits.
  */
 const stages = [
   {
@@ -29,7 +28,7 @@ const stages = [
     name: "Frying",
     note: "An illustrative frying process for crispy snack production.",
     image: "/images/stages/frying.jpg",
-    alt: "Potato chips frying in a fryer — illustrative stage photograph",
+    alt: "Commercial snack fryer with golden chips in hot bubbling oil — illustrative stage photograph",
     href: "/solutions",
   },
   {
@@ -140,10 +139,7 @@ export function ProcessRail() {
         </Reveal>
 
         <p className="mt-6 font-mono text-[10.5px] leading-relaxed text-sage/75">
-          Illustrative stage photography.{" "}
-          <Link href="/image-credits" className="font-medium text-forest/70 underline underline-offset-2 hover:text-forest">
-            Image credits
-          </Link>
+          Illustrative stage photography.
         </p>
       </div>
     </section>
