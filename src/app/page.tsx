@@ -226,27 +226,27 @@ export default async function HomePage() {
           <div className="mt-12 grid grid-cols-2 gap-3.5 sm:gap-4 md:grid-cols-3 lg:grid-cols-5">
             {solutions.map((solution, index) => (
               <Reveal key={solution.slug} delay={Math.min(index, 5) * 70}>
-              <Link
-                href={`/solutions/${solution.slug}`}
-                className="group relative block overflow-hidden rounded-xl bg-forest"
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={solution.image}
-                  alt={`${solution.name} — illustrative image`}
-                  loading="lazy"
-                  className="aspect-[4/4.4] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 p-4">
-                  <span className="text-[14px] leading-snug font-medium text-white sm:text-[15px]">
-                    {solution.shortName}
-                  </span>
-                  <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-white/30 bg-white/10 text-white backdrop-blur-sm transition duration-200 group-hover:border-white group-hover:bg-white group-hover:text-forest">
-                    <IconArrowUpRight className="h-3.5 w-3.5" />
-                  </span>
-                </div>
-              </Link>
+                <Link
+                  href={`/solutions/${solution.slug}`}
+                  className="group relative block overflow-hidden rounded-xl bg-forest"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={solution.image}
+                    alt={`${solution.name} — illustrative image`}
+                    loading="lazy"
+                    className="aspect-[4/4.4] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 p-4">
+                    <span className="text-[14px] leading-snug font-medium text-white sm:text-[15px]">
+                      {solution.shortName}
+                    </span>
+                    <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-white/30 bg-white/10 text-white backdrop-blur-sm transition duration-200 group-hover:border-white group-hover:bg-white group-hover:text-forest">
+                      <IconArrowUpRight className="h-3.5 w-3.5" />
+                    </span>
+                  </div>
+                </Link>
               </Reveal>
             ))}
           </div>
@@ -267,41 +267,41 @@ export default async function HomePage() {
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {lineHighlights.map((line, index) => (
               <Reveal key={line.number} delay={index * 90}>
-              <Link
-                href={line.href}
-                className="group flex h-full flex-col overflow-hidden rounded-xl border border-forest/[0.07] bg-white transition-all duration-300 hover:-translate-y-0.5 hover:border-forest/[0.16] hover:shadow-[0_24px_48px_-28px_rgba(17,20,22,0.16)]"
-              >
-                <div className="aspect-[3/2] overflow-hidden bg-sand">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={line.image}
-                    alt={line.alt}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-                  />
-                </div>
-                <div className="flex flex-1 flex-col p-6">
-                  <span className="font-mono text-[10px] tracking-[0.14em] text-sage">{line.number}</span>
-                  <h3 className="mt-2 text-[20px] leading-snug font-medium tracking-[-0.02em] text-forest transition-colors group-hover:text-moss">
-                    {line.title}
-                  </h3>
-                  <p className="mt-2.5 text-[13.5px] leading-[1.7] text-sage">{line.description}</p>
-                  <div className="mt-5 flex flex-wrap gap-1.5">
-                    {line.details.map((detail) => (
-                      <span
-                        key={detail}
-                        className="rounded-full bg-bone px-3 py-1 text-[11px] font-medium text-forest/70"
-                      >
-                        {detail}
-                      </span>
-                    ))}
+                <Link
+                  href={line.href}
+                  className="group flex h-full flex-col overflow-hidden rounded-xl border border-forest/[0.07] bg-white transition-all duration-300 hover:-translate-y-0.5 hover:border-forest/[0.16] hover:shadow-[0_24px_48px_-28px_rgba(17,20,22,0.16)]"
+                >
+                  <div className="aspect-[3/2] overflow-hidden bg-sand">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={line.image}
+                      alt={line.alt}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                    />
                   </div>
-                  <div className="mt-auto flex items-center gap-1.5 pt-6 text-[13px] font-medium text-forest">
-                    Explore line{" "}
-                    <IconArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+                  <div className="flex flex-1 flex-col p-6">
+                    <span className="font-mono text-[10px] tracking-[0.14em] text-sage">{line.number}</span>
+                    <h3 className="mt-2 text-[20px] leading-snug font-medium tracking-[-0.02em] text-forest transition-colors group-hover:text-moss">
+                      {line.title}
+                    </h3>
+                    <p className="mt-2.5 text-[13.5px] leading-[1.7] text-sage">{line.description}</p>
+                    <div className="mt-5 flex flex-wrap gap-1.5">
+                      {line.details.map((detail) => (
+                        <span
+                          key={detail}
+                          className="rounded-full bg-bone px-3 py-1 text-[11px] font-medium text-forest/70"
+                        >
+                          {detail}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="mt-auto flex items-center gap-1.5 pt-6 text-[13px] font-medium text-forest">
+                      Explore line{" "}
+                      <IconArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+                    </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
               </Reveal>
             ))}
           </div>
@@ -313,47 +313,45 @@ export default async function HomePage() {
         <div className="wrap space-y-6">
           {equipmentSections.map((section, index) => (
             <Reveal key={section.kicker}>
-            <div
-              className="grid overflow-hidden rounded-2xl border border-forest/[0.06] bg-white lg:grid-cols-2"
-            >
               <div
-                className={`flex flex-col justify-center p-8 sm:p-12 lg:p-16 ${
-                  index % 2 === 1 ? "lg:order-2" : ""
-                }`}
+                className="grid overflow-hidden rounded-2xl border border-forest/[0.06] bg-white lg:grid-cols-2"
               >
-                <p className="eyebrow text-sage">{section.kicker}</p>
-                <h2 className="display mt-3.5 text-[clamp(1.7rem,2.8vw,2.4rem)] text-forest">
-                  {section.title}
-                </h2>
-                <p className="mt-4 text-[14.5px] leading-[1.78] text-sage">{section.copy}</p>
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {section.points.map((point) => (
-                    <span
-                      key={point}
-                      className="rounded-full border border-forest/10 px-3 py-1 text-[11.5px] text-forest/70"
-                    >
-                      {point}
-                    </span>
-                  ))}
+                <div
+                  className={`flex flex-col justify-center p-8 sm:p-12 lg:p-16 ${index % 2 === 1 ? "lg:order-2" : ""
+                    }`}
+                >
+                  <p className="eyebrow text-sage">{section.kicker}</p>
+                  <h2 className="display mt-3.5 text-[clamp(1.7rem,2.8vw,2.4rem)] text-forest">
+                    {section.title}
+                  </h2>
+                  <p className="mt-4 text-[14.5px] leading-[1.78] text-sage">{section.copy}</p>
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {section.points.map((point) => (
+                      <span
+                        key={point}
+                        className="rounded-full border border-forest/10 px-3 py-1 text-[11.5px] text-forest/70"
+                      >
+                        {point}
+                      </span>
+                    ))}
+                  </div>
+                  <Link href={section.href} className="btn btn-outline mt-8 w-fit">
+                    {section.cta} <IconArrowRight className="h-3.5 w-3.5" />
+                  </Link>
                 </div>
-                <Link href={section.href} className="btn btn-outline mt-8 w-fit">
-                  {section.cta} <IconArrowRight className="h-3.5 w-3.5" />
-                </Link>
+                <div
+                  className={`relative min-h-[260px] bg-sand sm:min-h-[340px] ${index % 2 === 1 ? "lg:order-1" : ""
+                    }`}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={section.image}
+                    alt={section.alt}
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                </div>
               </div>
-              <div
-                className={`relative min-h-[260px] bg-sand sm:min-h-[340px] ${
-                  index % 2 === 1 ? "lg:order-1" : ""
-                }`}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={section.image}
-                  alt={section.alt}
-                  loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover"
-                />
-              </div>
-            </div>
             </Reveal>
           ))}
         </div>
@@ -474,39 +472,40 @@ export default async function HomePage() {
             {clientNames.map((client) => (
               <div
                 key={`${client.region}-${client.name}`}
-                className="flex min-h-24 flex-col justify-center border-r border-b border-forest/[0.07] px-5 py-4"
+                className="flex min-h-32 flex-col items-center justify-center border-r border-b border-forest/[0.07] p-5 text-center transition-colors hover:bg-forest/[0.02]"
               >
-                <div className="flex items-center gap-2.5">
+                <div className="flex h-12 w-full items-center justify-center">
                   <img
                     src={getClientLogo(client.name)}
                     alt={client.name}
-                    width={28}
-                    height={28}
-                    className="h-7 w-7 shrink-0 object-contain"
+                    width={48}
+                    height={48}
+                    className="max-h-11 max-w-[85%] object-contain"
                     loading="lazy"
                   />
-                  <span className="text-[12.5px] font-medium leading-snug text-forest">{client.name}</span>
                 </div>
-                <span className="mt-1 font-mono text-[9.5px] text-sage">{client.region}</span>
+                <span className="mt-3 text-[12px] font-medium leading-snug text-forest">
+                  {client.name}
+                </span>
               </div>
             ))}
           </Reveal>
 
           {review && (
             <Reveal>
-            <figure className="mt-8 grid overflow-hidden rounded-2xl border border-forest/[0.07] bg-bone md:grid-cols-[0.9fr_2.1fr]">
-              <figcaption className="flex flex-col justify-center border-b border-forest/[0.07] p-7 md:border-r md:border-b-0 md:p-9">
-                <span className="eyebrow text-sage">Buyer review</span>
-                <span className="mt-3 text-[16px] font-medium text-forest">{review.name}</span>
-                <span className="mt-1 text-[12px] text-sage">
-                  {review.location}
-                  {review.product ? ` · ${review.product}` : ""}
-                </span>
-              </figcaption>
-              <blockquote className="flex items-center p-7 text-[16.5px] leading-[1.7] font-normal text-forest/85 md:p-10 md:text-[18.5px]">
-                “{review.quote}”
-              </blockquote>
-            </figure>
+              <figure className="mt-8 grid overflow-hidden rounded-2xl border border-forest/[0.07] bg-bone md:grid-cols-[0.9fr_2.1fr]">
+                <figcaption className="flex flex-col justify-center border-b border-forest/[0.07] p-7 md:border-r md:border-b-0 md:p-9">
+                  <span className="eyebrow text-sage">Buyer review</span>
+                  <span className="mt-3 text-[16px] font-medium text-forest">{review.name}</span>
+                  <span className="mt-1 text-[12px] text-sage">
+                    {review.location}
+                    {review.product ? ` · ${review.product}` : ""}
+                  </span>
+                </figcaption>
+                <blockquote className="flex items-center p-7 text-[16.5px] leading-[1.7] font-normal text-forest/85 md:p-10 md:text-[18.5px]">
+                  “{review.quote}”
+                </blockquote>
+              </figure>
             </Reveal>
           )}
         </div>
@@ -523,29 +522,29 @@ export default async function HomePage() {
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {videos.map((video, index) => (
               <Reveal key={video.id} delay={index * 80}>
-              <a
-                href={`https://www.youtube.com/watch?v=${video.id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group overflow-hidden rounded-xl border border-forest/[0.07] bg-white transition hover:border-forest/[0.16]"
-              >
-                <div className="relative aspect-video overflow-hidden bg-forest">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={video.src}
-                    alt={`Video still: ${video.title}`}
-                    loading="lazy"
-                    className="h-full w-full scale-[1.08] object-cover transition-transform duration-700 ease-out group-hover:scale-[1.13]"
-                  />
-                  <span className="absolute top-1/2 left-1/2 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white/90 pl-0.5 text-[12px] text-forest shadow-lg backdrop-blur-md transition duration-200 group-hover:scale-105 group-hover:bg-white">
-                    ▶
-                  </span>
-                </div>
-                <div className="flex items-center justify-between gap-3 px-5 py-4">
-                  <span className="text-[13.5px] font-medium text-forest">{video.title}</span>
-                  <IconArrowUpRight className="h-4 w-4 text-sage transition group-hover:text-forest" />
-                </div>
-              </a>
+                <a
+                  href={`https://www.youtube.com/watch?v=${video.id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group overflow-hidden rounded-xl border border-forest/[0.07] bg-white transition hover:border-forest/[0.16]"
+                >
+                  <div className="relative aspect-video overflow-hidden bg-forest">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={video.src}
+                      alt={`Video still: ${video.title}`}
+                      loading="lazy"
+                      className="h-full w-full scale-[1.08] object-cover transition-transform duration-700 ease-out group-hover:scale-[1.13]"
+                    />
+                    <span className="absolute top-1/2 left-1/2 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white/90 pl-0.5 text-[12px] text-forest shadow-lg backdrop-blur-md transition duration-200 group-hover:scale-105 group-hover:bg-white">
+                      ▶
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between gap-3 px-5 py-4">
+                    <span className="text-[13.5px] font-medium text-forest">{video.title}</span>
+                    <IconArrowUpRight className="h-4 w-4 text-sage transition group-hover:text-forest" />
+                  </div>
+                </a>
               </Reveal>
             ))}
           </div>

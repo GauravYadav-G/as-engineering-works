@@ -130,14 +130,14 @@ export default async function ClientsPage() {
                   {grouped[region].map((name) => (
                     <li
                       key={name}
-                      className="flex items-center gap-2.5 text-[13px] leading-snug text-forest/80"
+                      className="flex items-center gap-3 text-[13px] leading-snug text-forest/80"
                     >
                       <img
                         src={getClientLogo(name)}
                         alt={name}
-                        width={20}
-                        height={20}
-                        className="h-5 w-5 shrink-0 object-contain"
+                        width={24}
+                        height={24}
+                        className="h-6 w-6 shrink-0 object-contain"
                         loading="lazy"
                       />
                       <span>{name}</span>
