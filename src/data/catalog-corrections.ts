@@ -58,9 +58,9 @@ export const verifiedOverrides: Record<string, Partial<CatalogProduct>> = {
   "kurkure-extruder": {
     capacity: null,
     power: null,
-    shortDescription: "Kurkure extruder from our food processing plant range. Details on request.",
+    shortDescription: "Kurkure extruder listed at ₹3,00,000 per piece for fried extruded snack processing.",
     description:
-      "The Kurkure Extruder is named in A.S. Engineering Works' published product range. Capacity, connected load and price for this configuration are available on request. See the other Kurkure Making Machines for published model specifications.",
+      "The Kurkure Extruder is listed at ₹3,00,000 per piece in A.S. Engineering Works' published product range. Capacity and connected load are configured to customer requirements. See the other Kurkure Making Machines for published standard model specifications.",
     specifications: [],
   },
   "macaroni-pasta-making-machine": {
@@ -70,9 +70,9 @@ export const verifiedOverrides: Record<string, Partial<CatalogProduct>> = {
   "vermicelli-extruder-machine": {
     capacity: null,
     power: null,
-    shortDescription: "Vermicelli extruder machine. Price and specification on request.",
+    shortDescription: "Vermicelli extruder machine listed at ₹8,00,000 per piece.",
     description:
-      "Vermicelli Extruder Machine appears in the A.S. Engineering Works published product range. The listing does not give a public price or a detailed technical sheet. Tell us your strand gauge, flour and daily output for a model-specific quotation.",
+      "Vermicelli Extruder Machine appears in the A.S. Engineering Works published product range at ₹8,00,000 per piece. Tell us your strand gauge, flour blend and daily output for model-specific configuration and die tooling.",
     specifications: [],
   },
   "pasta-static-dryer": {
@@ -96,9 +96,9 @@ export const verifiedOverrides: Record<string, Partial<CatalogProduct>> = {
   "soya-nugget-plant": {
     capacity: null,
     power: null,
-    shortDescription: "Soya nugget plant configured to your required capacity. Details on request.",
+    shortDescription: "Soya nugget plant listed at ₹8,00,000 per piece, configured to your required capacity.",
     description:
-      "Soya Nugget Plant is listed in the A.S. Engineering Works food processing machine range. A plant is configured according to your required product and capacity. Ask for the equipment scope and a current quotation; no public technical specification is shown for this listing.",
+      "Soya Nugget Plant is listed in the A.S. Engineering Works food processing machine range at ₹8,00,000 per piece. A plant is configured according to your required product and capacity. Ask for the equipment scope and a current quotation.",
     specifications: [],
   },
   "energy-food-extruder": {
@@ -124,9 +124,9 @@ export const verifiedOverrides: Record<string, Partial<CatalogProduct>> = {
   "snacks-food-processing-plant": {
     capacity: null,
     power: null,
-    shortDescription: "Snacks food processing plant configured from our machinery range. Details on request.",
+    shortDescription: "Snacks food processing plant listed at ₹3,00,000 per piece, configured from our machinery range.",
     description:
-      "Snacks Food Processing Plant is included in A.S. Engineering Works' published plant range. We can discuss a combination of listed extrusion, thermal, seasoning and product-handling machines for your product. The exact equipment, capacity and installation scope are specified only in a quotation.",
+      "Snacks Food Processing Plant is included in A.S. Engineering Works' published plant range at ₹3,00,000 per piece. We can configure a combination of listed extrusion, thermal, seasoning and product-handling machines for your product.",
     specifications: [],
   },
   "inclined-conveyor-belt": {

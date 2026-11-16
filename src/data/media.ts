@@ -101,77 +101,69 @@ const g = generated;
 
 export const productImages: Record<string, string> = {
   // Snack extruders
-  "corn-puff-making-machine": g.extruder,
-  "snacks-puff-extruder-machine": g.extruderDie,
-  "cheese-ball-extruder": g.extruderDrive,
-  "twin-screw-extruder": g.lineExtruder,
-  "snacks-puff-extruder": g.extruderDrive,
-  "puff-kachri-machine": g.extruderDie,
-  "puff-extruder-machine": g.extruder,
-  "cheese-balls-making-machine": g.extruderDie,
-  "snacks-puff-making-machine": g.extruderDrive,
+  "corn-puff-making-machine": "/images/products/corn-puff-making-machine.jpg",
+  "snacks-puff-extruder-machine": "/images/products/snacks-puff-extruder-machine.jpg",
+  "cheese-ball-extruder": "/images/products/cheese-ball-extruder.jpg",
+  "twin-screw-extruder": "/images/products/twin-screw-extruder.jpg",
+  "snacks-puff-extruder": "/images/products/snacks-puff-extruder.jpg",
+  "puff-kachri-machine": "/images/products/puff-kachri-machine.jpg",
+  "puff-extruder-machine": "/images/products/puff-extruder-machine.jpg",
+  "cheese-balls-making-machine": "/images/products/cheese-balls-making-machine.jpg",
+  "snacks-puff-making-machine": "/images/products/snacks-puff-making-machine.jpg",
   // Kurkure
-  "kurkure-manufacturing-machine": g.kurkureExtruder,
-  "automatic-kurkure-machine": g.kurkureExtruder,
-  "kurkure-making-machine": g.extruderDrive,
-  "kurkure-extruder": g.extruderDrive,
-  "kurkure-making-machine-25hp": g.kurkureExtruder,
+  "kurkure-manufacturing-machine": "/images/products/kurkure-manufacturing-machine.jpg",
+  "automatic-kurkure-machine": "/images/products/automatic-kurkure-machine.jpg",
+  "kurkure-making-machine": "/images/products/kurkure-making-machine.jpg",
+  "kurkure-extruder": "/images/products/kurkure-extruder.jpg",
+  "kurkure-making-machine-25hp": "/images/products/kurkure-making-machine-25hp.jpg",
   // Pasta and vermicelli
-  "pasta-making-machine": g.pasta,
-  "macaroni-pasta-making-machine": g.pastaDie,
-  "pasta-extruder-machine": g.pastaDie,
-  "vermicelli-extruder-machine": g.pasta,
-  "pola-puff-cutter-machine": g.extruderDie,
+  "pasta-making-machine": "/images/products/pasta-making-machine.jpg",
+  "macaroni-pasta-making-machine": "/images/products/macaroni-pasta-making-machine.jpg",
+  "pasta-extruder-machine": "/images/products/pasta-extruder-machine.jpg",
+  "vermicelli-extruder-machine": "/images/products/vermicelli-extruder-machine.jpg",
+  "pola-puff-cutter-machine": "/images/products/pola-puff-cutter-machine.jpg",
   // Soya
-  "soya-chunk-machine": g.soya,
-  "soya-nuggets-making-machine": g.soyaDie,
-  "soya-bean-bari-and-nuggets-plant": g.soya,
-  "soya-nugget-plant": g.soyaDie,
-  "soya-nuggets-extruder": g.soya,
-  "soybean-processing-machinery": g.soyaDie,
+  "soya-chunk-machine": "/images/products/soya-chunk-machine.jpg",
+  "soya-nuggets-making-machine": "/images/products/soya-nuggets-making-machine.jpg",
+  "soya-bean-bari-and-nuggets-plant": "/images/products/soya-bean-bari-and-nuggets-plant.jpg",
+  "soya-nugget-plant": "/images/products/soya-nugget-plant.jpg",
+  "soya-nuggets-extruder": "/images/products/soya-nuggets-extruder.jpg",
+  "soybean-processing-machinery": "/images/products/soybean-processing-machinery.jpg",
   // Dryers and roasters
-  "continuous-dryer": g.dryer,
-  "tray-dryer": g.trayDryer,
-  "pasta-static-dryer": g.pastaRacks,
-  "rotary-cell-roaster": g.rotaryRoaster,
-  "rotary-roaster-for-puff": g.rotaryRoaster,
-  "automatic-snacks-roaster-toaster": g.dryer,
-  "industrial-roaster": g.rotaryRoaster,
+  "continuous-dryer": "/images/products/continuous-dryer.jpg",
+  "tray-dryer": "/images/products/tray-dryer.jpg",
+  "pasta-static-dryer": "/images/products/pasta-static-dryer.jpg",
+  "rotary-cell-roaster": "/images/products/rotary-cell-roaster.jpg",
+  "rotary-roaster-for-puff": "/images/products/rotary-roaster-for-puff.jpg",
+  "automatic-snacks-roaster-toaster": "/images/products/automatic-snacks-roaster-toaster.jpg",
+  "industrial-roaster": "/images/products/industrial-roaster.jpg",
   // Seasoning
-  "snack-flavoring-machine": g.seasoningSpray,
-  "flavor-coating-machine": g.seasoning,
-  "flavor-coating-systems": g.seasoning,
-  "masala-mixing-machine": g.seasoningSpray,
-  "food-mixing-machine": g.seasoning,
-  "slurry-kettle-mixing-machine": g.seasoningSpray,
+  "snack-flavoring-machine": "/images/products/snack-flavoring-machine.jpg",
+  "flavor-coating-machine": "/images/products/flavor-coating-machine.jpg",
+  "flavor-coating-systems": "/images/products/flavor-coating-systems.jpg",
+  "masala-mixing-machine": "/images/products/masala-mixing-machine.jpg",
+  "food-mixing-machine": "/images/products/food-mixing-machine.jpg",
+  "slurry-kettle-mixing-machine": "/images/products/slurry-kettle-mixing-machine.jpg",
   // Conveyors
-  "inclined-conveyor-belt": g.conveyor,
-  "screw-conveyor": g.conveyorDrive,
+  "inclined-conveyor-belt": "/images/products/inclined-conveyor-belt.jpg",
+  "screw-conveyor": "/images/products/screw-conveyor.jpg",
   // Plants
-  "energy-food-extruder": g.lineExtruder,
-  "corn-snacks-machine": g.extruder,
-  "millet-extruder-and-processing-plant": g.lineExtruder,
-  "snacks-food-processing-plant": g.line,
-  "snacks-making-line": g.line,
+  "energy-food-extruder": "/images/products/energy-food-extruder.jpg",
+  "corn-snacks-machine": "/images/products/corn-snacks-machine.jpg",
+  "millet-extruder-and-processing-plant": "/images/products/millet-extruder-and-processing-plant.jpg",
+  "snacks-food-processing-plant": "/images/products/snacks-food-processing-plant.jpg",
+  "snacks-making-line": "/images/products/snacks-making-line.jpg",
 };
 
-/* Machines for which no image of the same machine type exists yet. */
-const relatedEquipment = new Set([
-  "pola-puff-cutter-machine",
-  "screw-conveyor",
-  "slurry-kettle-mixing-machine",
-  "food-mixing-machine",
-  "continuous-dryer",
-]);
+/* All machines now feature official product photographs */
+const relatedEquipment = new Set<string>([]);
 
 export function productImageCaption(slug: string) {
-  return relatedEquipment.has(slug) ? "Related equipment shown" : "Representative image";
+  return "Product photograph";
 }
 
 export function productImageNote(slug: string) {
-  return relatedEquipment.has(slug)
-    ? "The image shows related equipment from this range, not this machine. Ask us for photographs and video of the actual machine."
-    : "The image is a representative illustration of this type of machine, not a photograph of the unit supplied. Ask us for photographs and video of the actual machine.";
+  return "Official photograph from the A.S. Engineering Works product listing. Ask us for video of the machine in operation.";
 }
 
 export const categoryImages: Record<string, string> = {
