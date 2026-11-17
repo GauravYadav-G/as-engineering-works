@@ -121,7 +121,7 @@ export default async function HomePage() {
     .map((slug) => products.find((product) => product.slug === slug))
     .filter((product) => product !== undefined);
   const review = testimonials.find((item) => (item.quote?.length ?? 0) > 40);
-  const clientNames = clients.slice(0, 18);
+  const clientNames = clients.slice(0, 10);
   const regionCount = new Set(clients.map((client) => client.region)).size;
 
   return (
@@ -468,7 +468,7 @@ export default async function HomePage() {
             link={{ href: "/clients", label: "Clients & reviews" }}
             align="between"
           />
-          <Reveal className="mt-12 grid grid-cols-2 overflow-hidden rounded-2xl border border-forest/[0.07] sm:grid-cols-3 lg:grid-cols-6">
+          <Reveal className="mt-12 grid grid-cols-2 overflow-hidden rounded-2xl border border-forest/[0.07] sm:grid-cols-5 lg:grid-cols-5">
             {clientNames.map((client) => (
               <div
                 key={`${client.region}-${client.name}`}

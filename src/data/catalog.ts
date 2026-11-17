@@ -1428,40 +1428,34 @@ export const testimonials: CatalogTestimonial[] = [
 ];
 
 export const clients: CatalogClient[] = [
-  // Delhi / NCR
+  // Top 10 Published Clients with Official Brand Logos (Homepage 2-Row Grid)
   { name: "Kiwi Food India (P) Ltd", region: "Delhi / NCR", sortOrder: 1 },
   { name: "Nanaji Namkeen Udyog (P) Ltd", region: "Delhi / NCR", sortOrder: 2 },
   { name: "Shah Namkeen (P) Ltd", region: "Delhi / NCR", sortOrder: 3 },
-  { name: "Fun Choice Pvt Ltd", region: "Delhi / NCR", sortOrder: 4 },
-  { name: "S.K. Food Products (P) Ltd", region: "Delhi / NCR", sortOrder: 5 },
-  { name: "U-Like Food Products (P) Ltd", region: "Delhi / NCR", sortOrder: 6 },
+  { name: "Dugar Spices & Food Pvt Ltd (Century Spices & Snacks)", region: "Delhi / NCR", sortOrder: 4 },
+  { name: "Ashoka Tea Company (P) Ltd (Ashok Masale)", region: "Kanpur", sortOrder: 5 },
+  { name: "Jay Bharat Food Processor Pvt Ltd (Bharat Masala)", region: "Odisha", sortOrder: 6 },
+  { name: "Agarwal Food & Spices Pvt Ltd (Swadist Masala)", region: "Odisha", sortOrder: 7 },
+  { name: "Subas Nutrition Pvt Ltd", region: "Odisha", sortOrder: 8 },
+  { name: "CBL Foods International Pvt Ltd", region: "Sri Lanka", sortOrder: 9 },
+  { name: "Wijitha Group of Companies", region: "Sri Lanka", sortOrder: 10 },
 
-  // Kanpur
-  { name: "Ashoka Tea Company (P) Ltd", region: "Kanpur", sortOrder: 7 },
-  { name: "R.J. Food", region: "Kanpur", sortOrder: 8 },
-  { name: "Damni Food Products Pvt Ltd", region: "Kanpur", sortOrder: 9 },
-  { name: "Barry Tarts Foods LLP", region: "Kanpur", sortOrder: 10 },
-
-  // Odisha
-  { name: "Jay Bharat Food Processor Pvt Ltd (Bharat Masala)", region: "Odisha", sortOrder: 11 },
-  { name: "Agarwal Food & Spices Pvt Ltd (Swadist Masala)", region: "Odisha", sortOrder: 12 },
-  { name: "Subas Nutrition Pvt Ltd", region: "Odisha", sortOrder: 13 },
-  { name: "Orissa Confectionery Pvt Ltd", region: "Odisha", sortOrder: 14 },
-
-  // Sri Lanka & International
-  { name: "CBL Foods International Pvt Ltd", region: "Sri Lanka", sortOrder: 15 },
-  { name: "Wijitha Group of Companies", region: "Sri Lanka", sortOrder: 16 },
-  { name: "Turney Biscuit Manufacturers (Pvt) Ltd", region: "Sri Lanka", sortOrder: 17 },
-  { name: "RajaRatta Manufacturers Pvt Ltd", region: "Sri Lanka", sortOrder: 18 },
-
-  // Additional Published Clients
-  { name: "Dugar Spices & Food Pvt Ltd", region: "Delhi / NCR", sortOrder: 19 },
-  { name: "Maa Food Products Pvt Ltd", region: "Delhi / NCR", sortOrder: 20 },
-  { name: "Khaowji Food Products Pvt Ltd", region: "Delhi / NCR", sortOrder: 21 },
-  { name: "Shani Food Products Pvt Ltd", region: "Kanpur", sortOrder: 22 },
-  { name: "S.K. Food Products", region: "Kanpur", sortOrder: 23 },
-  { name: "Kalinga Food and Alind Pvt Ltd", region: "Odisha", sortOrder: 24 },
-  { name: "Mill Machinery Store", region: "Odisha", sortOrder: 25 },
-  { name: "Vijaya Food Products", region: "Odisha", sortOrder: 26 },
+  // Additional Published Clients (Full Directory on /clients)
+  { name: "Fun Choice Pvt Ltd", region: "Delhi / NCR", sortOrder: 11 },
+  { name: "S.K. Food Products (P) Ltd", region: "Delhi / NCR", sortOrder: 12 },
+  { name: "U-Like Food Products (P) Ltd", region: "Delhi / NCR", sortOrder: 13 },
+  { name: "Maa Food Products Pvt Ltd", region: "Delhi / NCR", sortOrder: 14 },
+  { name: "Khaowji Food Products Pvt Ltd", region: "Delhi / NCR", sortOrder: 15 },
+  { name: "R.J. Food", region: "Kanpur", sortOrder: 16 },
+  { name: "Damni Food Products Pvt Ltd", region: "Kanpur", sortOrder: 17 },
+  { name: "Barry Tarts Foods LLP", region: "Kanpur", sortOrder: 18 },
+  { name: "Shani Food Products Pvt Ltd", region: "Kanpur", sortOrder: 19 },
+  { name: "S.K. Food Products", region: "Kanpur", sortOrder: 20 },
+  { name: "Orissa Confectionery Pvt Ltd", region: "Odisha", sortOrder: 21 },
+  { name: "Kalinga Food and Alind Pvt Ltd", region: "Odisha", sortOrder: 22 },
+  { name: "Mill Machinery Store", region: "Odisha", sortOrder: 23 },
+  { name: "Vijaya Food Products", region: "Odisha", sortOrder: 24 },
+  { name: "Turney Biscuit Manufacturers (Pvt) Ltd", region: "Sri Lanka", sortOrder: 25 },
+  { name: "RajaRatta Manufacturers Pvt Ltd", region: "Sri Lanka", sortOrder: 26 },
   { name: "Roche Enterprises", region: "Sri Lanka", sortOrder: 27 },
 ];
