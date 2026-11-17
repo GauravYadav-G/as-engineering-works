@@ -53,13 +53,13 @@ export default function InfrastructurePage() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/machines/line-extruder.jpg"
-                  alt="Representative image of a snack extruder line"
+                  alt="A.S. Engineering Works manufacturing facility and extrusion lines in Noida"
                   loading="lazy"
-                  className="aspect-[16/10] w-full object-cover"
+                  className="aspect-[16/10] w-full object-cover object-[center_28%]"
                 />
               </div>
               <figcaption className="mt-2.5 font-mono text-[10px] text-sage/75">
-                Representative image
+                A.S. Engineering Works manufacturing facility, Sector 10, Noida
               </figcaption>
             </figure>
           </div>

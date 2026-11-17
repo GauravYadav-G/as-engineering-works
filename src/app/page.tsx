@@ -183,9 +183,9 @@ export default async function HomePage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/machines/line-extruder.jpg"
-                alt="Representative image of a snack extruder line"
+                alt="Founder Mr. Akhtar Ali Khan with extrusion machinery at the A.S. Engineering Works workshop in Noida"
                 loading="lazy"
-                className="aspect-[16/10] w-full object-cover"
+                className="aspect-[16/10] w-full object-cover object-[center_28%]"
               />
             </div>
             <div className="overflow-hidden rounded-xl bg-sand">
