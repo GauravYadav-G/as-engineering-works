@@ -86,14 +86,14 @@ export default function InfrastructurePage() {
               <div className="overflow-hidden rounded-2xl border border-forest/[0.07] bg-sand">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/machines/dryer-roaster.jpg"
-                  alt="Representative image of an industrial tray dryer and rotary roaster"
+                  src="/images/as-engineering-facility-board.jpg"
+                  alt="M/S. A.S. Engineering Works, Administrator at Noida Entrepreneurs Association, Sector 6, Noida"
                   loading="lazy"
                   className="aspect-[16/10] w-full object-cover"
                 />
               </div>
               <figcaption className="mt-2.5 font-mono text-[11.5px] text-sage/80">
-                Representative image
+                Official Noida Entrepreneurs Association board — M/S. A.S. Engineering Works, Sector-6, Noida
               </figcaption>
             </figure>
           </div>
