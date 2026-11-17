@@ -122,7 +122,6 @@ export default async function HomePage() {
     .filter((product) => product !== undefined);
   const review = testimonials.find((item) => (item.quote?.length ?? 0) > 40);
   const clientNames = clients.slice(0, 10);
-  const regionCount = new Set(clients.map((client) => client.region)).size;
 
   return (
     <>
@@ -156,23 +155,23 @@ export default async function HomePage() {
               </Link>
             </div>
 
-            <div className="mt-12 grid max-w-[480px] grid-cols-3 border-t border-forest/[0.08] pt-7">
+            <div className="mt-12 grid max-w-[540px] grid-cols-3 border-t border-forest/[0.08] pt-7">
               <div>
-                <p className="display tabular text-[32px] text-forest sm:text-[36px]">1984</p>
+                <p className="display tabular text-[30px] text-forest sm:text-[34px]">42+</p>
                 <p className="mt-1.5 font-mono text-[11px] tracking-[0.08em] text-sage uppercase">
-                  Established
+                  Years of legacy
                 </p>
               </div>
               <div>
-                <p className="display tabular text-[32px] text-forest sm:text-[36px]">{products.length}</p>
+                <p className="display tabular text-[30px] text-forest sm:text-[34px]">50,000+</p>
                 <p className="mt-1.5 font-mono text-[11px] tracking-[0.08em] text-sage uppercase">
-                  Machines
+                  Machines delivered
                 </p>
               </div>
               <div>
-                <p className="display tabular text-[32px] text-forest sm:text-[36px]">{categories.length}</p>
+                <p className="display tabular text-[30px] text-forest sm:text-[34px]">2,000+</p>
                 <p className="mt-1.5 font-mono text-[11px] tracking-[0.08em] text-sage uppercase">
-                  Categories
+                  Projects completed
                 </p>
               </div>
             </div>
@@ -360,21 +359,42 @@ export default async function HomePage() {
       {/* Proof in numbers */}
       <section className="bg-[#0c0f11] text-white">
         <div className="wrap">
-          <div className="grid grid-cols-2 gap-px bg-white/[0.08] lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-px bg-white/[0.08] sm:grid-cols-3">
             {[
-              { value: 1984, animate: false, label: "Year established", note: "Noida, Uttar Pradesh" },
-              { value: products.length, animate: true, label: "Machines listed", note: "Published catalogue" },
-              { value: categories.length, animate: true, label: "Machine categories", note: "Extrusion to conveying" },
-              { value: clients.length, animate: true, label: "Clients on our list", note: `${regionCount} regions` },
+              {
+                value: 42,
+                suffix: "+",
+                animate: true,
+                label: "Years of legacy",
+                note: "Manufacturing in Noida since 1984",
+              },
+              {
+                value: 50000,
+                suffix: "+",
+                animate: true,
+                label: "Machines delivered",
+                note: "Food processing & extrusion machinery",
+              },
+              {
+                value: 2000,
+                suffix: "+",
+                animate: true,
+                label: "Projects completed",
+                note: "Snack factories & production lines",
+              },
             ].map((stat, index) => (
               <Reveal key={stat.label} delay={index * 80} className="h-full">
                 <div className="flex h-full flex-col justify-between gap-10 bg-[#0c0f11] px-6 py-12 lg:px-8 lg:py-16">
                   <p className="display text-[clamp(2.8rem,5vw,4.2rem)] font-medium tracking-[-0.03em] text-white">
-                    {stat.animate ? <CountUp value={stat.value} /> : stat.value}
+                    {stat.animate ? (
+                      <CountUp value={stat.value} suffix={stat.suffix} />
+                    ) : (
+                      `${stat.value}${stat.suffix ?? ""}`
+                    )}
                   </p>
                   <div>
-                    <p className="text-[16px] font-medium text-white/90">{stat.label}</p>
-                    <p className="mt-1.5 font-mono text-[11.5px] tracking-[0.1em] text-white/45 uppercase">
+                    <p className="text-[17px] font-medium text-white/95">{stat.label}</p>
+                    <p className="mt-1.5 font-mono text-[12px] tracking-[0.1em] text-white/50 uppercase">
                       {stat.note}
                     </p>
                   </div>

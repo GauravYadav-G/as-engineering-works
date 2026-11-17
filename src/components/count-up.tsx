@@ -10,9 +10,11 @@ import { useEffect, useRef, useState } from "react";
 export function CountUp({
   value,
   duration = 1400,
+  suffix = "",
 }: {
   value: number;
   duration?: number;
+  suffix?: string;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
   const [display, setDisplay] = useState(value);
@@ -60,7 +62,7 @@ export function CountUp({
 
   return (
     <span ref={ref} className="tabular">
-      {display.toLocaleString("en-IN")}
+      {display.toLocaleString("en-IN")}{suffix}
     </span>
   );
 }

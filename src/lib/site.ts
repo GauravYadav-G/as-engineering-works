@@ -28,7 +28,9 @@ export const site = {
     mapUrl: "https://maps.google.com?q=28.59221000,77.32750000",
   },
   facts: [
-    { label: "Established", value: "1984" },
+    { label: "Established", value: "1984 (42+ Years of Legacy)" },
+    { label: "Machines delivered", value: "50,000+ Units" },
+    { label: "Projects completed", value: "2,000+ Plants & Lines" },
     { label: "Nature of business", value: "Manufacturer & Exporter" },
     { label: "Additional business", value: "Factory / Retail / Wholesale" },
     { label: "Company CEO", value: "Akhtar Ali Khan" },

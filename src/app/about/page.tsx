@@ -88,6 +88,27 @@ export default async function AboutPage() {
                 Inside our facility
               </Link>
             </div>
+
+            <div className="mt-10 grid max-w-[540px] grid-cols-3 border-t border-forest/[0.08] pt-7">
+              <div>
+                <p className="display tabular text-[30px] font-semibold text-forest sm:text-[34px]">42+</p>
+                <p className="mt-1.5 font-mono text-[11px] tracking-[0.08em] text-sage uppercase">
+                  Years of legacy
+                </p>
+              </div>
+              <div>
+                <p className="display tabular text-[30px] font-semibold text-forest sm:text-[34px]">50,000+</p>
+                <p className="mt-1.5 font-mono text-[11px] tracking-[0.08em] text-sage uppercase">
+                  Machines delivered
+                </p>
+              </div>
+              <div>
+                <p className="display tabular text-[30px] font-semibold text-forest sm:text-[34px]">2,000+</p>
+                <p className="mt-1.5 font-mono text-[11px] tracking-[0.08em] text-sage uppercase">
+                  Projects completed
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="space-y-6">
