@@ -125,9 +125,20 @@ export function SiteFooter({ categories }: { categories: FooterCategory[] }) {
       </div>
 
       <div className="border-t border-white/[0.08] pb-16 lg:pb-0">
-        <div className="wrap py-6 text-[12.5px] text-white/45">
+        <div className="wrap flex flex-col items-start justify-between gap-3 py-6 text-[12.5px] text-white/45 sm:flex-row sm:items-center">
           <p className="leading-relaxed">
             © {new Date().getFullYear()} {site.name}. All rights reserved.
+          </p>
+          <p className="leading-relaxed">
+            Designed and developed by{" "}
+            <a
+              href="https://www.arkatechnovation.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-white/75 transition hover:text-white underline underline-offset-4 decoration-white/30 hover:decoration-white"
+            >
+              Arka Technovation
+            </a>
           </p>
         </div>
       </div>
