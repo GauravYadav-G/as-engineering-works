@@ -32,33 +32,43 @@ export const metadata: Metadata = {
 const lineHighlights = [
   {
     number: "01",
-    title: "Corn puff & cheese ball lines",
+    title: "Soya chunk & nugget plants",
     description:
-      "Snack extruders paired with roasting and flavour coating equipment for corn puffs, cheese balls, rings and kachri.",
-    image: "/images/machines/snack-extruder.jpg",
-    alt: "Representative image of a snack extruder producing corn puffs",
-    href: "/solutions/corn-puffs",
-    details: ["Extrusion", "Roasting", "Flavour coating"],
+      "High-yield Textured Soya Protein (TSP) extruders and complete plants for soya bari, chunks, and chaap with high output and precision drying.",
+    image: "/images/machines/soya-extruder-plant.jpg",
+    alt: "A.S. Engineering Works commercial soya chunk and nugget extruder plant in Noida",
+    href: "/solutions/soya-nuggets",
+    details: ["TSP extrusion", "2.5–3 ton/day", "Bari & chunks"],
   },
   {
     number: "02",
     title: "Kurkure & corn stick lines",
     description:
-      "Kurkure making machines that give each piece a naturally varied length and diameter, with seasoning equipment to finish.",
-    image: "/images/machines/kurkure-line.jpg",
-    alt: "Representative image of a kurkure production line",
+      "Continuous rotary die friction extruders giving authentic irregular crunchy curls, with continuous roasting, frying and automated flavouring.",
+    image: "/images/machines/kurkure-extruder-hero.jpg",
+    alt: "A.S. Engineering Works continuous kurkure making machine and line",
     href: "/solutions/kurkure-corn-sticks",
-    details: ["Kurkure extruders", "80–100 kg/hr", "Seasoning"],
+    details: ["Kurkure extruders", "80–100 kg/hr", "Continuous seasoning"],
   },
   {
     number: "03",
-    title: "Soya nugget & badi plants",
+    title: "Corn puff & snacks puff lines",
     description:
-      "Textured soya protein machines for nuggets, chunks, chaap and badi — from single extruders to complete plants.",
-    image: "/images/machines/soya-extruder.jpg",
-    alt: "Representative image of a soya nugget extruder",
-    href: "/solutions/soya-nuggets",
-    details: ["Hopper mixing", "Protein extrusion", "Drying"],
+      "High-speed snack extruders paired with roasting and flavour coating for cheese balls, round puffs, rings, twists, and kachri.",
+    image: "/images/machines/corn-puff-extruder-hero.jpg",
+    alt: "A.S. Engineering Works industrial corn puff and snacks extruder machine",
+    href: "/solutions/corn-puffs",
+    details: ["Puff extruders", "100–250 kg/hr", "Cheese balls & rings"],
+  },
+  {
+    number: "04",
+    title: "Macaroni & pasta plants",
+    description:
+      "Commercial vacuum mixing and extrusion plants producing smooth, bubble-free macaroni, penne, spirals, and vermicelli with brass dies.",
+    image: "/images/machines/pasta-macaroni-plant-hero.jpg",
+    alt: "A.S. Engineering Works industrial vacuum pasta and macaroni extruder plant",
+    href: "/solutions/pasta-macaroni",
+    details: ["Vacuum extrusion", "Bronze & brass dies", "Multi-tier drying"],
   },
 ];
 
@@ -96,10 +106,10 @@ const equipmentSections = [
 ];
 
 const popularSlugs = [
-  "corn-puff-making-machine",
-  "kurkure-manufacturing-machine",
   "soya-chunk-machine",
-  "pasta-making-machine",
+  "kurkure-manufacturing-machine",
+  "corn-puff-making-machine",
+  "macaroni-pasta-making-machine",
   "rotary-cell-roaster",
   "flavor-coating-systems",
 ];
@@ -181,8 +191,8 @@ export default async function HomePage() {
             <div className="col-span-2 overflow-hidden rounded-2xl bg-sand">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/machines/line-extruder.jpg"
-                alt="Founder Mr. Akhtar Ali Khan with extrusion machinery at the A.S. Engineering Works workshop in Noida"
+                src="/images/real/akhtar-ali-khan-workshop.jpg"
+                alt="Founder Mr. Akhtar Ali Khan at the A.S. Engineering Works workshop in Noida"
                 loading="lazy"
                 className="aspect-[16/10] w-full object-cover object-[center_28%]"
               />
@@ -190,8 +200,8 @@ export default async function HomePage() {
             <div className="overflow-hidden rounded-xl bg-sand">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/machines/pasta-die.jpg"
-                alt="Representative image of a pasta extruder die"
+                src="/images/real/video-soya.jpg"
+                alt="Real soya nugget processing in workshop"
                 loading="lazy"
                 className="aspect-[4/3] w-full object-cover"
               />
@@ -199,8 +209,8 @@ export default async function HomePage() {
             <div className="overflow-hidden rounded-xl bg-sand">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/machines/seasoning-spray.jpg"
-                alt="Representative image of a flavour coating drum"
+                src="/images/real/kurkure-line.jpg"
+                alt="Real kurkure processing line manufactured in Noida"
                 loading="lazy"
                 className="aspect-[4/3] w-full object-cover"
               />
@@ -263,7 +273,7 @@ export default async function HomePage() {
             align="between"
           />
 
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {lineHighlights.map((line, index) => (
               <Reveal key={line.number} delay={index * 90}>
                 <Link

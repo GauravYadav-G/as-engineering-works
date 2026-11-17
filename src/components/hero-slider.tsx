@@ -7,70 +7,59 @@ import { IconArrowRight, IconArrowUpRight } from "@/components/icons";
 
 const slides = [
   {
-    tab: "Complete lines",
-    eyebrow: "Noida, India · Since 1984",
-    title: "Food processing machinery, engineered for your product.",
+    tab: "Soya chunks plant",
+    eyebrow: "Textured Soya Protein · 2.5–3 Ton/Day Plants",
+    title: "Soya Chunk & Nugget Making Plants.",
     description:
-      "Extruders, kurkure machines, pasta and soya nugget plants, dryers, roasters and flavouring systems — manufactured in Noida for food businesses in India and abroad.",
-    image: "/images/hero-line.jpg",
-    alt: "Representative image of a stainless steel snack processing line",
-    href: "/solutions",
-    cta: "Explore processing lines",
-  },
-  {
-    tab: "Corn puffs",
-    eyebrow: "Corn puffs & cheese balls",
-    title: "Corn puff and cheese ball extruders.",
-    description:
-      "Snack extruders listed from 100 kg per hour, paired with roasting and flavour coating equipment to complete the line.",
-    image: "/images/extruder.jpg",
-    alt: "Representative image of a snack extruder producing corn puffs",
-    href: "/solutions/corn-puffs",
-    cta: "Corn puff solution",
-  },
-  {
-    tab: "Kurkure",
-    eyebrow: "Kurkure & corn sticks",
-    title: "Kurkure machines with an authentic texture.",
-    description:
-      "Every piece varies naturally in length and diameter for a home-made look. Listed models produce 80 to 100 kg per hour.",
-    image: "/images/kurkure.jpg",
-    alt: "Representative image of a kurkure production line",
-    href: "/solutions/kurkure-corn-sticks",
-    cta: "Kurkure solution",
-  },
-  {
-    tab: "Soya nuggets",
-    eyebrow: "Textured soya protein",
-    title: "Soya nugget machines and complete plants.",
-    description:
-      "Textured soya protein extruders for nuggets, chunks, chaap and badi — from standalone units to 2.5–3 ton per day plants.",
-    image: "/images/soya.jpg",
-    alt: "Representative image of a soya nugget extruder",
+      "Complete commercial plants and heavy-duty twin-screw extruders for textured soya chunks, bari, soya chaap, and protein nuggets. High-torque barrels, precision cutter heads, and controlled drying systems.",
+    image: "/images/soya-plant-hero.jpg",
+    alt: "A.S. Engineering Works commercial soya chunks and nugget processing plant extruder",
     href: "/solutions/soya-nuggets",
-    cta: "Soya nugget solution",
+    cta: "Soya chunk plants",
+  },
+  {
+    tab: "Kurkure extruder",
+    eyebrow: "Corn & Rice Meal Extrusion · 80–100 kg/hr",
+    title: "Continuous Kurkure & Corn Stick Extruders.",
+    description:
+      "Heavy-duty rotary die friction extruders producing authentic irregular, crunchy curled kurkure collets. Matched with continuous roasting, frying and automated slurry flavouring systems.",
+    image: "/images/kurkure-hero.jpg",
+    alt: "A.S. Engineering Works continuous kurkure and corn stick extruder machine",
+    href: "/solutions/kurkure-corn-sticks",
+    cta: "Kurkure extruders",
+  },
+  {
+    tab: "Puff extruder",
+    eyebrow: "Corn Puffs, Rings & Cheese Balls · 100–250 kg/hr",
+    title: "High-Speed Snacks & Corn Puff Extruders.",
+    description:
+      "High-yield food extruders with interchangeable precision dies for spherical cheese balls, tubular corn puffs, rings, twists, and kachri. Built for high expansion ratios and continuous output.",
+    image: "/images/extruder-hero.jpg",
+    alt: "A.S. Engineering Works commercial snacks and corn puff extruder machine",
+    href: "/solutions/corn-puffs",
+    cta: "Puff extruders",
   },
   {
     tab: "Pasta & macaroni",
-    eyebrow: "Pasta, macaroni & vermicelli",
-    title: "Vacuum pasta and macaroni extruders.",
+    eyebrow: "Macaroni, Pasta & Vermicelli · Vacuum Extrusion",
+    title: "Vacuum Pasta & Macaroni Extrusion Plants.",
     description:
-      "Pasta machines that mix and extrude under vacuum, matched with tray and static dryers for 100–200 kg per hour output.",
-    image: "/images/pasta.jpg",
-    alt: "Representative image of a pasta extruder producing macaroni",
+      "Heavy-duty vacuum mixing and extrusion plants producing smooth, bubble-free macaroni, penne, spirals, and vermicelli with precision brass dies and multi-tier static drying systems.",
+    image: "/images/pasta-hero.jpg",
+    alt: "A.S. Engineering Works industrial vacuum pasta and macaroni extruder plant",
     href: "/solutions/pasta-macaroni",
-    cta: "Pasta solution",
+    cta: "Pasta & macaroni plants",
   },
   {
-    tab: "Seasoning",
-    eyebrow: "Masala & flavour coating",
-    title: "Flavour coating and masala mixing systems.",
+    tab: "Turnkey lines",
+    eyebrow: "Noida, India · 42+ Years of Legacy",
+    title: "Complete Processing Lines, Engineered for Scale.",
     description:
-      "From compact batch masala mixers to 24 ft continuous coating drums with dry masala and ghee spray.",
-    image: "/images/seasoning.jpg",
-    alt: "Representative image of a flavour coating drum seasoning snacks",
-    href: "/products?category=seasoning-systems",
-    cta: "Seasoning equipment",
+      "Turnkey integrated snack plants: extruders, continuous fryers, rotary cell roasters, 24ft slurry flavour coating drums, and conveyors. Over 50,000 machines and 2,000 projects delivered worldwide.",
+    image: "/images/hero-line.jpg",
+    alt: "A.S. Engineering Works turnkey snack processing line",
+    href: "/solutions",
+    cta: "Explore turnkey lines",
   },
 ] as const;
 
@@ -156,7 +145,7 @@ export function HeroSlider() {
       </div>
 
       <div className="border-t border-white/[0.1] bg-[#0c0f11]/65 backdrop-blur-md">
-        <div className="wrap grid grid-cols-3 lg:grid-cols-6">
+        <div className="wrap grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
           {slides.map((item, index) => {
             const isActive = active === index;
             return (
