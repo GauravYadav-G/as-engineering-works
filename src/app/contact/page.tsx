@@ -43,7 +43,7 @@ export default async function ContactPage() {
                 </span>
                 <div>
                   <p className="eyebrow text-sage">{site.contact.address.label}</p>
-                  <p className="mt-2 text-[14px] leading-[1.65] font-medium text-forest">
+                  <p className="mt-2 text-[15.5px] leading-[1.7] font-medium text-forest">
                     {site.name}
                     {site.contact.address.lines.map((line) => (
                       <span key={line} className="block font-normal text-sage">
@@ -55,9 +55,9 @@ export default async function ContactPage() {
                     href={site.contact.mapUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 inline-flex items-center gap-1 text-[12.5px] font-medium text-forest transition hover:opacity-70"
+                    className="mt-3 inline-flex items-center gap-1 text-[13.5px] font-medium text-forest transition hover:opacity-70"
                   >
-                    Get directions <IconArrowUpRight className="h-3.5 w-3.5" />
+                    Get directions <IconArrowUpRight className="h-4 w-4" />
                   </a>
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default async function ContactPage() {
 
             <div className="rounded-2xl border border-forest/[0.08] bg-white p-6">
               <p className="eyebrow text-sage">{site.contact.corporateOffice.label}</p>
-              <p className="mt-2 text-[14px] leading-[1.65] text-sage">
+              <p className="mt-2 text-[15.5px] leading-[1.7] text-sage">
                 {site.contact.corporateOffice.lines.map((line) => (
                   <span key={line} className="block">
                     {line}
@@ -81,7 +81,7 @@ export default async function ContactPage() {
               >
                 <IconPhone className="h-4 w-4 text-sage" />
                 <p className="eyebrow mt-4 text-sage">Call us</p>
-                <p className="mt-1.5 text-[15px] font-medium text-forest">{site.contact.phone}</p>
+                <p className="mt-1.5 text-[16.5px] font-medium text-forest">{site.contact.phone}</p>
               </a>
               <a
                 href={site.contact.emailHref}
@@ -89,7 +89,7 @@ export default async function ContactPage() {
               >
                 <IconMail className="h-4 w-4 text-sage" />
                 <p className="eyebrow mt-4 text-sage">Write to us</p>
-                <p className="mt-1.5 text-[13.5px] font-medium break-all text-forest">
+                <p className="mt-1.5 text-[15px] font-medium break-all text-forest">
                   {site.contact.email}
                 </p>
               </a>
@@ -97,8 +97,8 @@ export default async function ContactPage() {
 
             <div className="rounded-2xl bg-[#0e1113] p-6 text-white">
               <p className="eyebrow text-brasslight">{site.contact.designation}</p>
-              <p className="mt-2 text-[17px] font-medium">{site.contact.person}</p>
-              <div className="mt-5 grid grid-cols-2 gap-x-4 gap-y-2 border-t border-white/10 pt-4 font-mono text-[10.5px] text-white/50">
+              <p className="mt-2 text-[19px] font-semibold">{site.contact.person}</p>
+              <div className="mt-5 grid grid-cols-2 gap-x-4 gap-y-2 border-t border-white/10 pt-4 font-mono text-[11.5px] text-white/55">
                 <span>GST · 09AHNPK3689D1ZX</span>
                 <span>IEC · 0504026763</span>
                 <span>Proprietorship</span>
@@ -113,15 +113,15 @@ export default async function ContactPage() {
               title="Send a requirement"
               description="The more detail you share — product, hourly output, existing machines, location — the more precise our first response can be."
             />
-            <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 px-2 text-[12px] text-sage">
+            <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 px-2 text-[13px] text-sage">
               <span className="inline-flex items-center gap-1.5">
-                <IconCheck className="h-3.5 w-3.5 text-moss" /> No obligation quotation
+                <IconCheck className="h-4 w-4 text-moss" /> No obligation quotation
               </span>
               <span className="inline-flex items-center gap-1.5">
-                <IconCheck className="h-3.5 w-3.5 text-moss" /> Used only for your enquiry
+                <IconCheck className="h-4 w-4 text-moss" /> Used only for your enquiry
               </span>
               <span className="inline-flex items-center gap-1.5">
-                <IconCheck className="h-3.5 w-3.5 text-moss" /> Brochure on request
+                <IconCheck className="h-4 w-4 text-moss" /> Brochure on request
               </span>
             </div>
           </div>
@@ -132,14 +132,14 @@ export default async function ContactPage() {
         <div className="wrap grid gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-16">
           <div>
             <p className="eyebrow text-sage">Before you write</p>
-            <h2 className="display mt-3.5 text-[clamp(1.8rem,3vw,2.4rem)] text-forest">
+            <h2 className="display mt-3.5 text-[clamp(2rem,3.2vw,2.65rem)] text-forest">
               Questions buyers ask us
             </h2>
-            <p className="mt-4 max-w-sm text-[14px] leading-[1.75] text-sage">
+            <p className="mt-4 max-w-sm text-[15.5px] leading-[1.8] text-sage">
               Not sure which machine suits your product? Send a message with what you want to make
               and your target output.
             </p>
-            <Link href="/products" className="btn btn-outline mt-7">
+            <Link href="/products" className="btn btn-outline mt-7 text-[14.5px]">
               Review the catalogue
             </Link>
           </div>
@@ -147,7 +147,7 @@ export default async function ContactPage() {
           <div className="divide-y divide-forest/[0.08] border-y border-forest/[0.08]">
             {faqs.map((faq, index) => (
               <details key={faq.question} className="group py-5" open={index === 0}>
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[15px] font-medium text-forest">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[16.5px] font-semibold text-forest">
                   {faq.question}
                   <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-forest/15 text-forest/70 transition group-open:border-forest group-open:text-forest">
                     <svg
@@ -161,7 +161,7 @@ export default async function ContactPage() {
                     </svg>
                   </span>
                 </summary>
-                <p className="mt-3 max-w-xl pr-8 text-[13.5px] leading-[1.75] text-sage">
+                <p className="mt-3 max-w-xl pr-8 text-[15px] leading-[1.8] text-sage">
                   {faq.answer}
                 </p>
               </details>

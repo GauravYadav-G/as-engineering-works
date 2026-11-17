@@ -9,7 +9,7 @@ type Machine = { slug: string; name: string };
 type FormState = "idle" | "submitting" | "success" | "error";
 
 const labelClass =
-  "mb-1.5 block font-mono text-[9.5px] font-medium tracking-[0.14em] text-sage uppercase";
+  "mb-2 block font-mono text-[11.5px] font-medium tracking-[0.14em] text-sage uppercase";
 
 export function InquiryForm({
   machines = [],
@@ -83,28 +83,28 @@ export function InquiryForm({
             : "rounded-2xl border border-forest/[0.08] bg-white p-8"
         }
       >
-        <span className="grid h-11 w-11 place-items-center rounded-full bg-moss text-white">
-          <IconCheck className="h-5 w-5" />
+        <span className="grid h-12 w-12 place-items-center rounded-full bg-moss text-white">
+          <IconCheck className="h-6 w-6" />
         </span>
-        <h3 className={`mt-5 text-[22px] font-medium tracking-tight ${dark ? "text-white" : "text-forest"}`}>
+        <h3 className={`mt-5 text-[24px] font-semibold tracking-tight ${dark ? "text-white" : "text-forest"}`}>
           Enquiry received — thank you.
         </h3>
-        <p className={`mt-2.5 text-[14px] leading-[1.7] ${dark ? "text-white/65" : "text-sage"}`}>
+        <p className={`mt-3 text-[16px] leading-[1.7] ${dark ? "text-white/70" : "text-sage"}`}>
           Your requirement has reached the A.S. Engineering Works sales desk
           {reference ? ` (reference #AS-${1000 + reference})` : ""}. We will revert with technical
           equipment recommendations, pricing and a delivery schedule after reviewing your requirement.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <a href={site.contact.phoneHref} className="btn btn-dark px-5 py-2.5 text-[12.5px]">
-            <IconPhone className="h-3.5 w-3.5" /> Call now
+          <a href={site.contact.phoneHref} className="btn btn-dark px-5 py-3 text-[14px]">
+            <IconPhone className="h-4 w-4" /> Call now
           </a>
           <button
             type="button"
             onClick={() => setState("idle")}
             className={
               dark
-                ? "btn btn-ghost-light px-5 py-2.5 text-[12.5px]"
-                : "btn btn-outline px-5 py-2.5 text-[12.5px]"
+                ? "btn btn-ghost-light px-5 py-3 text-[14px]"
+                : "btn btn-outline px-5 py-3 text-[14px]"
             }
           >
             Send another enquiry
@@ -125,10 +125,10 @@ export function InquiryForm({
       }
     >
       <div>
-        <h3 className={`text-[21px] font-medium tracking-[-0.025em] ${dark ? "text-white" : "text-forest"}`}>
+        <h3 className={`text-[23px] font-semibold tracking-[-0.025em] ${dark ? "text-white" : "text-forest"}`}>
           {title}
         </h3>
-        <p className={`mt-1.5 text-[13px] leading-relaxed ${dark ? "text-white/60" : "text-sage"}`}>
+        <p className={`mt-2 text-[15px] leading-relaxed ${dark ? "text-white/65" : "text-sage"}`}>
           {description}
         </p>
       </div>
@@ -140,10 +140,10 @@ export function InquiryForm({
               dark ? "border-white/15 bg-white/[0.04]" : "border-forest/[0.08] bg-bone"
             }`}
           >
-            <span className="font-mono text-[9.5px] tracking-[0.14em] text-sage uppercase">
+            <span className="font-mono text-[11px] tracking-[0.14em] text-sage uppercase">
               Enquiry for
             </span>
-            <span className={`text-[12.5px] font-medium ${dark ? "text-brasslight" : "text-forest"}`}>
+            <span className={`text-[14px] font-medium ${dark ? "text-brasslight" : "text-forest"}`}>
               {product.name}
             </span>
           </div>
@@ -235,22 +235,22 @@ export function InquiryForm({
           <button
             type="submit"
             disabled={state === "submitting"}
-            className="btn btn-dark w-full px-6 py-3 text-[13px] disabled:cursor-not-allowed disabled:opacity-65 sm:w-auto"
+            className="btn btn-dark w-full px-7 py-3.5 text-[15px] font-medium disabled:cursor-not-allowed disabled:opacity-65 sm:w-auto"
           >
             {state === "submitting" ? "Sending enquiry…" : "Send enquiry"}
             <IconArrowRight className="h-4 w-4" />
           </button>
           <a
             href={site.contact.emailHref}
-            className={`inline-flex items-center gap-2 text-[12px] transition ${
-              dark ? "text-white/55 hover:text-white" : "text-sage hover:text-forest"
+            className={`inline-flex items-center gap-2 text-[14px] font-medium transition ${
+              dark ? "text-white/65 hover:text-white" : "text-sage hover:text-forest"
             }`}
           >
-            <IconMail className="h-3.5 w-3.5" />
+            <IconMail className="h-4 w-4" />
             {site.contact.email}
           </a>
         </div>
-        <p className={`text-[11px] leading-relaxed ${dark ? "text-white/35" : "text-sage/75"}`}>
+        <p className={`text-[12px] leading-relaxed ${dark ? "text-white/45" : "text-sage/80"}`}>
           Used only to respond to your enquiry. No newsletters, no third-party sharing.
         </p>
       </form>

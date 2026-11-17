@@ -33,7 +33,7 @@ export function PageHero({
           {breadcrumb.length > 0 && (
             <nav
               aria-label="Breadcrumb"
-              className="mb-7 flex flex-wrap items-center gap-2 font-mono text-[10px] tracking-[0.14em] text-white/40 uppercase"
+              className="mb-7 flex flex-wrap items-center gap-2 font-mono text-[11.5px] tracking-[0.14em] text-white/50 uppercase"
             >
               <Link href="/" className="transition hover:text-white/80">
                 Home
@@ -53,9 +53,9 @@ export function PageHero({
             </nav>
           )}
           <p className="eyebrow text-brasslight">{eyebrow}</p>
-          <h1 className="display mt-4 text-[clamp(2.2rem,4.8vw,3.75rem)] text-white">{title}</h1>
+          <h1 className="display mt-4 text-[clamp(2.4rem,5.2vw,4.1rem)] text-white">{title}</h1>
           {description && (
-            <p className="mt-5 max-w-xl text-[15px] leading-[1.78] text-white/62">{description}</p>
+            <p className="mt-5 max-w-xl text-[17px] sm:text-[18.5px] leading-[1.8] text-white/70">{description}</p>
           )}
         </div>
       </div>
@@ -66,7 +66,7 @@ export function PageHero({
 export function BreadcrumbStrip({ items }: { items: { href?: string; label: string }[] }) {
   return (
     <div className="border-b border-forest/[0.06] bg-white">
-      <div className="wrap flex items-center gap-2 overflow-x-auto py-3.5 font-mono text-[10px] tracking-[0.14em] whitespace-nowrap text-sage uppercase hide-scrollbar">
+      <div className="wrap flex items-center gap-2 overflow-x-auto py-3.5 font-mono text-[11.5px] tracking-[0.14em] whitespace-nowrap text-sage uppercase hide-scrollbar">
         <Link href="/" className="transition hover:text-forest">
           Home
         </Link>

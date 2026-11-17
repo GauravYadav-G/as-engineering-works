@@ -58,7 +58,7 @@ export default function InfrastructurePage() {
                   className="aspect-[16/10] w-full object-cover object-[center_28%]"
                 />
               </div>
-              <figcaption className="mt-2.5 font-mono text-[10px] text-sage/75">
+              <figcaption className="mt-2.5 font-mono text-[11.5px] text-sage/80">
                 A.S. Engineering Works manufacturing facility, Sector 8, Noida
               </figcaption>
             </figure>
@@ -92,7 +92,7 @@ export default function InfrastructurePage() {
                   className="aspect-[16/10] w-full object-cover"
                 />
               </div>
-              <figcaption className="mt-2.5 font-mono text-[10px] text-sage/75">
+              <figcaption className="mt-2.5 font-mono text-[11.5px] text-sage/80">
                 Representative image
               </figcaption>
             </figure>
@@ -108,14 +108,14 @@ export default function InfrastructurePage() {
               title="Checked from raw material to final production."
               description="Our quality inspection team inspects quality from raw materials through final production. Machines are tested so they operate as specified and checked for dimensions, weight and measurements."
             />
-            <p className="mt-8 font-mono text-[10px] tracking-[0.14em] text-sage uppercase">
+            <p className="mt-8 font-mono text-[11.5px] tracking-[0.14em] text-sage uppercase">
               Each finished product is tested on
             </p>
             <ul className="mt-3.5 grid gap-2.5 sm:grid-cols-2">
               {site.quality.map((item) => (
                 <li
                   key={item}
-                  className="flex items-center gap-2.5 rounded-xl border border-forest/[0.07] bg-bone px-4 py-3 text-[13px] text-forest/80"
+                  className="flex items-center gap-2.5 rounded-xl border border-forest/[0.07] bg-bone px-4 py-3 text-[14.5px] text-forest/85"
                 >
                   <IconCheck className="h-4 w-4 shrink-0 text-moss" />
                   {item}
@@ -130,22 +130,22 @@ export default function InfrastructurePage() {
               title="Engineers, technical associates and food experts."
               description="Our team includes qualified engineers, technical associates and food experts who test each product during production. Experienced instructors train floor workers regularly on safety and production procedures."
             />
-            <dl className="mt-8 divide-y divide-forest/[0.08] border-y border-forest/[0.08] text-[13.5px]">
+            <dl className="mt-8 divide-y divide-forest/[0.08] border-y border-forest/[0.08] text-[15px]">
               <div className="flex items-center justify-between gap-4 py-3.5">
                 <dt className="text-sage">Total number of employees</dt>
-                <dd className="font-medium text-forest">11 to 25 people</dd>
+                <dd className="font-semibold text-forest">11 to 25 people</dd>
               </div>
               <div className="flex items-center justify-between gap-4 py-3.5">
                 <dt className="text-sage">Primary competitive advantage</dt>
-                <dd className="text-right font-medium text-forest">Experienced R&amp;D department</dd>
+                <dd className="text-right font-semibold text-forest">Experienced R&amp;D department</dd>
               </div>
               <div className="flex items-center justify-between gap-4 py-3.5">
                 <dt className="text-sage">Quality measures / testing facilities</dt>
-                <dd className="font-medium text-forest">Yes</dd>
+                <dd className="font-semibold text-forest">Yes</dd>
               </div>
               <div className="flex items-center justify-between gap-4 py-3.5">
                 <dt className="text-sage">Customized packaging</dt>
-                <dd className="font-medium text-forest">Yes</dd>
+                <dd className="font-semibold text-forest">Yes</dd>
               </div>
             </dl>
           </div>
@@ -159,13 +159,13 @@ export default function InfrastructurePage() {
             <h2 className="display mt-3 text-[clamp(1.7rem,3vw,2.4rem)] text-white">
               See the machines before you order.
             </h2>
-            <p className="mt-2.5 max-w-xl text-[14px] leading-[1.7] text-white/60">
+            <p className="mt-2.5 max-w-xl text-[15.5px] leading-[1.75] text-white/70">
               {site.contact.address.lines.join(", ")}. Call {site.contact.phone} to arrange a visit,
               or ask us for photographs and video of the machine you are interested in.
             </p>
           </div>
-          <Link href="/contact" className="btn btn-light shrink-0">
-            Contact us <IconArrowUpRight className="h-3.5 w-3.5" />
+          <Link href="/contact" className="btn btn-light shrink-0 text-[15px] px-7 py-3.5">
+            Contact us <IconArrowUpRight className="h-4 w-4" />
           </Link>
         </div>
       </section>

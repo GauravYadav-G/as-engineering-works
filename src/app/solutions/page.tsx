@@ -24,23 +24,23 @@ export default function SolutionsPage() {
             <h1 className="display mt-4 max-w-[540px] text-[clamp(2.2rem,4.4vw,3.6rem)] text-forest">
               Start with the snack. Build the right line.
             </h1>
-            <p className="mt-5 max-w-[520px] text-[15px] leading-[1.8] text-sage">
+            <p className="mt-5 max-w-[540px] text-[16.5px] leading-[1.85] text-sage">
               The right equipment begins with what you want to make. Explore our processing
               solutions to see which extruders, roasters, dryers and seasoning systems from our
               catalogue fit each product.
             </p>
-            <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-[12.5px] font-medium text-forest/70">
+            <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-[13.5px] font-medium text-forest/75">
               <span className="inline-flex items-center gap-1.5">
-                <IconCheck className="h-3.5 w-3.5 text-moss" /> Machine combinations
+                <IconCheck className="h-4 w-4 text-moss" /> Machine combinations
               </span>
               <span className="inline-flex items-center gap-1.5">
-                <IconCheck className="h-3.5 w-3.5 text-moss" /> Application-led selection
+                <IconCheck className="h-4 w-4 text-moss" /> Application-led selection
               </span>
               <span className="inline-flex items-center gap-1.5">
-                <IconCheck className="h-3.5 w-3.5 text-moss" /> Custom configuration
+                <IconCheck className="h-4 w-4 text-moss" /> Custom configuration
               </span>
             </div>
-            <Link href="/contact" className="btn btn-dark mt-8">
+            <Link href="/contact" className="btn btn-dark mt-8 text-[15px]">
               Discuss a processing line <IconArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -109,20 +109,20 @@ export default function SolutionsPage() {
                   </div>
                   <div className={`flex flex-1 flex-col ${isWide ? "justify-center p-7 lg:p-12" : "p-6"}`}>
                     <div className="flex items-center justify-between gap-2">
-                      <p className="font-mono text-[9.5px] tracking-[0.14em] text-sage uppercase">
+                      <p className="font-mono text-[11px] tracking-[0.14em] text-sage uppercase">
                         {solution.eyebrow}
                       </p>
-                      <span className="font-mono text-[10px] text-sage/60">
+                      <span className="font-mono text-[11.5px] text-sage/75">
                         {String(index + 1).padStart(2, "0")}
                       </span>
                     </div>
-                    <h3 className={`mt-2.5 font-medium text-forest transition-colors group-hover:text-moss ${isWide ? "text-[24px]" : "text-[19px]"}`}>
+                    <h3 className={`mt-2.5 font-semibold text-forest transition-colors group-hover:text-moss ${isWide ? "text-[26px]" : "text-[21px]"}`}>
                       {solution.name}
                     </h3>
-                    <p className={`mt-2 text-[13.5px] leading-[1.7] text-sage ${isWide ? "max-w-lg" : "line-clamp-3"}`}>
+                    <p className={`mt-2 text-[14.5px] leading-[1.7] text-sage ${isWide ? "max-w-lg" : "line-clamp-3"}`}>
                       {solution.intro}
                     </p>
-                    <div className="mt-auto flex items-center justify-between border-t border-forest/[0.07] pt-4 text-[12.5px] font-medium text-forest">
+                    <div className="mt-auto flex items-center justify-between border-t border-forest/[0.07] pt-4 text-[14px] font-medium text-forest">
                       <span>Explore solution</span>
                       <IconArrowUpRight className="h-4 w-4 text-sage transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-forest" />
                     </div>

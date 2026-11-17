@@ -101,15 +101,15 @@ export default async function AboutPage() {
                   className="aspect-[5/4] w-full object-cover object-[center_28%]"
                 />
               </div>
-              <p className="mt-2.5 font-mono text-[10px] text-sage/75">
+              <p className="mt-2.5 font-mono text-[11.5px] text-sage/80">
                 Founder Mr. Akhtar Ali Khan at A.S. Engineering Works workshop, Noida
               </p>
             </div>
             <div className="rounded-2xl border border-forest/[0.07] bg-white p-7">
               <p className="eyebrow text-sage">Vision</p>
-              <p className="mt-3 text-[13.5px] leading-[1.75] text-forest/70">{site.vision}</p>
+              <p className="mt-3 text-[15px] leading-[1.8] text-forest/75">{site.vision}</p>
               <p className="eyebrow mt-7 text-sage">Mission</p>
-              <p className="mt-3 text-[13.5px] leading-[1.75] text-forest/70">{site.mission}</p>
+              <p className="mt-3 text-[15px] leading-[1.8] text-forest/75">{site.mission}</p>
             </div>
           </div>
         </div>
@@ -128,10 +128,10 @@ export default async function AboutPage() {
           <div className="mt-12 grid gap-x-10 gap-y-7 sm:grid-cols-2 lg:grid-cols-3">
             {site.facts.map((fact, index) => (
               <Reveal key={fact.label} delay={(index % 3) * 60} className="border-t border-forest/[0.09] pt-4">
-                <p className="font-mono text-[9.5px] tracking-[0.14em] text-sage uppercase">
+                <p className="font-mono text-[11px] tracking-[0.14em] text-sage uppercase">
                   {fact.label}
                 </p>
-                <p className="mt-1.5 text-[15px] font-medium text-forest">{fact.value}</p>
+                <p className="mt-1.5 text-[16.5px] font-semibold text-forest">{fact.value}</p>
               </Reveal>
             ))}
           </div>
@@ -154,14 +154,14 @@ export default async function AboutPage() {
                 they stand at par with international competition.
               </p>
             </div>
-            <p className="mt-8 font-mono text-[10px] tracking-[0.14em] text-sage uppercase">
+            <p className="mt-8 font-mono text-[11.5px] tracking-[0.14em] text-sage uppercase">
               Each finished machine is tested for
             </p>
             <ul className="mt-3.5 grid gap-2.5 sm:grid-cols-2">
               {site.quality.map((item) => (
                 <li
                   key={item}
-                  className="flex items-center gap-2.5 rounded-xl border border-forest/[0.07] bg-white px-4 py-3 text-[13px] text-forest/80"
+                  className="flex items-center gap-2.5 rounded-xl border border-forest/[0.07] bg-white px-4 py-3 text-[14.5px] text-forest/85"
                 >
                   <IconCheck className="h-4 w-4 shrink-0 text-moss" />
                   {item}
@@ -173,41 +173,41 @@ export default async function AboutPage() {
           <div className="space-y-5">
             <div className="rounded-2xl bg-[#0e1113] p-7 text-white">
               <div className="flex items-center gap-3">
-                <span className="grid h-9 w-9 place-items-center rounded-full border border-white/15 bg-white/[0.05] text-brasslight">
-                  <IconShield className="h-4 w-4" />
+                <span className="grid h-10 w-10 place-items-center rounded-full border border-white/15 bg-white/[0.05] text-brasslight">
+                  <IconShield className="h-4.5 w-4.5" />
                 </span>
                 <p className="eyebrow text-brasslight">Company profile</p>
               </div>
               <dl className="mt-6 divide-y divide-white/[0.08]">
                 <div className="flex items-center justify-between gap-4 py-3.5">
-                  <dt className="text-[13px] text-white/55">Primary competitive advantage</dt>
-                  <dd className="text-right text-[13px] font-medium">Experienced R&amp;D department</dd>
+                  <dt className="text-[14.5px] text-white/60">Primary competitive advantage</dt>
+                  <dd className="text-right text-[14.5px] font-medium">Experienced R&amp;D department</dd>
                 </div>
                 <div className="flex items-center justify-between gap-4 py-3.5">
-                  <dt className="text-[13px] text-white/55">Quality testing facilities</dt>
-                  <dd className="text-right text-[13px] font-medium">Yes</dd>
+                  <dt className="text-[14.5px] text-white/60">Quality testing facilities</dt>
+                  <dd className="text-right text-[14.5px] font-medium">Yes</dd>
                 </div>
                 <div className="flex items-center justify-between gap-4 py-3.5">
-                  <dt className="text-[13px] text-white/55">Customized packaging</dt>
-                  <dd className="text-right text-[13px] font-medium">Yes</dd>
+                  <dt className="text-[14.5px] text-white/60">Customized packaging</dt>
+                  <dd className="text-right text-[14.5px] font-medium">Yes</dd>
                 </div>
                 <div className="flex items-center justify-between gap-4 py-3.5">
-                  <dt className="text-[13px] text-white/55">Banker</dt>
-                  <dd className="text-right text-[13px] font-medium">Bank of Baroda</dd>
+                  <dt className="text-[14.5px] text-white/60">Banker</dt>
+                  <dd className="text-right text-[14.5px] font-medium">Bank of Baroda</dd>
                 </div>
               </dl>
             </div>
             <div className="rounded-2xl border border-forest/[0.07] bg-white p-7">
               <p className="eyebrow text-sage">Our team</p>
-              <p className="mt-3 text-[13.5px] leading-[1.78] text-forest/70">
+              <p className="mt-3 text-[15px] leading-[1.8] text-forest/75">
                 Our team includes qualified engineers, technical associates and food experts who test
                 each product during the production stage. Experienced instructors train floor workers
                 at regular intervals to minimise risk and familiarise them with the production
                 process. As a workforce we operate under pressure round the clock with coordination
                 and harmony across departments.
               </p>
-              <p className="mt-5 inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.12em] text-sage uppercase">
-                <IconCheck className="h-3.5 w-3.5 text-moss" /> 11–25 skilled people
+              <p className="mt-5 inline-flex items-center gap-1.5 font-mono text-[11.5px] tracking-[0.12em] text-sage uppercase">
+                <IconCheck className="h-4 w-4 text-moss" /> 11–25 skilled people
               </p>
             </div>
           </div>
@@ -227,14 +227,14 @@ export default async function AboutPage() {
             {deliveryFootprint.map((region) => (
               <span
                 key={region}
-                className="inline-flex items-center gap-2 rounded-full border border-forest/12 bg-bone px-4 py-2 text-[12.5px] text-forest/80"
+                className="inline-flex items-center gap-2 rounded-full border border-forest/12 bg-bone px-4 py-2.5 text-[14px] text-forest/85"
               >
-                <IconGlobe className="h-3.5 w-3.5 text-sage" />
+                <IconGlobe className="h-4 w-4 text-sage" />
                 {region}
               </span>
             ))}
-            <span className="inline-flex items-center gap-2 rounded-full border border-forest/12 bg-bone px-4 py-2 text-[12.5px] text-forest/80">
-              <IconGlobe className="h-3.5 w-3.5 text-sage" />
+            <span className="inline-flex items-center gap-2 rounded-full border border-forest/12 bg-bone px-4 py-2.5 text-[14px] text-forest/85">
+              <IconGlobe className="h-4 w-4 text-sage" />
               Export enquiries welcome
             </span>
           </div>
@@ -242,17 +242,17 @@ export default async function AboutPage() {
           <div className="mt-12 flex flex-col items-start justify-between gap-6 rounded-2xl bg-[#0e1113] px-7 py-10 text-white md:flex-row md:items-center md:px-12">
             <div>
               <p className="eyebrow text-brasslight">Verification</p>
-              <h3 className="display mt-2.5 text-[clamp(1.5rem,2.6vw,2rem)]">
+              <h3 className="display mt-2.5 text-[clamp(1.6rem,2.8vw,2.2rem)]">
                 Trust-seal verified manufacturer
               </h3>
-              <p className="mt-2.5 max-w-xl text-[13.5px] leading-relaxed text-white/60">
+              <p className="mt-2.5 max-w-xl text-[15px] leading-relaxed text-white/65">
                 Our profile, GST and IEC details are published openly so buyers can verify before
                 ordering.
               </p>
             </div>
-            <Link href="/contact" className="btn btn-light shrink-0 px-6 py-3">
+            <Link href="/contact" className="btn btn-light shrink-0 px-6 py-3.5 text-[15px]">
               Verify &amp; enquire
-              <IconArrowUpRight className="h-3.5 w-3.5" />
+              <IconArrowUpRight className="h-4 w-4" />
             </Link>
           </div>
         </div>

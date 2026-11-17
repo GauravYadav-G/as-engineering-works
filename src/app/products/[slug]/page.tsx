@@ -126,18 +126,18 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                   key={spec.label}
                   className="rounded-xl border border-forest/[0.07] bg-bone px-3.5 py-3.5"
                 >
-                  <p className="font-mono text-[9px] tracking-[0.12em] text-sage uppercase">
+                  <p className="font-mono text-[10.5px] tracking-[0.12em] text-sage uppercase">
                     {spec.label}
                   </p>
-                  <p className="mt-1.5 text-[12px] leading-tight font-medium text-forest">
+                  <p className="mt-1.5 text-[13.5px] leading-tight font-semibold text-forest">
                     {spec.value}
                   </p>
                 </div>
               ))}
             </div>
 
-            <p className="mt-4 text-[12px] leading-[1.65] text-sage">
-              <span className="font-mono text-[10px] tracking-[0.08em] text-forest/70 uppercase">
+            <p className="mt-4 text-[13px] leading-[1.65] text-sage">
+              <span className="font-mono text-[11px] tracking-[0.08em] text-forest/70 uppercase">
                 {productImageCaption(product.slug)} —
               </span>{" "}
               {productImageNote(product.slug)}
@@ -151,26 +151,26 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             >
               {category?.name ?? "Food processing machinery"}
             </Link>
-            <h1 className="display mt-3.5 text-[clamp(2rem,4vw,3rem)] text-forest">
+            <h1 className="display mt-3.5 text-[clamp(2.1rem,4.2vw,3.2rem)] text-forest">
               {product.name}
             </h1>
-            <p className="mt-4 text-[15px] leading-[1.75] text-sage">{product.shortDescription}</p>
+            <p className="mt-4 text-[16.5px] leading-[1.8] text-sage">{product.shortDescription}</p>
 
             <div className="mt-7 rounded-2xl border border-forest/[0.08] bg-bone p-6">
               <div className="flex flex-wrap items-end justify-between gap-3">
                 <div>
-                  <p className="font-mono text-[9.5px] tracking-[0.14em] text-sage uppercase">
+                  <p className="font-mono text-[11px] tracking-[0.14em] text-sage uppercase">
                     Indicative price
                   </p>
-                  <p className="display tabular mt-1.5 text-[clamp(1.6rem,2.8vw,2.1rem)] text-forest">
+                  <p className="display tabular mt-1.5 text-[clamp(1.7rem,3vw,2.3rem)] text-forest">
                     {formatPrice(product.price, product.unit)}
                   </p>
                 </div>
-                <span className="rounded-full border border-forest/15 bg-white px-3 py-1 font-mono text-[9.5px] tracking-[0.1em] text-forest/70 uppercase">
+                <span className="rounded-full border border-forest/15 bg-white px-3.5 py-1 font-mono text-[11px] tracking-[0.1em] text-forest/80 uppercase">
                   MOQ {product.moq}
                 </span>
               </div>
-              <dl className="mt-5 grid gap-2.5 border-t border-forest/[0.08] pt-5 text-[13px]">
+              <dl className="mt-5 grid gap-2.5 border-t border-forest/[0.08] pt-5 text-[14.5px]">
                 {[
                   { label: "Production capacity", value: product.capacity ?? "On request" },
                   { label: "Connected load / power", value: product.power ?? "As per configuration" },
@@ -179,22 +179,22 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                 ].map((row) => (
                   <div key={row.label} className="flex items-start justify-between gap-4">
                     <dt className="text-sage">{row.label}</dt>
-                    <dd className="max-w-[62%] text-right font-medium text-forest">{row.value}</dd>
+                    <dd className="max-w-[62%] text-right font-semibold text-forest">{row.value}</dd>
                   </div>
                 ))}
               </dl>
-              <p className="mt-4 text-[11px] leading-relaxed text-sage/80">
+              <p className="mt-4 text-[12px] leading-relaxed text-sage/85">
                 Price shown is from the published listing. Request a current quotation for your
                 chosen configuration, taxes and delivery.
               </p>
             </div>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="#enquiry" className="btn btn-dark flex-1 px-6 py-3.5 text-[13px]">
+              <a href="#enquiry" className="btn btn-dark flex-1 px-6 py-3.5 text-[14.5px]">
                 Request a quotation
                 <IconArrowUpRight className="h-4 w-4 opacity-75" />
               </a>
-              <a href={site.contact.phoneHref} className="btn btn-outline px-5 py-3.5 text-[13px]">
+              <a href={site.contact.phoneHref} className="btn btn-outline px-5 py-3.5 text-[14.5px]">
                 <IconPhone className="h-4 w-4 text-sage" />
                 {site.contact.phone}
               </a>
@@ -204,14 +204,14 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-outline px-5 py-3.5 text-[13px]"
+                className="btn btn-outline px-5 py-3.5 text-[14.5px]"
               >
                 WhatsApp
               </a>
             </div>
 
             <div className="mt-7 border-t border-forest/[0.07] pt-5">
-              <Link href="/clients" className="text-[12.5px] text-sage transition hover:text-forest">
+              <Link href="/clients" className="text-[14px] font-medium text-sage transition hover:text-forest">
                 Read published buyer reviews and client list →
               </Link>
             </div>
@@ -222,7 +222,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <section id="enquiry" className="border-y border-forest/[0.06] bg-bone py-16 md:py-24">
         <div className="wrap grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
           <div>
-            <h2 className="display text-[clamp(1.6rem,2.6vw,2.1rem)] text-forest">
+            <h2 className="display text-[clamp(1.7rem,2.8vw,2.3rem)] text-forest">
               About this machine
             </h2>
             <div className="prose-machine mt-4">
@@ -236,7 +236,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                   {product.features.map((feature) => (
                     <li
                       key={feature}
-                      className="flex items-start gap-2.5 rounded-xl border border-forest/[0.07] bg-white px-4 py-3 text-[13px] leading-relaxed text-forest/80"
+                      className="flex items-start gap-2.5 rounded-xl border border-forest/[0.07] bg-white px-4 py-3 text-[14px] leading-relaxed text-forest/85"
                     >
                       <IconCheck className="mt-0.5 h-4 w-4 shrink-0 text-moss" />
                       {feature}
@@ -250,7 +250,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               <p className="eyebrow text-sage">Technical specifications</p>
               {product.specifications.length > 0 ? (
                 <div className="mt-4 overflow-hidden rounded-xl border border-forest/[0.08] bg-white">
-                  <table className="w-full border-collapse text-left text-[13px]">
+                  <table className="w-full border-collapse text-left text-[14.5px]">
                     <tbody>
                       {product.specifications.map((spec, index) => (
                         <tr
@@ -260,14 +260,14 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                           <th className="w-[44%] bg-bone/60 px-5 py-3.5 font-medium text-sage">
                             {spec.label}
                           </th>
-                          <td className="px-5 py-3.5 font-medium text-forest">{spec.value}</td>
+                          <td className="px-5 py-3.5 font-semibold text-forest">{spec.value}</td>
                         </tr>
                       ))}
                     </tbody>
                   </table>
                 </div>
               ) : (
-                <div className="mt-4 rounded-xl border border-forest/[0.08] bg-white px-5 py-4 text-[13.5px] leading-[1.7] text-sage">
+                <div className="mt-4 rounded-xl border border-forest/[0.08] bg-white px-5 py-4 text-[14.5px] leading-[1.7] text-sage">
                   Detailed capacity, power and configuration for this listing are available on
                   request. Share your target output for a model-specific technical sheet.
                 </div>
@@ -294,10 +294,10 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                         />
                       </div>
                       <div className="flex items-center justify-between gap-2 px-4 py-3">
-                        <span className="text-[12.5px] font-medium text-forest">
+                        <span className="text-[13.5px] font-medium text-forest">
                           {solution.shortName}
                         </span>
-                        <IconArrowUpRight className="h-3.5 w-3.5 text-sage transition group-hover:text-forest" />
+                        <IconArrowUpRight className="h-4 w-4 text-sage transition group-hover:text-forest" />
                       </div>
                     </Link>
                   ))}
@@ -311,13 +311,13 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                   <IconDoc className="h-4 w-4" />
                 </span>
                 <div>
-                  <p className="text-[13.5px] font-medium">Detailed product brochure</p>
-                  <p className="text-[12px] text-white/55">
+                  <p className="text-[14.5px] font-semibold">Detailed product brochure</p>
+                  <p className="text-[13px] text-white/60">
                     Drawings, dimensions and utility requirements on request.
                   </p>
                 </div>
               </div>
-              <a href="#enquiry" className="btn btn-light px-4 py-2 text-[12px]">
+              <a href="#enquiry" className="btn btn-light px-4 py-2 text-[13px]">
                 Ask for brochure
               </a>
             </div>
@@ -334,17 +334,17 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               <p className="eyebrow text-sage">Prefer to talk?</p>
               <a
                 href={site.contact.phoneHref}
-                className="display mt-2 block text-[21px] text-forest transition hover:opacity-75"
+                className="display mt-2 block text-[23px] text-forest transition hover:opacity-75"
               >
                 {site.contact.phone}
               </a>
               <a
                 href={site.contact.emailHref}
-                className="mt-1 block text-[13px] text-sage transition hover:text-forest"
+                className="mt-1 block text-[14px] text-sage transition hover:text-forest"
               >
                 {site.contact.email}
               </a>
-              <p className="mt-4 border-t border-forest/[0.07] pt-3.5 text-[11.5px] leading-relaxed text-sage/85">
+              <p className="mt-4 border-t border-forest/[0.07] pt-3.5 text-[12.5px] leading-relaxed text-sage/85">
                 {site.contact.address.lines.join(", ")}
               </p>
             </div>

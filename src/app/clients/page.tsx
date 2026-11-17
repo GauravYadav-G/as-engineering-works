@@ -48,14 +48,14 @@ export default async function ClientsPage() {
             <figure className="grid gap-8 rounded-2xl bg-[#0e1113] p-8 text-white md:grid-cols-[1.5fr_0.5fr] md:items-end md:p-12">
               <div>
                 <p className="eyebrow text-brasslight">Buyer review · {lead.reviewedOn}</p>
-                <blockquote className="mt-5 max-w-3xl text-[clamp(1.2rem,2.1vw,1.65rem)] leading-[1.55] font-normal text-white/90">
+                <blockquote className="mt-5 max-w-3xl text-[clamp(1.35rem,2.3vw,1.85rem)] leading-[1.55] font-normal text-white/95">
                   “{lead.quote}”
                 </blockquote>
               </div>
               <figcaption className="border-t border-white/12 pt-5 md:border-t-0 md:border-l md:pt-0 md:pl-8">
-                <p className="text-[15px] font-medium">{lead.name}</p>
-                <p className="mt-1 text-[12px] text-white/50">{lead.location}</p>
-                {lead.product && <p className="mt-3 text-[12.5px] text-brasslight">{lead.product}</p>}
+                <p className="text-[17px] font-semibold">{lead.name}</p>
+                <p className="mt-1 text-[13.5px] text-white/60">{lead.location}</p>
+                {lead.product && <p className="mt-3 text-[14px] text-brasslight font-medium">{lead.product}</p>}
               </figcaption>
             </figure>
           </div>
@@ -79,31 +79,31 @@ export default async function ClientsPage() {
                 className="flex flex-col rounded-xl border border-forest/[0.07] bg-white p-6"
               >
                 <div className="flex items-start justify-between gap-3">
-                  <p className="text-[14.5px] leading-snug font-medium text-forest">
+                  <p className="text-[16.5px] leading-snug font-semibold text-forest">
                     {testimonial.product || "Buyer feedback"}
                   </p>
-                  <span className="shrink-0 font-mono text-[10px] text-sage/75">
+                  <span className="shrink-0 font-mono text-[11px] text-sage/80">
                     {testimonial.reviewedOn}
                   </span>
                 </div>
                 {testimonial.quote && (
-                  <p className="mt-2.5 text-[13px] leading-[1.68] text-forest/70">
+                  <p className="mt-2.5 text-[14.5px] leading-[1.7] text-forest/75">
                     “{testimonial.quote}”
                   </p>
                 )}
                 {testimonial.reply && (
-                  <p className="mt-3.5 rounded-lg bg-bone px-3.5 py-2.5 text-[11.5px] leading-[1.6] text-sage">
-                    <span className="font-medium text-forest/80">Seller reply:</span>{" "}
+                  <p className="mt-3.5 rounded-lg bg-bone px-3.5 py-2.5 text-[13px] leading-[1.65] text-sage">
+                    <span className="font-semibold text-forest/85">Seller reply:</span>{" "}
                     {testimonial.reply}
                   </p>
                 )}
                 <div className="mt-auto flex items-center gap-3 pt-5">
-                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-sand font-mono text-[11px] font-medium text-forest/75">
+                  <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-sand font-mono text-[12px] font-semibold text-forest/85">
                     {testimonial.name.slice(0, 1).toUpperCase()}
                   </span>
                   <div>
-                    <p className="text-[13px] font-medium text-forest">{testimonial.name}</p>
-                    <p className="text-[11px] text-sage">{testimonial.location}</p>
+                    <p className="text-[14.5px] font-semibold text-forest">{testimonial.name}</p>
+                    <p className="text-[12.5px] text-sage">{testimonial.location}</p>
                   </div>
                 </div>
               </article>
@@ -126,11 +126,11 @@ export default async function ClientsPage() {
               <Reveal key={region} delay={Math.min(index, 3) * 80}>
               <div className="h-full rounded-xl border border-forest/[0.07] bg-bone p-6">
                 <p className="eyebrow text-sage">{region}</p>
-                <ul className="mt-4 space-y-2.5">
+                <ul className="mt-4 space-y-3">
                   {grouped[region].map((name) => (
                     <li
                       key={name}
-                      className="flex items-center gap-3 text-[13px] leading-snug text-forest/80"
+                      className="flex items-center gap-3 text-[14.5px] leading-snug text-forest/85"
                     >
                       <img
                         src={getClientLogo(name)}
@@ -155,22 +155,22 @@ export default async function ClientsPage() {
         <div className="wrap flex flex-col justify-between gap-6 md:flex-row md:items-center">
           <div>
             <p className="eyebrow text-brasslight">Where we supply</p>
-            <h2 className="display mt-3 text-[clamp(1.6rem,2.8vw,2.3rem)] text-white">
+            <h2 className="display mt-3 text-[clamp(1.7rem,3vw,2.4rem)] text-white">
               Domestic and international clients
             </h2>
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="mt-4 flex flex-wrap gap-2.5">
               {site.markets.map((market) => (
                 <span
                   key={market}
-                  className="inline-flex items-center gap-1.5 rounded-full border border-white/15 px-3.5 py-1.5 text-[12px] text-white/75"
+                  className="inline-flex items-center gap-1.5 rounded-full border border-white/15 px-4 py-2 text-[13.5px] text-white/80"
                 >
-                  <IconGlobe className="h-3.5 w-3.5 text-brasslight" /> {market}
+                  <IconGlobe className="h-4 w-4 text-brasslight" /> {market}
                 </span>
               ))}
             </div>
           </div>
-          <Link href="/contact" className="btn btn-light shrink-0">
-            Start an enquiry <IconArrowUpRight className="h-3.5 w-3.5" />
+          <Link href="/contact" className="btn btn-light shrink-0 text-[15px] px-7 py-3.5">
+            Start an enquiry <IconArrowUpRight className="h-4 w-4" />
           </Link>
         </div>
       </section>

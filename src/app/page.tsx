@@ -133,15 +133,15 @@ export default async function HomePage() {
         <div className="wrap grid items-center gap-12 lg:grid-cols-[1fr_1.02fr] lg:gap-20">
           <Reveal>
             <p className="eyebrow text-sage">About A.S. Engineering Works</p>
-            <h2 className="display mt-4 max-w-[540px] text-[clamp(2rem,3.6vw,3.1rem)] text-forest">
+            <h2 className="display mt-4 max-w-[560px] text-[clamp(2.2rem,3.8vw,3.3rem)] text-forest">
               Built in Noida for food manufacturers since 1984.
             </h2>
-            <p className="mt-6 max-w-[520px] text-[15px] leading-[1.82] text-sage">
+            <p className="mt-6 max-w-[540px] text-[16.5px] leading-[1.85] text-sage">
               For over four decades, we have manufactured and exported snack extruders, kurkure
               machines, pasta and vermicelli equipment, soya nugget plants, industrial dryers,
               roasters and flavouring systems — regarded for dependable design and efficiency.
             </p>
-            <p className="mt-4 max-w-[520px] text-[15px] leading-[1.82] text-sage">
+            <p className="mt-4 max-w-[540px] text-[16.5px] leading-[1.85] text-sage">
               Every requirement begins with the product you want to make. Whether you are installing
               a single machine or configuring a full line, our team works directly to your output and
               floor space.
@@ -156,22 +156,22 @@ export default async function HomePage() {
               </Link>
             </div>
 
-            <div className="mt-12 grid max-w-[460px] grid-cols-3 border-t border-forest/[0.08] pt-7">
+            <div className="mt-12 grid max-w-[480px] grid-cols-3 border-t border-forest/[0.08] pt-7">
               <div>
-                <p className="display tabular text-[28px] text-forest sm:text-[32px]">1984</p>
-                <p className="mt-1.5 font-mono text-[10px] tracking-[0.08em] text-sage uppercase">
+                <p className="display tabular text-[32px] text-forest sm:text-[36px]">1984</p>
+                <p className="mt-1.5 font-mono text-[11px] tracking-[0.08em] text-sage uppercase">
                   Established
                 </p>
               </div>
               <div>
-                <p className="display tabular text-[28px] text-forest sm:text-[32px]">{products.length}</p>
-                <p className="mt-1.5 font-mono text-[10px] tracking-[0.08em] text-sage uppercase">
+                <p className="display tabular text-[32px] text-forest sm:text-[36px]">{products.length}</p>
+                <p className="mt-1.5 font-mono text-[11px] tracking-[0.08em] text-sage uppercase">
                   Machines
                 </p>
               </div>
               <div>
-                <p className="display tabular text-[28px] text-forest sm:text-[32px]">{categories.length}</p>
-                <p className="mt-1.5 font-mono text-[10px] tracking-[0.08em] text-sage uppercase">
+                <p className="display tabular text-[32px] text-forest sm:text-[36px]">{categories.length}</p>
+                <p className="mt-1.5 font-mono text-[11px] tracking-[0.08em] text-sage uppercase">
                   Categories
                 </p>
               </div>
@@ -239,11 +239,11 @@ export default async function HomePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 p-4">
-                    <span className="text-[14px] leading-snug font-medium text-white sm:text-[15px]">
+                    <span className="text-[15.5px] leading-snug font-semibold text-white sm:text-[16.5px]">
                       {solution.shortName}
                     </span>
-                    <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-white/30 bg-white/10 text-white backdrop-blur-sm transition duration-200 group-hover:border-white group-hover:bg-white group-hover:text-forest">
-                      <IconArrowUpRight className="h-3.5 w-3.5" />
+                    <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-white/30 bg-white/10 text-white backdrop-blur-sm transition duration-200 group-hover:border-white group-hover:bg-white group-hover:text-forest">
+                      <IconArrowUpRight className="h-4 w-4" />
                     </span>
                   </div>
                 </Link>
@@ -281,24 +281,24 @@ export default async function HomePage() {
                     />
                   </div>
                   <div className="flex flex-1 flex-col p-6">
-                    <span className="font-mono text-[10px] tracking-[0.14em] text-sage">{line.number}</span>
-                    <h3 className="mt-2 text-[20px] leading-snug font-medium tracking-[-0.02em] text-forest transition-colors group-hover:text-moss">
+                    <span className="font-mono text-[12px] font-medium tracking-[0.14em] text-sage">{line.number}</span>
+                    <h3 className="mt-2 text-[21.5px] leading-snug font-semibold tracking-[-0.02em] text-forest transition-colors group-hover:text-moss">
                       {line.title}
                     </h3>
-                    <p className="mt-2.5 text-[13.5px] leading-[1.7] text-sage">{line.description}</p>
+                    <p className="mt-2.5 text-[15px] leading-[1.75] text-sage">{line.description}</p>
                     <div className="mt-5 flex flex-wrap gap-1.5">
                       {line.details.map((detail) => (
                         <span
                           key={detail}
-                          className="rounded-full bg-bone px-3 py-1 text-[11px] font-medium text-forest/70"
+                          className="rounded-full bg-bone px-3.5 py-1 text-[12.5px] font-medium text-forest/75"
                         >
                           {detail}
                         </span>
                       ))}
                     </div>
-                    <div className="mt-auto flex items-center gap-1.5 pt-6 text-[13px] font-medium text-forest">
+                    <div className="mt-auto flex items-center gap-1.5 pt-6 text-[14.5px] font-medium text-forest">
                       Explore line{" "}
-                      <IconArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+                      <IconArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                     </div>
                   </div>
                 </Link>
@@ -321,22 +321,22 @@ export default async function HomePage() {
                     }`}
                 >
                   <p className="eyebrow text-sage">{section.kicker}</p>
-                  <h2 className="display mt-3.5 text-[clamp(1.7rem,2.8vw,2.4rem)] text-forest">
+                  <h2 className="display mt-3.5 text-[clamp(1.9rem,3.1vw,2.65rem)] text-forest">
                     {section.title}
                   </h2>
-                  <p className="mt-4 text-[14.5px] leading-[1.78] text-sage">{section.copy}</p>
+                  <p className="mt-4 text-[16px] sm:text-[17px] leading-[1.8] text-sage">{section.copy}</p>
                   <div className="mt-6 flex flex-wrap gap-2">
                     {section.points.map((point) => (
                       <span
                         key={point}
-                        className="rounded-full border border-forest/10 px-3 py-1 text-[11.5px] text-forest/70"
+                        className="rounded-full border border-forest/10 px-3.5 py-1 text-[13px] text-forest/75"
                       >
                         {point}
                       </span>
                     ))}
                   </div>
-                  <Link href={section.href} className="btn btn-outline mt-8 w-fit">
-                    {section.cta} <IconArrowRight className="h-3.5 w-3.5" />
+                  <Link href={section.href} className="btn btn-outline mt-8 w-fit text-[14.5px]">
+                    {section.cta} <IconArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
                 <div
@@ -369,12 +369,12 @@ export default async function HomePage() {
             ].map((stat, index) => (
               <Reveal key={stat.label} delay={index * 80} className="h-full">
                 <div className="flex h-full flex-col justify-between gap-10 bg-[#0c0f11] px-6 py-12 lg:px-8 lg:py-16">
-                  <p className="display text-[clamp(2.6rem,4.6vw,3.8rem)] font-medium tracking-[-0.03em] text-white">
+                  <p className="display text-[clamp(2.8rem,5vw,4.2rem)] font-medium tracking-[-0.03em] text-white">
                     {stat.animate ? <CountUp value={stat.value} /> : stat.value}
                   </p>
                   <div>
-                    <p className="text-[14px] font-medium text-white/85">{stat.label}</p>
-                    <p className="mt-1.5 font-mono text-[10px] tracking-[0.1em] text-white/40 uppercase">
+                    <p className="text-[16px] font-medium text-white/90">{stat.label}</p>
+                    <p className="mt-1.5 font-mono text-[11.5px] tracking-[0.1em] text-white/45 uppercase">
                       {stat.note}
                     </p>
                   </div>
@@ -418,13 +418,13 @@ export default async function HomePage() {
             ].map((step, index) => (
               <Reveal key={step.title} delay={index * 80}>
                 <div className="h-full border-t border-forest/[0.12] pt-6">
-                  <span className="font-mono text-[11px] tracking-[0.12em] text-sage">
+                  <span className="font-mono text-[12.5px] font-medium tracking-[0.12em] text-sage">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="mt-4 text-[18px] font-medium tracking-[-0.02em] text-forest">
+                  <h3 className="mt-4 text-[20px] font-semibold tracking-[-0.02em] text-forest">
                     {step.title}
                   </h3>
-                  <p className="mt-2.5 text-[13.5px] leading-[1.7] text-sage">{step.copy}</p>
+                  <p className="mt-2.5 text-[15px] leading-[1.75] text-sage">{step.copy}</p>
                 </div>
               </Reveal>
             ))}
@@ -452,7 +452,7 @@ export default async function HomePage() {
               </Reveal>
             ))}
           </div>
-          <p className="mt-6 font-mono text-[10.5px] text-sage/75">
+          <p className="mt-6 font-mono text-[11.5px] text-sage/80">
             Representative machine illustrations shown. Ask us for current workshop photographs and video.
           </p>
         </div>
@@ -492,13 +492,13 @@ export default async function HomePage() {
               <figure className="mt-8 grid overflow-hidden rounded-2xl border border-forest/[0.07] bg-bone md:grid-cols-[0.9fr_2.1fr]">
                 <figcaption className="flex flex-col justify-center border-b border-forest/[0.07] p-7 md:border-r md:border-b-0 md:p-9">
                   <span className="eyebrow text-sage">Buyer review</span>
-                  <span className="mt-3 text-[16px] font-medium text-forest">{review.name}</span>
-                  <span className="mt-1 text-[12px] text-sage">
+                  <span className="mt-3 text-[18px] font-semibold text-forest">{review.name}</span>
+                  <span className="mt-1.5 text-[13.5px] text-sage">
                     {review.location}
                     {review.product ? ` · ${review.product}` : ""}
                   </span>
                 </figcaption>
-                <blockquote className="flex items-center p-7 text-[16.5px] leading-[1.7] font-normal text-forest/85 md:p-10 md:text-[18.5px]">
+                <blockquote className="flex items-center p-7 text-[18px] leading-[1.75] font-normal text-forest/85 md:p-10 md:text-[21px]">
                   “{review.quote}”
                 </blockquote>
               </figure>
@@ -532,12 +532,12 @@ export default async function HomePage() {
                       loading="lazy"
                       className="h-full w-full scale-[1.08] object-cover transition-transform duration-700 ease-out group-hover:scale-[1.13]"
                     />
-                    <span className="absolute top-1/2 left-1/2 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white/90 pl-0.5 text-[12px] text-forest shadow-lg backdrop-blur-md transition duration-200 group-hover:scale-105 group-hover:bg-white">
+                    <span className="absolute top-1/2 left-1/2 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white/90 pl-0.5 text-[13px] text-forest shadow-lg backdrop-blur-md transition duration-200 group-hover:scale-105 group-hover:bg-white">
                       ▶
                     </span>
                   </div>
                   <div className="flex items-center justify-between gap-3 px-5 py-4">
-                    <span className="text-[13.5px] font-medium text-forest">{video.title}</span>
+                    <span className="text-[15px] font-semibold text-forest">{video.title}</span>
                     <IconArrowUpRight className="h-4 w-4 text-sage transition group-hover:text-forest" />
                   </div>
                 </a>
@@ -552,14 +552,14 @@ export default async function HomePage() {
         <div className="wrap grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:gap-16">
           <Reveal>
             <p className="eyebrow text-sage">Before you enquire</p>
-            <h2 className="display mt-3.5 text-[clamp(1.8rem,3vw,2.4rem)] text-forest">
+            <h2 className="display mt-3.5 text-[clamp(2rem,3.2vw,2.65rem)] text-forest">
               Questions buyers ask us
             </h2>
-            <p className="mt-4 max-w-sm text-[14px] leading-[1.75] text-sage">
+            <p className="mt-4 max-w-sm text-[15.5px] leading-[1.8] text-sage">
               Not sure which machine suits your product? Send a message with what you want to make
               and your target output.
             </p>
-            <Link href="/contact" className="btn btn-outline mt-7">
+            <Link href="/contact" className="btn btn-outline mt-7 text-[14.5px]">
               Ask a question
             </Link>
           </Reveal>
@@ -567,7 +567,7 @@ export default async function HomePage() {
           <Reveal delay={100} className="divide-y divide-forest/[0.08] border-y border-forest/[0.08]">
             {faqs.map((faq, index) => (
               <details key={faq.question} className="group py-5" open={index === 0}>
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[15px] font-medium text-forest">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[16.5px] font-semibold text-forest">
                   {faq.question}
                   <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-forest/15 text-forest/70 transition group-open:border-forest group-open:text-forest">
                     <svg
@@ -581,7 +581,7 @@ export default async function HomePage() {
                     </svg>
                   </span>
                 </summary>
-                <p className="mt-3 max-w-xl pr-8 text-[13.5px] leading-[1.75] text-sage">
+                <p className="mt-3 max-w-xl pr-8 text-[15px] leading-[1.8] text-sage">
                   {faq.answer}
                 </p>
               </details>
@@ -595,23 +595,23 @@ export default async function HomePage() {
         <div className="wrap grid items-start gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
           <div className="lg:pt-4">
             <p className="eyebrow text-brasslight">Start a project</p>
-            <h2 className="display mt-4 text-[clamp(2rem,3.6vw,3.1rem)] text-white">
+            <h2 className="display mt-4 text-[clamp(2.2rem,3.8vw,3.3rem)] text-white">
               Tell us the product. We&apos;ll recommend the machine.
             </h2>
-            <p className="mt-5 max-w-[440px] text-[14.5px] leading-[1.8] text-white/60">
+            <p className="mt-5 max-w-[460px] text-[16px] sm:text-[17px] leading-[1.85] text-white/65">
               Share what you want to produce, your target hourly output and where the facility is
               located. We will reply with suitable machinery options and a quotation.
             </p>
             <a
               href={site.contact.phoneHref}
-              className="mt-8 inline-flex items-center gap-3 text-[19px] font-medium tracking-tight text-white transition hover:text-brasslight"
+              className="mt-8 inline-flex items-center gap-3 text-[21px] font-semibold tracking-tight text-white transition hover:text-brasslight"
             >
-              <span className="grid h-10 w-10 place-items-center rounded-full border border-white/15 bg-white/[0.06]">
-                <IconPhone className="h-4 w-4 text-brasslight" />
+              <span className="grid h-11 w-11 place-items-center rounded-full border border-white/15 bg-white/[0.06]">
+                <IconPhone className="h-4.5 w-4.5 text-brasslight" />
               </span>
               {site.contact.phone}
             </a>
-            <div className="mt-8 space-y-2.5 text-[13px] text-white/60">
+            <div className="mt-8 space-y-2.5 text-[14.5px] text-white/70">
               <p className="flex items-center gap-2.5">
                 <IconCheck className="h-4 w-4 text-brasslight" /> Machine-specific quotations
               </p>
@@ -622,7 +622,7 @@ export default async function HomePage() {
                 <IconCheck className="h-4 w-4 text-brasslight" /> India and export enquiries welcome
               </p>
             </div>
-            <p className="mt-10 border-t border-white/[0.08] pt-5 font-mono text-[10.5px] text-white/40">
+            <p className="mt-10 border-t border-white/[0.08] pt-5 font-mono text-[12px] text-white/45">
               GST 09AHNPK3689D1ZX · IEC 0504026763
             </p>
           </div>

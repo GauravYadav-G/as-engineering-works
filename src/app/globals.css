@@ -51,10 +51,12 @@
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    font-size: 16.5px;
   }
   body {
     @apply bg-bone text-forest antialiased;
     font-family: var(--font-sans);
+    font-size: 1.05rem;
     letter-spacing: 0.005em;
     word-spacing: 0.03em;
   }
@@ -85,7 +87,7 @@
     @apply mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-12;
   }
   .eyebrow {
-    @apply font-mono text-[10.5px] font-medium uppercase tracking-[0.18em];
+    @apply font-mono text-[11.5px] font-medium uppercase tracking-[0.18em];
   }
   .display {
     font-family: var(--font-sans);
@@ -95,7 +97,7 @@
     line-height: 1.1;
   }
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-[13px] font-medium tracking-[0.005em] transition-all duration-200;
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-[14.5px] font-medium tracking-[0.005em] transition-all duration-200;
   }
   .btn-brass {
     @apply bg-forest text-white hover:bg-[#262c31];
@@ -129,13 +131,13 @@
     @apply w-full;
   }
   .field {
-    @apply w-full rounded-lg border border-forest/12 bg-white px-3.5 py-2.5 text-[13.5px] text-forest placeholder:text-sage/60 transition-colors focus:border-forest/45 focus:outline-none;
+    @apply w-full rounded-lg border border-forest/12 bg-white px-4 py-3 text-[15px] text-forest placeholder:text-sage/60 transition-colors focus:border-forest/45 focus:outline-none;
   }
   .prose-machine p {
-    @apply text-[15px] leading-[1.82] text-forest/68;
+    @apply text-[16.5px] sm:text-[17.5px] leading-[1.85] text-forest/75;
   }
   .section-kicker {
-    @apply inline-flex items-center gap-2.5 font-mono text-[10.5px] font-medium uppercase tracking-[0.18em] text-sage;
+    @apply inline-flex items-center gap-2.5 font-mono text-[11.5px] font-medium uppercase tracking-[0.18em] text-sage;
   }
 }
 

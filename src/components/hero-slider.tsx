@@ -133,24 +133,24 @@ export function HeroSlider() {
       <div className="absolute inset-x-0 bottom-0 -z-10 h-48 bg-gradient-to-t from-[#0c0f11]/90 to-transparent" />
 
       <div className="wrap relative flex min-h-[540px] flex-col justify-center py-20 md:min-h-[620px] lg:min-h-[680px]">
-        <div key={active} className="animate-rise max-w-[640px]">
+        <div key={active} className="animate-rise max-w-[660px]">
           <p className="eyebrow text-brasslight">{slide.eyebrow}</p>
-          <h1 className="display text-shadow-hero mt-5 text-[clamp(2.35rem,4.7vw,4.15rem)] text-white">
+          <h1 className="display text-shadow-hero mt-5 text-[clamp(2.55rem,5.1vw,4.4rem)] text-white">
             {slide.title}
           </h1>
-          <p className="mt-6 max-w-[500px] text-[15.5px] leading-[1.75] font-normal text-white/75">
+          <p className="mt-6 max-w-[540px] text-[17px] sm:text-[18.5px] leading-[1.8] font-normal text-white/80">
             {slide.description}
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-3">
-            <Link href={slide.href} className="btn btn-light px-6 py-3.5">
+            <Link href={slide.href} className="btn btn-light px-7 py-3.5 text-[15px]">
               {slide.cta} <IconArrowRight className="h-4 w-4" />
             </Link>
-            <Link href="/contact" className="btn btn-ghost-light px-6 py-3.5">
-              Request a quote <IconArrowUpRight className="h-3.5 w-3.5 opacity-80" />
+            <Link href="/contact" className="btn btn-ghost-light px-7 py-3.5 text-[15px]">
+              Request a quote <IconArrowUpRight className="h-4 w-4 opacity-80" />
             </Link>
           </div>
         </div>
-        <p className="absolute right-5 bottom-4 font-mono text-[9.5px] tracking-[0.06em] text-white/45 sm:right-8 lg:right-12">
+        <p className="absolute right-5 bottom-4 font-mono text-[11px] tracking-[0.06em] text-white/50 sm:right-8 lg:right-12">
           Representative imagery
         </p>
       </div>
@@ -166,13 +166,13 @@ export function HeroSlider() {
                 aria-label={`Show slide: ${item.tab}`}
                 aria-current={isActive ? "true" : undefined}
                 onClick={() => show(index)}
-                className={`relative px-2 py-4 text-left text-[11px] font-medium tracking-[0.01em] transition sm:px-4 sm:py-4.5 sm:text-[12px] ${
-                  isActive ? "text-white" : "text-white/45 hover:text-white/80"
+                className={`relative px-2 py-4 text-left text-[12.5px] font-medium tracking-[0.01em] transition sm:px-4 sm:py-4.5 sm:text-[14px] ${
+                  isActive ? "text-white font-semibold" : "text-white/50 hover:text-white/85"
                 }`}
               >
                 <span
-                  className={`mr-2 font-mono text-[10px] tabular ${
-                    isActive ? "text-brasslight" : "text-white/25"
+                  className={`mr-2 font-mono text-[11px] tabular ${
+                    isActive ? "text-brasslight font-semibold" : "text-white/30"
                   }`}
                 >
                   0{index + 1}

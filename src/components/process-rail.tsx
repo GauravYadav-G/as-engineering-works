@@ -83,12 +83,12 @@ export function ProcessRail() {
               <p className="eyebrow text-sage">Eight stages · one production line</p>
               <h2
                 id="process-rail-title"
-                className="display mt-3.5 text-[clamp(1.85rem,3.4vw,2.75rem)] text-forest"
+                className="display mt-3.5 text-[clamp(2.1rem,3.8vw,3.15rem)] text-forest"
               >
                 Every stage of the snack journey.
               </h2>
             </div>
-            <p className="max-w-sm text-[14px] leading-[1.75] text-sage">
+            <p className="max-w-md text-[16px] sm:text-[17.5px] leading-[1.75] text-sage">
               Start with the stage you need and explore the complete processing journey.
             </p>
           </div>
@@ -117,18 +117,18 @@ export function ProcessRail() {
                     aria-hidden
                     className="absolute inset-0 bg-gradient-to-t from-[#0c0f11]/90 via-[#0c0f11]/15 to-transparent"
                   />
-                  <span className="tabular absolute top-5 left-5 font-mono text-[11px] tracking-[0.12em] text-white/85">
+                  <span className="tabular absolute top-5 left-5 font-mono text-[12.5px] font-medium tracking-[0.12em] text-white/90">
                     {stage.number}
                   </span>
 
                   <div className="absolute inset-x-0 bottom-0 flex flex-col p-4 lg:p-5">
-                    <p className="order-2 mt-2.5 max-w-[260px] text-[12.5px] leading-[1.6] text-white/75 transition-all duration-500 ease-out lg:order-1 lg:mt-0 lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 lg:group-focus-within:translate-y-0 lg:group-focus-within:opacity-100">
+                    <p className="order-2 mt-2.5 max-w-[280px] text-[14px] leading-[1.6] text-white/85 transition-all duration-500 ease-out lg:order-1 lg:mt-0 lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 lg:group-focus-within:translate-y-0 lg:group-focus-within:opacity-100">
                       {stage.note}
                     </p>
-                    <span className="order-3 mt-4 inline-flex items-center gap-1.5 text-[11px] font-medium text-white/90 transition-opacity duration-500 lg:order-1 lg:mt-0 lg:mb-4 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
-                      Explore stage <IconArrowUpRight className="h-3 w-3" />
+                    <span className="order-3 mt-4 inline-flex items-center gap-1.5 text-[13px] font-medium text-white/95 transition-opacity duration-500 lg:order-1 lg:mt-0 lg:mb-4 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
+                      Explore stage <IconArrowUpRight className="h-3.5 w-3.5" />
                     </span>
-                    <h3 className="order-1 text-[16px] leading-tight font-medium tracking-[-0.015em] text-white transition-[font-size] duration-500 lg:order-2 lg:text-[15px] lg:group-hover:text-[19px]">
+                    <h3 className="order-1 text-[18px] leading-tight font-semibold tracking-[-0.015em] text-white transition-[font-size] duration-500 lg:order-2 lg:text-[17px] lg:group-hover:text-[21px]">
                       {stage.name}
                     </h3>
                   </div>
@@ -138,7 +138,7 @@ export function ProcessRail() {
           </ol>
         </Reveal>
 
-        <p className="mt-6 font-mono text-[10.5px] leading-relaxed text-sage/75">
+        <p className="mt-6 font-mono text-[11.5px] leading-relaxed text-sage/75">
           Illustrative stage photography.
         </p>
       </div>

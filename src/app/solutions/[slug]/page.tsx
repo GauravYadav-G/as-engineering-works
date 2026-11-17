@@ -74,20 +74,20 @@ export default async function SolutionDetailPage({
             </div>
             <div className="mt-10 grid max-w-md grid-cols-3 border-t border-forest/[0.08] pt-6">
               <div>
-                <p className="display tabular text-[24px] text-forest">
+                <p className="display tabular text-[28px] text-forest sm:text-[32px]">
                   {String(solution.steps.length).padStart(2, "0")}
                 </p>
-                <p className="mt-1 font-mono text-[9.5px] text-sage uppercase">Stages</p>
+                <p className="mt-1 font-mono text-[11px] text-sage uppercase">Stages</p>
               </div>
               <div>
-                <p className="display tabular text-[24px] text-forest">
+                <p className="display tabular text-[28px] text-forest sm:text-[32px]">
                   {String(linkedProducts.length).padStart(2, "0")}
                 </p>
-                <p className="mt-1 font-mono text-[9.5px] text-sage uppercase">Machines</p>
+                <p className="mt-1 font-mono text-[11px] text-sage uppercase">Machines</p>
               </div>
               <div>
-                <p className="display tabular text-[24px] text-forest">1984</p>
-                <p className="mt-1 font-mono text-[9.5px] text-sage uppercase">Est.</p>
+                <p className="display tabular text-[28px] text-forest sm:text-[32px]">1984</p>
+                <p className="mt-1 font-mono text-[11px] text-sage uppercase">Est.</p>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@ export default async function SolutionDetailPage({
                 className="aspect-[5/4] w-full object-cover"
               />
             </div>
-            <p className="mt-3 font-mono text-[10px] text-sage/75">Illustrative image</p>
+            <p className="mt-3 font-mono text-[11.5px] text-sage/80">Illustrative image</p>
           </div>
         </div>
       </section>
@@ -109,10 +109,10 @@ export default async function SolutionDetailPage({
       <section className="border-y border-forest/[0.06] bg-bone py-16 md:py-24">
         <div className="wrap">
           <p className="eyebrow text-sage">Processing flow</p>
-          <h2 className="display mt-3.5 text-[clamp(1.8rem,3vw,2.5rem)] text-forest">
+          <h2 className="display mt-3.5 text-[clamp(1.9rem,3.2vw,2.65rem)] text-forest">
             How the equipment works together
           </h2>
-          <p className="mt-3 max-w-2xl text-[14px] leading-[1.75] text-sage">
+          <p className="mt-3 max-w-2xl text-[15.5px] leading-[1.8] text-sage">
             This is an application overview, not a fixed package. Every quoted setup is selected
             against your recipe and target output.
           </p>
@@ -123,18 +123,18 @@ export default async function SolutionDetailPage({
                 key={step.title}
                 className="rounded-xl border border-forest/[0.07] bg-white p-6"
               >
-                <span className="font-mono text-[11px] font-medium text-sage">
+                <span className="font-mono text-[12px] font-semibold text-sage">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <h3 className="mt-3 text-[17px] font-medium tracking-[-0.015em] text-forest">
+                <h3 className="mt-3 text-[19px] font-semibold tracking-[-0.015em] text-forest">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-[13px] leading-[1.7] text-sage">{step.detail}</p>
+                <p className="mt-2 text-[14.5px] leading-[1.7] text-sage">{step.detail}</p>
               </div>
             ))}
           </div>
 
-          <div className="mt-6 flex items-start gap-3 rounded-xl border border-forest/[0.07] bg-white px-5 py-4 text-[12.5px] leading-[1.7] text-sage">
+          <div className="mt-6 flex items-start gap-3 rounded-xl border border-forest/[0.07] bg-white px-5 py-4 text-[14px] leading-[1.7] text-sage">
             <IconCheck className="mt-0.5 h-4 w-4 shrink-0 text-moss" />
             <span>{solution.note}</span>
           </div>
@@ -146,19 +146,19 @@ export default async function SolutionDetailPage({
           <div className="flex flex-wrap items-end justify-between gap-5">
             <div>
               <p className="eyebrow text-sage">Relevant equipment</p>
-              <h2 className="display mt-3 text-[clamp(1.8rem,3vw,2.5rem)] text-forest">
+              <h2 className="display mt-3 text-[clamp(1.9rem,3.2vw,2.65rem)] text-forest">
                 Machines for this solution
               </h2>
-              <p className="mt-3 max-w-2xl text-[14px] leading-[1.75] text-sage">
+              <p className="mt-3 max-w-2xl text-[15.5px] leading-[1.8] text-sage">
                 Published machines from A.S. Engineering Works. Individual specifications and prices
                 are on each machine page.
               </p>
             </div>
             <Link
               href="/products"
-              className="inline-flex items-center gap-1.5 border-b border-forest/20 pb-1 text-[13px] font-medium text-forest/80 transition hover:border-forest hover:text-forest"
+              className="inline-flex items-center gap-1.5 border-b border-forest/20 pb-1 text-[14.5px] font-medium text-forest/80 transition hover:border-forest hover:text-forest"
             >
-              Browse all machines <IconArrowUpRight className="h-3.5 w-3.5" />
+              Browse all machines <IconArrowUpRight className="h-4 w-4" />
             </Link>
           </div>
 
@@ -179,18 +179,18 @@ export default async function SolutionDetailPage({
         <div className="wrap grid items-start gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           <div className="lg:pt-3">
             <p className="eyebrow text-brasslight">Plan your line</p>
-            <h2 className="display mt-4 text-[clamp(1.9rem,3.4vw,2.8rem)] text-white">
+            <h2 className="display mt-4 text-[clamp(2.1rem,3.6vw,3rem)] text-white">
               Let&apos;s talk about your {solution.shortName.toLowerCase()} setup.
             </h2>
-            <p className="mt-4 max-w-[440px] text-[14.5px] leading-[1.8] text-white/60">
+            <p className="mt-4 max-w-[460px] text-[16px] leading-[1.8] text-white/65">
               Send your product, capacity and location and we will recommend relevant machines and a
               quotation for the equipment we can supply.
             </p>
             <a
               href={site.contact.phoneHref}
-              className="mt-8 inline-flex items-center gap-3 text-[17px] font-medium text-white transition hover:text-brasslight"
+              className="mt-8 inline-flex items-center gap-3 text-[19px] font-semibold text-white transition hover:text-brasslight"
             >
-              <IconPhone className="h-4 w-4 text-brasslight" />
+              <IconPhone className="h-4.5 w-4.5 text-brasslight" />
               {site.contact.phone}
             </a>
           </div>
