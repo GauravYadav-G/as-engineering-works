@@ -26,10 +26,11 @@ export function getClientLogo(name: string): string {
   if (n.includes("shah") || n.includes("shahi")) return "/images/clients/shah-namkeen.png";
   if (n.includes("bharat masala") || n.includes("jay bharat")) return "/images/clients/bharat-masala.png";
   if (n.includes("ashok")) return "/images/clients/ashoka-tea.png";
-  if (n.includes("cbl") || n.includes("munchee")) return "/images/clients/cbl.png";
+  if (n.includes("cbl") || n.includes("munchee")) return "/images/clients/cbl.svg";
   if (n.includes("wijitha")) return "/images/clients/wijitha.png";
 
   // Regional food brands
+  if (n.includes("swadist") || n.includes("agarwal")) return "/images/clients/swadist-masala.png";
   if (n.includes("fun choice")) return "/images/clients/fun-choice.svg";
   if (n.includes("s.k.") || n.includes("sk food")) return "/images/clients/sk-food.svg";
   if (n.includes("u-like") || n.includes("ulike")) return "/images/clients/u-like.svg";
