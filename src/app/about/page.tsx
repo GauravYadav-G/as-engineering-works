@@ -95,13 +95,15 @@ export default async function AboutPage() {
               <div className="overflow-hidden rounded-2xl border border-forest/[0.07] bg-sand">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/machines/pasta-machine.jpg"
-                  alt="Representative image of a pasta making machine"
+                  src="/images/real/akhtar-ali-khan-workshop.jpg"
+                  alt="Founder Mr. Akhtar Ali Khan at the A.S. Engineering Works workshop in Noida"
                   loading="lazy"
-                  className="aspect-[5/4] w-full object-cover"
+                  className="aspect-[5/4] w-full object-cover object-[center_28%]"
                 />
               </div>
-              <p className="mt-2.5 font-mono text-[10px] text-sage/75">Representative image</p>
+              <p className="mt-2.5 font-mono text-[10px] text-sage/75">
+                Founder Mr. Akhtar Ali Khan at A.S. Engineering Works workshop, Noida
+              </p>
             </div>
             <div className="rounded-2xl border border-forest/[0.07] bg-white p-7">
               <p className="eyebrow text-sage">Vision</p>
