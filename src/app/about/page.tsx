@@ -4,6 +4,7 @@ import Link from "next/link";
 import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
+import { CompanyJourney } from "@/components/company-journey";
 import {
   IconArrowRight,
   IconArrowUpRight,
@@ -135,6 +136,9 @@ export default async function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* 42+ Years Company Journey & Milestone Flowchart Diagram */}
+      <CompanyJourney />
 
       <section className="border-y border-forest/[0.06] bg-white py-20 md:py-24">
         <div className="wrap">
