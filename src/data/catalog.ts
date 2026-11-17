@@ -1437,8 +1437,8 @@ export const clients: CatalogClient[] = [
   { name: "Jay Bharat Food Processor Pvt Ltd (Bharat Masala)", region: "Odisha", sortOrder: 6 },
   { name: "Agarwal Food & Spices Pvt Ltd (Swadist Masala)", region: "Odisha", sortOrder: 7 },
   { name: "Subas Nutrition Pvt Ltd", region: "Odisha", sortOrder: 8 },
-  { name: "CBL Foods International Pvt Ltd", region: "Sri Lanka", sortOrder: 9 },
-  { name: "Wijitha Group of Companies", region: "Sri Lanka", sortOrder: 10 },
+  { name: "CBL Foods International Pvt Ltd", region: "Sri-Lanka", sortOrder: 9 },
+  { name: "Wijitha Group of Companies", region: "Sri-Lanka", sortOrder: 10 },
 
   // Additional Published Clients (Full Directory on /clients)
   { name: "Fun Choice Pvt Ltd", region: "Delhi / NCR", sortOrder: 11 },
@@ -1455,7 +1455,7 @@ export const clients: CatalogClient[] = [
   { name: "Kalinga Food and Alind Pvt Ltd", region: "Odisha", sortOrder: 22 },
   { name: "Mill Machinery Store", region: "Odisha", sortOrder: 23 },
   { name: "Vijaya Food Products", region: "Odisha", sortOrder: 24 },
-  { name: "Turney Biscuit Manufacturers (Pvt) Ltd", region: "Sri Lanka", sortOrder: 25 },
-  { name: "RajaRatta Manufacturers Pvt Ltd", region: "Sri Lanka", sortOrder: 26 },
-  { name: "Roche Enterprises", region: "Sri Lanka", sortOrder: 27 },
+  { name: "Turney Biscuit Manufacturers (Pvt) Ltd", region: "Sri-Lanka", sortOrder: 25 },
+  { name: "RajaRatta Manufacturers Pvt Ltd", region: "Sri-Lanka", sortOrder: 26 },
+  { name: "Roche Enterprises", region: "Sri-Lanka", sortOrder: 27 },
 ];

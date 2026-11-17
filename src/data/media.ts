@@ -167,25 +167,25 @@ export function productImageNote(slug: string) {
 }
 
 export const categoryImages: Record<string, string> = {
-  "snack-extruders": g.extruder,
-  "kurkure-plant": g.kurkureExtruder,
-  "pasta-vermicelli": g.pasta,
-  "soya-processing": g.soya,
-  "dryers-roasters": g.dryer,
-  "seasoning-systems": g.seasoning,
+  "soya-processing": "/images/machines/soya-extruder-plant.jpg",
+  "kurkure-plant": "/images/machines/kurkure-extruder-hero.jpg",
+  "snack-extruders": "/images/machines/corn-puff-extruder-hero.jpg",
+  "pasta-vermicelli": "/images/machines/pasta-macaroni-plant-hero.jpg",
+  "dryers-roasters": "/images/real/rotary-cell-roaster.jpg",
+  "seasoning-systems": "/images/real/flavour-coating-system.jpg",
   conveyors: g.conveyor,
-  "snack-plants": g.line,
+  "snack-plants": "/images/real/kurkure-line.jpg",
 };
 
 export const solutionImages: Record<string, string> = {
-  "corn-puffs": a("cornPuffs"),
-  "kurkure-corn-sticks": a("kurkure"),
-  "soya-nuggets": g.soyaDie,
-  "pasta-macaroni": a("pasta"),
-  vermicelli: a("vermicelli"),
-  "puff-rings-kachri": a("puffRings"),
+  "soya-nuggets": "/images/machines/soya-extruder-plant.jpg",
+  "kurkure-corn-sticks": "/images/machines/kurkure-extruder-hero.jpg",
+  "corn-puffs": "/images/machines/corn-puff-extruder-hero.jpg",
+  "pasta-macaroni": "/images/machines/pasta-macaroni-plant-hero.jpg",
+  vermicelli: "/images/products/vermicelli-extruder-machine.jpg",
+  "puff-rings-kachri": "/images/real/puff-kachri.jpg",
   "millet-snacks": a("millet"),
-  "namkeen-seasoning": a("namkeen"),
-  "roasted-snacks": a("chickpeas"),
-  "complete-snack-lines": g.line,
+  "namkeen-seasoning": "/images/real/flavour-coating-system.jpg",
+  "roasted-snacks": "/images/real/rotary-cell-roaster.jpg",
+  "complete-snack-lines": "/images/real/kurkure-line.jpg",
 };

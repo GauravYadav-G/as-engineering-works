@@ -20,5 +20,5 @@
   <text x="124" y="35" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="url(#tb-gold)" text-anchor="middle" letter-spacing="2">TURNEY</text>
   <line x1="72" y1="41" x2="178" y2="41" stroke="url(#tb-gold)" stroke-width="1" opacity="0.8"/>
   <text x="124" y="51" font-family="Arial, sans-serif" font-size="8.5" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.2">BISCUIT MANUFACTURERS</text>
-  <text x="124" y="61" font-family="Arial, sans-serif" font-size="7.5" font-weight="600" fill="#BAE6FD" text-anchor="middle" letter-spacing="1">KANDY · SRI LANKA</text>
+  <text x="124" y="61" font-family="Arial, sans-serif" font-size="7.5" font-weight="600" fill="#BAE6FD" text-anchor="middle" letter-spacing="1">KANDY · SRI-LANKA</text>
 </svg>
