@@ -10,7 +10,7 @@ import { getCategories, getProducts } from "@/lib/data";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Food Processing Machines, Prices & Specifications",
+  title: "Food Processing Machines, Catalog & Specifications",
   description:
     "Browse food processing machines from A.S. Engineering Works — snack extruders, kurkure plants, pasta and vermicelli lines, soya nugget plants, dryers, roasters, seasoning systems and conveyors.",
 };
@@ -22,8 +22,6 @@ const single = (value: string | string[] | undefined) =>
 
 const sortOptions = [
   { value: "featured", label: "Featured first" },
-  { value: "price-asc", label: "Price: low to high" },
-  { value: "price-desc", label: "Price: high to low" },
   { value: "name", label: "Name A–Z" },
 ];
 
@@ -61,7 +59,7 @@ export default async function ProductsPage({
       <PageHero
         eyebrow="Machine catalogue"
         title="Machines for every stage of the line."
-        description="Extruders, dryers, roasters, seasoning and handling equipment from the A.S. Engineering Works catalogue. Prices are indicative ex-works figures from our listings."
+        description="Extruders, dryers, roasters, seasoning and handling equipment from the A.S. Engineering Works catalogue. Custom output configurations and quotations available on request."
         breadcrumb={[{ label: "Machines" }]}
         image="/images/extruder.jpg"
       />

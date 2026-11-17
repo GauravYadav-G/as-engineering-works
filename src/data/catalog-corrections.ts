@@ -36,7 +36,7 @@ export const verifiedOverrides: Record<string, Partial<CatalogProduct>> = {
     power: null,
     shortDescription: "Cheese ball extruder from our extruder machine range. Specification on request.",
     description:
-      "A.S. Engineering Works lists a Cheese Ball Extruder among its extruder machines at an indicative price of ₹2,90,000 per piece. Request the latest technical specification, output, connected load and die options for your product before placing an order.",
+      "A.S. Engineering Works manufactures Cheese Ball Extruders among its extrusion machinery range. Request the latest technical specification, output, connected load and die options for your product before placing an order.",
     specifications: [],
   },
   "twin-screw-extruder": {
@@ -44,7 +44,7 @@ export const verifiedOverrides: Record<string, Partial<CatalogProduct>> = {
     power: null,
     shortDescription: "Twin screw extruder from our extruder machine range. Specification on request.",
     description:
-      "A.S. Engineering Works lists a Twin Screw Extruder in its extruder machine range at an indicative price of ₹12,00,000 per piece. The listing does not publish an output, power rating or barrel configuration; these are confirmed in a technical quotation.",
+      "A.S. Engineering Works manufactures Twin Screw Extruders in its food extrusion range. Output, power rating, barrel configuration and electricals are tailored to your recipe and confirmed in a technical quotation.",
     specifications: [],
   },
   "snack-flavoring-machine": {
@@ -52,27 +52,27 @@ export const verifiedOverrides: Record<string, Partial<CatalogProduct>> = {
     power: null,
     shortDescription: "Snack flavoring machine. Specification on request.",
     description:
-      "A.S. Engineering Works lists a Snack Flavoring Machine at an indicative price of ₹1,50,000 per piece. Ask us for the drum size, throughput and seasoning arrangement suitable for your snack.",
+      "A.S. Engineering Works manufactures Snack Flavoring Machines for continuous and batch seasoning. Ask us for the drum size, throughput and seasoning arrangement suitable for your snack line.",
     specifications: [],
   },
   "kurkure-extruder": {
     capacity: null,
     power: null,
-    shortDescription: "Kurkure extruder listed at ₹3,00,000 per piece for fried extruded snack processing.",
+    shortDescription: "Kurkure extruder for fried extruded snack processing. Output configured to requirement.",
     description:
-      "The Kurkure Extruder is listed at ₹3,00,000 per piece in A.S. Engineering Works' published product range. Capacity and connected load are configured to customer requirements. See the other Kurkure Making Machines for published standard model specifications.",
+      "The Kurkure Extruder is manufactured by A.S. Engineering Works for authentic crispy corn stick production. Capacity and connected load are configured to customer requirements. See the other Kurkure Making Machines for published standard model specifications.",
     specifications: [],
   },
   "macaroni-pasta-making-machine": {
     description:
-      "We are offering a dynamic assortment of Macaroni Pasta Machine and Pasta Making Machine in the market, which requires less maintenance and is easy to use. These products are highly appreciated by patrons not only for their easy usage and best performance, but also for a long service life. Our clients can avail these products at leading market price from us.",
+      "We are offering a dynamic assortment of Macaroni Pasta Machine and Pasta Making Machine in the market, which requires less maintenance and is easy to use. These products are highly appreciated by patrons not only for their easy usage and best performance, but also for a long service life. Patrons can avail these machines configured to exact production requirements.",
   },
   "vermicelli-extruder-machine": {
     capacity: null,
     power: null,
-    shortDescription: "Vermicelli extruder machine listed at ₹8,00,000 per piece.",
+    shortDescription: "Vermicelli extruder machine for industrial vermicelli processing.",
     description:
-      "Vermicelli Extruder Machine appears in the A.S. Engineering Works published product range at ₹8,00,000 per piece. Tell us your strand gauge, flour blend and daily output for model-specific configuration and die tooling.",
+      "Vermicelli Extruder Machine appears in the A.S. Engineering Works published product range. Tell us your strand gauge, flour blend and daily output for model-specific configuration and die tooling.",
     specifications: [],
   },
   "pasta-static-dryer": {
@@ -96,9 +96,9 @@ export const verifiedOverrides: Record<string, Partial<CatalogProduct>> = {
   "soya-nugget-plant": {
     capacity: null,
     power: null,
-    shortDescription: "Soya nugget plant listed at ₹8,00,000 per piece, configured to your required capacity.",
+    shortDescription: "Soya nugget plant configured to your required production capacity.",
     description:
-      "Soya Nugget Plant is listed in the A.S. Engineering Works food processing machine range at ₹8,00,000 per piece. A plant is configured according to your required product and capacity. Ask for the equipment scope and a current quotation.",
+      "Soya Nugget Plant is built in Noida by A.S. Engineering Works for textured vegetable protein processing. Plants are configured according to your required product and capacity. Ask for the equipment scope and a current quotation.",
     specifications: [],
   },
   "energy-food-extruder": {
@@ -124,9 +124,9 @@ export const verifiedOverrides: Record<string, Partial<CatalogProduct>> = {
   "snacks-food-processing-plant": {
     capacity: null,
     power: null,
-    shortDescription: "Snacks food processing plant listed at ₹3,00,000 per piece, configured from our machinery range.",
+    shortDescription: "Snacks food processing plant configured from our extrusion, thermal and seasoning machinery range.",
     description:
-      "Snacks Food Processing Plant is included in A.S. Engineering Works' published plant range at ₹3,00,000 per piece. We can configure a combination of listed extrusion, thermal, seasoning and product-handling machines for your product.",
+      "Snacks Food Processing Plant is engineered by A.S. Engineering Works to match your recipe and floor layout. We configure a matched combination of extrusion, thermal, seasoning and product-handling machines for your product.",
     specifications: [],
   },
   "inclined-conveyor-belt": {
@@ -136,9 +136,9 @@ export const verifiedOverrides: Record<string, Partial<CatalogProduct>> = {
   "industrial-roaster": {
     capacity: null,
     power: null,
-    shortDescription: "Industrial roaster. Specification and price on request.",
+    shortDescription: "Industrial roaster. Technical specifications available on request.",
     description:
-      "Industrial Roaster appears in the A.S. Engineering Works product range. Please request current model specifications, heating configuration and pricing; the listing does not publish a detailed specification for this item.",
+      "Industrial Roaster manufactured by A.S. Engineering Works. Please request current model specifications, heating configuration and quotation; the listing does not publish a fixed specification for this item.",
     specifications: [],
   },
 };

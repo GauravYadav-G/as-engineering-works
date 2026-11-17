@@ -10,9 +10,9 @@ export const faqs = [
       "Our listings show a minimum order quantity of one piece or one unit for most machines.",
   },
   {
-    question: "How do I get a price?",
+    question: "How do I get a quotation?",
     answer:
-      "Indicative prices are shown on machine pages where they have been published. Send an enquiry for a current quotation for your configuration, including taxes and delivery.",
+      "Send an enquiry with the snack you want to make, your target hourly output and delivery location. Our engineering desk will recommend matching machines and provide a tailored commercial quotation.",
   },
   {
     question: "Can machines be customised?",

@@ -438,7 +438,7 @@ export default async function HomePage() {
           <SectionHeading
             eyebrow="Machine catalogue"
             title="Selected equipment"
-            description="Indicative prices and specifications from our published listings. Open any machine for details or request a configured quotation."
+            description="Specifications and machine details from our catalogue. Open any machine for technical parameters or request a configured quotation."
             link={{ href: "/products", label: `View all ${products.length} machines` }}
             align="between"
           />

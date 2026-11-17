@@ -23,10 +23,7 @@ const onRequest = (
   power: null,
   image: "",
   shortDescription: `${name} from our ${range} range. Specification on request.`,
-  description:
-    price === null
-      ? `${name} is listed in the A.S. Engineering Works ${range} range. Price and technical specification are available on request — tell us your product and target output.`
-      : `${name} is listed in the A.S. Engineering Works ${range} range at an indicative price of ₹${price.toLocaleString("en-IN")} per piece. Detailed capacity, power and configuration are available on request.`,
+  description: `${name} is manufactured in Noida by A.S. Engineering Works in its ${range} range. Detailed capacity, power, electricals and custom configuration are available on request.`,
   specifications: [],
   features: [],
   badges: [],

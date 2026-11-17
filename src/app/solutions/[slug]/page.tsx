@@ -150,7 +150,7 @@ export default async function SolutionDetailPage({
                 Machines for this solution
               </h2>
               <p className="mt-3 max-w-2xl text-[15.5px] leading-[1.8] text-sage">
-                Published machines from A.S. Engineering Works. Individual specifications and prices
+                Published machines from A.S. Engineering Works. Individual specifications and details
                 are on each machine page.
               </p>
             </div>

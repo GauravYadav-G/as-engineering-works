@@ -2,7 +2,6 @@ import Link from "next/link";
 
 import type { Product } from "@/db/schema";
 import { productImageCaption } from "@/data/media";
-import { formatPrice } from "@/lib/site";
 import { IconArrowUpRight } from "@/components/icons";
 
 export function ProductCard({
@@ -50,17 +49,20 @@ export function ProductCard({
         </p>
 
         <div className="mt-auto pt-6">
-          <div className="flex items-end justify-between gap-3 border-t border-forest/[0.07] pt-4">
+          <div className="flex items-center justify-between gap-3 border-t border-forest/[0.07] pt-4">
             <div className="min-w-0">
               <span className="block font-mono text-[11px] tracking-[0.12em] text-sage/75 uppercase">
-                {product.capacity ?? `MOQ ${product.moq}`}
+                {product.capacity ?? "Capacity on request"}
               </span>
-              <span className="tabular mt-1 block text-[17px] font-bold tracking-[-0.015em] text-forest">
-                {formatPrice(product.price, product.unit)}
+              <span className="mt-0.5 block font-mono text-[11.5px] font-medium text-forest/75">
+                MOQ {product.moq}
               </span>
             </div>
-            <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-forest/12 text-forest/65 transition-all duration-200 group-hover:border-forest group-hover:bg-forest group-hover:text-white">
-              <IconArrowUpRight className="h-4 w-4" />
+            <span className="inline-flex items-center gap-1.5 text-[13.5px] font-medium text-forest transition-colors group-hover:text-moss">
+              <span>View details</span>
+              <span className="grid h-8 w-8 place-items-center rounded-full border border-forest/12 text-forest/70 transition-all duration-200 group-hover:border-forest group-hover:bg-forest group-hover:text-white">
+                <IconArrowUpRight className="h-4 w-4" />
+              </span>
             </span>
           </div>
         </div>

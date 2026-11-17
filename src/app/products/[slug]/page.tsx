@@ -10,7 +10,7 @@ import { InquiryForm } from "@/components/inquiry-form";
 import { ProductCard } from "@/components/product-card";
 import { IconArrowUpRight, IconCheck, IconDoc, IconPhone } from "@/components/icons";
 import { getCategories, getProductBySlug, getProducts } from "@/lib/data";
-import { formatPrice, site } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const dynamic = "force-dynamic";
 
@@ -27,7 +27,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${product.name} — ${product.price ? formatPrice(product.price, product.unit) : "Price on request"}`,
+    title: `${product.name} — Technical Specifications & Quotation`,
     description: product.shortDescription,
     openGraph: {
       title: product.name,
@@ -70,14 +70,6 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         image: `${site.url}${product.image}`,
         brand: { "@type": "Brand", name: site.name },
         category: category?.name ?? "Food processing machinery",
-        offers: product.price
-          ? {
-              "@type": "Offer",
-              priceCurrency: "INR",
-              price: product.price,
-              seller: { "@type": "Organization", name: site.name },
-            }
-          : undefined,
       },
       {
         "@type": "BreadcrumbList",
@@ -160,10 +152,10 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               <div className="flex flex-wrap items-end justify-between gap-3">
                 <div>
                   <p className="font-mono text-[11px] tracking-[0.14em] text-sage uppercase">
-                    Indicative price
+                    Commercial quotation
                   </p>
-                  <p className="display tabular mt-1.5 text-[clamp(1.7rem,3vw,2.3rem)] text-forest">
-                    {formatPrice(product.price, product.unit)}
+                  <p className="display mt-1.5 text-[clamp(1.5rem,2.5vw,2rem)] text-forest">
+                    Price on request
                   </p>
                 </div>
                 <span className="rounded-full border border-forest/15 bg-white px-3.5 py-1 font-mono text-[11px] tracking-[0.1em] text-forest/80 uppercase">
@@ -172,7 +164,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               </div>
               <dl className="mt-5 grid gap-2.5 border-t border-forest/[0.08] pt-5 text-[14.5px]">
                 {[
-                  { label: "Production capacity", value: product.capacity ?? "On request" },
+                  { label: "Production capacity", value: product.capacity ?? "Custom output on request" },
                   { label: "Connected load / power", value: product.power ?? "As per configuration" },
                   { label: "Country of origin", value: "India" },
                   { label: "Customisation", value: "Custom design on request" },
@@ -184,8 +176,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                 ))}
               </dl>
               <p className="mt-4 text-[12px] leading-relaxed text-sage/85">
-                Price shown is from the published listing. Request a current quotation for your
-                chosen configuration, taxes and delivery.
+                Every machine is quoted directly to your target hourly output, electrical specifications and factory layout.
               </p>
             </div>
 

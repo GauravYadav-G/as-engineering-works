@@ -132,7 +132,7 @@ export const solutions: Solution[] = [
       { title: "Dry", detail: "Use a matched tray or static dryer for a controlled finish." },
     ],
     productSlugs: ["vermicelli-extruder-machine", "tray-dryer", "pasta-static-dryer"],
-    note: "Please enquire for vermicelli-extruder pricing; the original listing does not publish a price.",
+    note: "Please enquire for vermicelli-extruder technical specifications and custom die tooling.",
   },
   {
     slug: "puff-rings-kachri",
