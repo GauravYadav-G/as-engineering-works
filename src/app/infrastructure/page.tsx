@@ -59,7 +59,7 @@ export default function InfrastructurePage() {
                 />
               </div>
               <figcaption className="mt-2.5 font-mono text-[10px] text-sage/75">
-                A.S. Engineering Works manufacturing facility, Sector 10, Noida
+                A.S. Engineering Works manufacturing facility, Sector 8, Noida
               </figcaption>
             </figure>
           </div>
