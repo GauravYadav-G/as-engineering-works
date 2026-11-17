@@ -1,5 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
-  <rect width="200" height="60" rx="8" fill="#ffffff"/>
-  <text x="100" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#B7791F" text-anchor="middle" letter-spacing="0.05em">BARRY TARTS</text>
-  <text x="100" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="#718096" text-anchor="middle" letter-spacing="0.12em">FOODS LLP</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" width="220" height="80">
+  <defs>
+    <linearGradient id="bt-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#78350F"/>
+      <stop offset="100%" stop-color="#451A03"/>
+    </linearGradient>
+    <linearGradient id="bt-gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+  </defs>
+  <rect x="14" y="8" width="192" height="64" rx="10" fill="url(#bt-grad)" stroke="url(#bt-gold)" stroke-width="2.5"/>
+  <rect x="18" y="12" width="184" height="56" rx="7" fill="none" stroke="#FDE68A" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+  
+  <!-- Wheat / Bakery Laurel -->
+  <circle cx="42" cy="40" r="18" fill="none" stroke="url(#bt-gold)" stroke-width="2"/>
+  <text x="42" y="46" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="url(#bt-gold)" text-anchor="middle">BT</text>
+  
+  <text x="126" y="35" font-family="Georgia, serif" font-size="19" font-weight="bold" fill="url(#bt-gold)" text-anchor="middle" letter-spacing="1.5">BARRY TARTS</text>
+  <line x1="75" y1="41" x2="178" y2="41" stroke="url(#bt-gold)" stroke-width="1" opacity="0.8"/>
+  <text x="126" y="52" font-family="Arial, sans-serif" font-size="8.5" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">FOODS LLP · BAKERY &amp; SNACKS</text>
+  <text x="126" y="62" font-family="Arial, sans-serif" font-size="7" font-weight="600" fill="#FDE68A" text-anchor="middle" letter-spacing="1">KALPI ROAD · KANPUR</text>
 </svg>

@@ -1,5 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
-  <rect width="200" height="60" rx="8" fill="#ffffff"/>
-  <text x="100" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#E53E3E" text-anchor="middle" letter-spacing="0.05em">FUN CHOICE</text>
-  <text x="100" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="#718096" text-anchor="middle" letter-spacing="0.12em">FOODS PVT LTD</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" width="220" height="80">
+  <defs>
+    <linearGradient id="fc-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E52D27"/>
+      <stop offset="100%" stop-color="#B31217"/>
+    </linearGradient>
+    <linearGradient id="fc-gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <filter id="fc-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <g filter="url(#fc-shadow)">
+    <!-- Outer oval badge -->
+    <ellipse cx="110" cy="40" rx="102" ry="34" fill="url(#fc-grad)" stroke="url(#fc-gold)" stroke-width="3"/>
+    <ellipse cx="110" cy="40" rx="97" ry="29" fill="none" stroke="#FFE066" stroke-dasharray="3,3" stroke-width="1" opacity="0.7"/>
+    
+    <!-- Top stars -->
+    <polygon points="110,13 112,17 116,17 113,20 114,24 110,21 106,24 107,20 104,17 108,17" fill="#FFE066"/>
+    <polygon points="80,16 81.5,19 85,19 82.5,21.5 83.5,25 80,22.5 76.5,25 77.5,21.5 75,19 78.5,19" fill="#FFE066"/>
+    <polygon points="140,16 141.5,19 145,19 142.5,21.5 143.5,25 140,22.5 136.5,25 137.5,21.5 135,19 138.5,19" fill="#FFE066"/>
+    
+    <!-- Bold brand typography -->
+    <text x="110" y="43" font-family="Impact, Arial Black, sans-serif" font-size="24" font-weight="900" fill="#1A0000" text-anchor="middle" letter-spacing="1.5">FUN CHOICE</text>
+    <text x="110" y="41" font-family="Impact, Arial Black, sans-serif" font-size="24" font-weight="900" fill="url(#fc-gold)" text-anchor="middle" letter-spacing="1.5">FUN CHOICE</text>
+    
+    <!-- Bottom ribbon banner -->
+    <path d="M 45 52 L 175 52 L 170 66 L 50 66 Z" fill="#FFE066" stroke="#D97706" stroke-width="1"/>
+    <text x="110" y="62" font-family="Arial, sans-serif" font-size="8.5" font-weight="900" fill="#B31217" text-anchor="middle" letter-spacing="1.5">FOODS PVT LTD · SNACKS</text>
+  </g>
 </svg>

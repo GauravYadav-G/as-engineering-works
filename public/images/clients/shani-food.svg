@@ -1,5 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
-  <rect width="200" height="60" rx="8" fill="#ffffff"/>
-  <text x="100" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#4A5568" text-anchor="middle" letter-spacing="0.05em">SHANI</text>
-  <text x="100" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="#718096" text-anchor="middle" letter-spacing="0.12em">FOOD PRODUCTS</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" width="220" height="80">
+  <defs>
+    <linearGradient id="sh-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#581C87"/>
+      <stop offset="100%" stop-color="#3B0764"/>
+    </linearGradient>
+    <linearGradient id="sh-gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#EAB308"/>
+    </linearGradient>
+  </defs>
+  <rect x="14" y="8" width="192" height="64" rx="12" fill="url(#sh-purple)" stroke="url(#sh-gold)" stroke-width="2.5"/>
+  <rect x="18" y="12" width="184" height="56" rx="9" fill="none" stroke="#FDE047" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
+  
+  <text x="110" y="37" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="url(#sh-gold)" text-anchor="middle" letter-spacing="2">SHANI FOOD</text>
+  <rect x="45" y="46" width="130" height="16" rx="8" fill="#FDE047"/>
+  <text x="110" y="58" font-family="Arial, sans-serif" font-size="8" font-weight="900" fill="#3B0764" text-anchor="middle" letter-spacing="1.2">FOOD PRODUCTS · DADA NAGAR</text>
 </svg>

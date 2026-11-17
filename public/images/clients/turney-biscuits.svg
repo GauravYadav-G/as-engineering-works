@@ -1,5 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
-  <rect width="200" height="60" rx="8" fill="#ffffff"/>
-  <text x="100" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#744210" text-anchor="middle" letter-spacing="0.05em">TURNEY</text>
-  <text x="100" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="#718096" text-anchor="middle" letter-spacing="0.12em">BISCUIT MFRS SRI LANKA</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" width="220" height="80">
+  <defs>
+    <linearGradient id="tb-navy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0C4A6E"/>
+      <stop offset="100%" stop-color="#082F49"/>
+    </linearGradient>
+    <linearGradient id="tb-gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect x="14" y="8" width="192" height="64" rx="10" fill="url(#tb-navy)" stroke="url(#tb-gold)" stroke-width="2.5"/>
+  <rect x="18" y="12" width="184" height="56" rx="7" fill="none" stroke="#FDE047" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
+  
+  <!-- Biscuit wheat badge -->
+  <circle cx="42" cy="40" r="18" fill="none" stroke="url(#tb-gold)" stroke-width="1.5"/>
+  <text x="42" y="44" font-family="Georgia, serif" font-size="9" font-weight="bold" fill="url(#tb-gold)" text-anchor="middle">ESTD</text>
+  <text x="42" y="52" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1987</text>
+  
+  <text x="124" y="35" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="url(#tb-gold)" text-anchor="middle" letter-spacing="2">TURNEY</text>
+  <line x1="72" y1="41" x2="178" y2="41" stroke="url(#tb-gold)" stroke-width="1" opacity="0.8"/>
+  <text x="124" y="51" font-family="Arial, sans-serif" font-size="8.5" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.2">BISCUIT MANUFACTURERS</text>
+  <text x="124" y="61" font-family="Arial, sans-serif" font-size="7.5" font-weight="600" fill="#BAE6FD" text-anchor="middle" letter-spacing="1">KANDY · SRI LANKA</text>
 </svg>

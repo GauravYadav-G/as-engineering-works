@@ -1,5 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
-  <rect width="200" height="60" rx="8" fill="#ffffff"/>
-  <text x="100" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#3182CE" text-anchor="middle" letter-spacing="0.05em">DAMNI</text>
-  <text x="100" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="#718096" text-anchor="middle" letter-spacing="0.12em">FOOD PRODUCTS</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" width="220" height="80">
+  <defs>
+    <linearGradient id="damni-teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#115E59"/>
+    </linearGradient>
+    <linearGradient id="damni-gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect x="15" y="8" width="190" height="64" rx="16" fill="#FFFFFF" stroke="url(#damni-gold)" stroke-width="2"/>
+  <rect x="18" y="11" width="184" height="58" rx="13" fill="url(#damni-teal)"/>
+  
+  <!-- Wheat stalks accents -->
+  <path d="M 35 48 C 30 40 32 30 38 25 M 35 48 C 40 40 38 30 32 25" stroke="url(#damni-gold)" stroke-width="1.5" fill="none"/>
+  <path d="M 185 48 C 180 40 182 30 188 25 M 185 48 C 190 40 188 30 182 25" stroke="url(#damni-gold)" stroke-width="1.5" fill="none"/>
+  
+  <text x="110" y="38" font-family="Arial Black, sans-serif" font-size="23" font-weight="900" fill="url(#damni-gold)" text-anchor="middle" letter-spacing="3">DAMNI</text>
+  <rect x="45" y="46" width="130" height="16" rx="8" fill="#FDE047"/>
+  <text x="110" y="58" font-family="Arial, sans-serif" font-size="8" font-weight="900" fill="#115E59" text-anchor="middle" letter-spacing="1.2">FOOD PRODUCTS · KANPUR</text>
 </svg>

@@ -31,6 +31,7 @@ export function getClientLogo(name: string): string {
 
   // Regional food brands
   if (n.includes("swadist") || n.includes("agarwal")) return "/images/clients/swadist-masala.png";
+  if (n.includes("subas")) return "/images/clients/subas-nutrition.png";
   if (n.includes("fun choice")) return "/images/clients/fun-choice.svg";
   if (n.includes("s.k.") || n.includes("sk food")) return "/images/clients/sk-food.svg";
   if (n.includes("u-like") || n.includes("ulike")) return "/images/clients/u-like.svg";
@@ -41,8 +42,6 @@ export function getClientLogo(name: string): string {
   if (n.includes("damni")) return "/images/clients/damni-food.svg";
   if (n.includes("barry")) return "/images/clients/barry-tarts.svg";
   if (n.includes("shani")) return "/images/clients/shani-food.svg";
-  if (n.includes("swadist") || n.includes("agarwal")) return "/images/clients/swadist-masala.svg";
-  if (n.includes("subas")) return "/images/clients/subas-nutrition.svg";
   if (n.includes("orissa")) return "/images/clients/orissa-confectionery.svg";
   if (n.includes("kalinga")) return "/images/clients/kalinga-food.svg";
   if (n.includes("mill")) return "/images/clients/mill-machinery.svg";
