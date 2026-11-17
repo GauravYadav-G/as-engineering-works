@@ -54,7 +54,7 @@ export const site = {
     "Ability to withstand rugged conditions",
     "Resistance to corrosion",
   ],
-  markets: ["India", "Gulf countries", "Sri-Lanka"],
+  markets: ["India", "Gulf countries", "Sri Lanka"],
   imageNote:
     "Machine images on this website are representative illustrations, not photographs of the machines supplied. Actual machines may differ in design and finish — ask us for current photos and video.",
 } as const;

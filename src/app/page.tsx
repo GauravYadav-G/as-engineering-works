@@ -494,7 +494,7 @@ export default async function HomePage() {
           <SectionHeading
             eyebrow="Clients"
             title="Trusted across India and export markets"
-            description="Food manufacturers across Delhi NCR, Kanpur, Odisha, Sri-Lanka and the Gulf countries — drawn from our published client list."
+            description="Food manufacturers across Delhi NCR, Kanpur, Odisha, Sri Lanka and the Gulf countries — drawn from our published client list."
             link={{ href: "/clients", label: "Clients & reviews" }}
             align="between"
           />

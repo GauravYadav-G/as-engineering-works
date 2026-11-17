@@ -14,7 +14,7 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Clients & Buyer Reviews",
   description:
-    "Food businesses in Delhi NCR, Kanpur, Odisha and Sri-Lanka work with A.S. Engineering Works. See the published client list and buyer feedback.",
+    "Food businesses in Delhi NCR, Kanpur, Odisha and Sri Lanka work with A.S. Engineering Works. See the published client list and buyer feedback.",
 };
 
 export default async function ClientsPage() {

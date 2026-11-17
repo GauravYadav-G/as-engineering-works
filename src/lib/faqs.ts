@@ -27,7 +27,7 @@ export const faqs = [
   {
     question: "Do you supply outside India?",
     answer:
-      "Yes. We are a manufacturer and exporter with an Import Export Code (0504026763), and our clients include companies in the Gulf countries and Sri-Lanka.",
+      "Yes. We are a manufacturer and exporter with an Import Export Code (0504026763), and our clients include companies in the Gulf countries and Sri Lanka.",
   },
   {
     question: "Do you provide installation?",

@@ -78,17 +78,17 @@ const milestones: Milestone[] = [
     period: "Global Footprint",
     badge: "IEC Export Certification",
     title: "Awarded Import Export Code · Cross-border supply",
-    subtitle: "Supplying international food processors in Sri-Lanka & Gulf",
+    subtitle: "Supplying international food processors in Sri Lanka & Gulf",
     description:
-      "Recognized by DGFT with an official Import Export Code (IEC 0504026763), marking the transition from a domestic leader to an international machinery exporter. Established longstanding export relationships with prominent Sri-Lankan food manufacturers — including CBL Foods International, Wijitha Group, Turney Biscuit, and RajaRatta — alongside shipments to Gulf nations.",
+      "Recognized by DGFT with an official Import Export Code (IEC 0504026763), marking the transition from a domestic leader to an international machinery exporter. Established longstanding export relationships with prominent Sri Lankan food manufacturers — including CBL Foods International, Wijitha Group, Turney Biscuit, and RajaRatta — alongside shipments to Gulf nations.",
     highlights: [
       "DGFT Import Export Code issued: IEC 0504026763",
-      "First international processing lines commissioned in Sri-Lanka",
+      "First international processing lines commissioned in Sri Lanka",
       "Export container crating and tropical-environment engineering standards adopted",
     ],
     tags: [
       { label: "IEC 0504026763", icon: "doc" },
-      { label: "Sri-Lanka & Gulf Exports", icon: "globe" },
+      { label: "Sri Lanka & Gulf Exports", icon: "globe" },
       { label: "CBL Foods & Wijitha Group", icon: "shield" },
     ],
     statNote: "International Exporter",
@@ -143,7 +143,7 @@ const milestones: Milestone[] = [
     title: "42+ years of legacy · 50,000+ machines delivered",
     subtitle: "Over 2,000 food processing plants commissioned worldwide",
     description:
-      "Reaching over four decades of engineering resilience. With 50,000+ machines delivered and 2,000+ commercial processing lines commissioned across India, Sri-Lanka, and international markets, A.S. Engineering Works combines 42+ years of foundational workshop experience with modern high-yield extrusion and seasoning technologies.",
+      "Reaching over four decades of engineering resilience. With 50,000+ machines delivered and 2,000+ commercial processing lines commissioned across India, Sri Lanka, and international markets, A.S. Engineering Works combines 42+ years of foundational workshop experience with modern high-yield extrusion and seasoning technologies.",
     highlights: [
       "42+ years of continuous food machinery manufacturing since 1984",
       "50,000+ food processing and extrusion machines built and delivered",

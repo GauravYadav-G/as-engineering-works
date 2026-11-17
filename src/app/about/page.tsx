@@ -76,7 +76,7 @@ export default async function AboutPage() {
                 We are a proprietorship firm functioning under the visionary guidance of{" "}
                 <strong className="font-medium text-forest">Mr. Akhtar Ali Khan</strong>. With his
                 rich industry experience and leadership, the organisation has grown to serve a large
-                clientele across the Gulf countries, Sri-Lanka and India.
+                clientele across the Gulf countries, Sri Lanka and India.
               </p>
             </div>
 
