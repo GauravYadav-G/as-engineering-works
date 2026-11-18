@@ -120,7 +120,7 @@ export default async function AboutPage() {
                   src="/images/real/akhtar-ali-khan-workshop.jpg"
                   alt="Founder Mr. Akhtar Ali Khan at the A.S. Engineering Works workshop in Noida"
                   loading="lazy"
-                  className="aspect-[5/4] w-full object-cover object-[center_28%]"
+                  className="aspect-[4/5] max-h-[520px] w-full object-cover object-top"
                 />
               </div>
               <p className="mt-2.5 font-mono text-[11.5px] text-sage/80">
