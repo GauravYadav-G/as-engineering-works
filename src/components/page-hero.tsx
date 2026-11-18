@@ -23,9 +23,10 @@ export function PageHero({
             src={image}
             alt=""
             aria-hidden
-            className="absolute inset-y-0 right-0 hidden h-full w-[52%] object-cover opacity-40 lg:block"
+            className="absolute inset-y-0 right-0 h-full w-full object-cover opacity-25 sm:opacity-35 md:w-[58%] lg:w-[52%] lg:opacity-45"
           />
-          <div className="absolute inset-y-0 right-0 hidden w-[52%] bg-gradient-to-r from-[#0e1113] via-[#0e1113]/65 to-transparent lg:block" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0e1113] via-[#0e1113]/85 to-[#0e1113]/60 md:hidden" />
+          <div className="absolute inset-y-0 right-0 hidden w-[58%] bg-gradient-to-r from-[#0e1113] via-[#0e1113]/65 to-transparent md:block lg:w-[52%]" />
         </>
       )}
       <div className="wrap relative py-16 md:py-24">

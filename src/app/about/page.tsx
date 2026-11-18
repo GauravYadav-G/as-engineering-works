@@ -40,7 +40,7 @@ export default async function AboutPage() {
         }
         description="A.S. Engineering Works commenced operations in 1984 as a manufacturer and exporter of a comprehensive range of food extrusion machines, under the guidance of Mr. Akhtar Ali Khan."
         breadcrumb={[{ label: "About" }]}
-        image="/images/hero-line.jpg"
+        image="/images/pages-hero/Gemini_Generated_Image_sarb00sarb00sarb.png"
       />
 
       <section className="bg-bone py-20 md:py-28">

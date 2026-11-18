@@ -191,10 +191,10 @@ export default async function HomePage() {
             <div className="col-span-2 overflow-hidden rounded-2xl bg-sand">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/home/noida-machinery-facility.jpg"
-                alt="A.S. Engineering Works manufacturing facility and food processing lines in Noida"
+                src="/images/real/akhtar-ali-khan-workshop.jpg"
+                alt="Founder Mr. Akhtar Ali Khan at the A.S. Engineering Works workshop in Noida"
                 loading="lazy"
-                className="aspect-[16/10] w-full object-cover"
+                className="aspect-[16/10] w-full object-cover object-[center_28%]"
               />
             </div>
             <div className="overflow-hidden rounded-xl bg-sand">

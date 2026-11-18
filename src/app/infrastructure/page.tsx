@@ -24,7 +24,7 @@ export default function InfrastructurePage() {
         }
         description="A well established manufacturing unit in Noida, organised into divisions for efficient working, with research, development and quality testing alongside production."
         breadcrumb={[{ label: "Facility" }]}
-        image="/images/hero-line.jpg"
+        image="/images/pages-hero/Gemini_Generated_Image_t2rw6dt2rw6dt2rw.png"
       />
 
       <section className="bg-bone py-20 md:py-28">

@@ -61,7 +61,7 @@ export default async function ProductsPage({
         title="Machines for every stage of the line."
         description="Extruders, dryers, roasters, seasoning and handling equipment from the A.S. Engineering Works catalogue. Custom output configurations and quotations available on request."
         breadcrumb={[{ label: "Machines" }]}
-        image="/images/extruder.jpg"
+        image="/images/pages-hero/Gemini_Generated_Image_l7ffr3l7ffr3l7ff.png"
       />
 
       <section className="border-b border-forest/[0.06] bg-white py-5 lg:sticky lg:top-[88px] lg:z-30 lg:bg-white/95 lg:backdrop-blur-md">
@@ -69,11 +69,10 @@ export default async function ProductsPage({
           <div className="flex flex-wrap items-center gap-2">
             <Link
               href="/products"
-              className={`rounded-full border px-4 py-2 text-[13.5px] font-medium transition ${
-                activeCategory === "all"
-                  ? "border-forest bg-forest text-white"
-                  : "border-forest/12 bg-white text-forest/70 hover:border-forest/35 hover:text-forest"
-              }`}
+              className={`rounded-full border px-4 py-2 text-[13.5px] font-medium transition ${activeCategory === "all"
+                ? "border-forest bg-forest text-white"
+                : "border-forest/12 bg-white text-forest/70 hover:border-forest/35 hover:text-forest"
+                }`}
             >
               All machines
               <span className="ml-1.5 font-mono text-[11px] opacity-70 tabular">
@@ -84,11 +83,10 @@ export default async function ProductsPage({
               <Link
                 key={item.slug}
                 href={`/products?category=${item.slug}`}
-                className={`rounded-full border px-4 py-2 text-[13.5px] font-medium transition ${
-                  activeCategory === item.slug
-                    ? "border-forest bg-forest text-white"
-                    : "border-forest/12 bg-white text-forest/70 hover:border-forest/35 hover:text-forest"
-                }`}
+                className={`rounded-full border px-4 py-2 text-[13.5px] font-medium transition ${activeCategory === item.slug
+                  ? "border-forest bg-forest text-white"
+                  : "border-forest/12 bg-white text-forest/70 hover:border-forest/35 hover:text-forest"
+                  }`}
               >
                 {item.name}
                 <span className="ml-1.5 font-mono text-[11px] opacity-70 tabular">

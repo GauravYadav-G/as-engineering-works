@@ -30,7 +30,7 @@ export default async function ContactPage() {
         }
         description="Share your product, target output and location. Our team will review your requirement and respond with suitable machinery options and a quotation."
         breadcrumb={[{ label: "Contact" }]}
-        image="/images/seasoning.jpg"
+        image="/images/pages-hero/Gemini_Generated_Image_nhg6psnhg6psnhg6.png"
       />
 
       <section className="bg-bone py-16 md:py-24">
