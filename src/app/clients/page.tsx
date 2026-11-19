@@ -39,7 +39,7 @@ export default async function ClientsPage() {
         }
         description="Built through long-term relationships with domestic and international clients. Below is our published client list and buyer feedback."
         breadcrumb={[{ label: "Clients" }]}
-        image="/images/pages-hero/Gemini_Generated_Image_m1jeo3m1jeo3m1je.png"
+        image="/images/pages-hero/Gemini_Generated_Image_m1jeo3m1jeo3m1je.webp"
       />
 
       {lead && (

@@ -61,7 +61,7 @@ export default async function ProductsPage({
         title="Machines for every stage of the line."
         description="Extruders, dryers, roasters, seasoning and handling equipment from the A.S. Engineering Works catalogue. Custom output configurations and quotations available on request."
         breadcrumb={[{ label: "Machines" }]}
-        image="/images/pages-hero/Gemini_Generated_Image_l7ffr3l7ffr3l7ff.png"
+        image="/images/pages-hero/Gemini_Generated_Image_l7ffr3l7ffr3l7ff.webp"
       />
 
       <section className="border-b border-forest/[0.06] bg-white py-5 lg:sticky lg:top-[88px] lg:z-30 lg:bg-white/95 lg:backdrop-blur-md">
@@ -140,7 +140,7 @@ export default async function ProductsPage({
         </div>
       </section>
 
-      <section className="bg-bone py-14 md:py-20">
+      <section className="bg-[#ffffff] py-14 md:py-20">
         <div className="wrap">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>

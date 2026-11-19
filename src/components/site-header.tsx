@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { solutions } from "@/data/solutions";
 import { site } from "@/lib/site";
@@ -30,11 +30,52 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileSection, setMobileSection] = useState<"solutions" | "machines" | null>(null);
   const [scrolled, setScrolled] = useState(false);
+  const [activeMenu, setActiveMenu] = useState<"solutions" | "machines" | null>(null);
+  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = (menu: "solutions" | "machines") => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+      closeTimeoutRef.current = null;
+    }
+    setActiveMenu(menu);
+  };
+
+  const handleMouseLeave = () => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+    }
+    closeTimeoutRef.current = setTimeout(() => {
+      setActiveMenu(null);
+    }, 150);
+  };
+
+  const handleClose = () => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+      closeTimeoutRef.current = null;
+    }
+    setActiveMenu(null);
+  };
 
   useEffect(() => {
     setMobileOpen(false);
     setMobileSection(null);
+    handleClose();
   }, [pathname]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        handleClose();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+    };
+  }, []);
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
@@ -98,24 +139,51 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
           {links.map((link) => {
             const active = pathname === link.href || pathname.startsWith(`${link.href}/`);
             const isDropdown = "menu" in link;
+            const isOpen = isDropdown && activeMenu === link.menu;
             return (
-              <div key={link.label} className="group relative">
+              <div
+                key={link.label}
+                className="relative"
+                onMouseEnter={isDropdown ? () => handleMouseEnter(link.menu) : undefined}
+                onMouseLeave={isDropdown ? handleMouseLeave : undefined}
+                onFocus={isDropdown ? () => handleMouseEnter(link.menu) : undefined}
+                onBlur={
+                  isDropdown
+                    ? (e) => {
+                        if (!e.currentTarget.contains(e.relatedTarget as Node | null)) {
+                          handleClose();
+                        }
+                      }
+                    : undefined
+                }
+              >
                 <Link
                   href={link.href}
+                  onClick={handleClose}
                   className={`flex h-[88px] items-center gap-1.5 px-3.5 text-[15px] font-medium tracking-[-0.005em] whitespace-nowrap transition-colors ${
                     active ? "text-forest font-semibold" : "text-forest/65 hover:text-forest"
                   }`}
                 >
                   {link.label}
                   {isDropdown && (
-                    <IconChevronDown className="h-3.5 w-3.5 opacity-55 transition-transform duration-200 group-hover:rotate-180" />
+                    <IconChevronDown
+                      className={`h-3.5 w-3.5 opacity-55 transition-transform duration-200 ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                    />
                   )}
                 </Link>
                 {active && (
                   <span className="pointer-events-none absolute inset-x-3.5 bottom-0 h-[2px] bg-forest" />
                 )}
                 {isDropdown && (
-                  <div className="invisible absolute top-full left-1/2 w-[580px] -translate-x-1/2 translate-y-1.5 pt-2 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+                  <div
+                    className={`absolute top-full left-1/2 w-[580px] -translate-x-1/2 pt-2 transition-all duration-200 ${
+                      isOpen
+                        ? "visible translate-y-0 opacity-100 pointer-events-auto"
+                        : "invisible translate-y-1.5 opacity-0 pointer-events-none"
+                    }`}
+                  >
                     <div className="rounded-2xl border border-forest/[0.08] bg-white/98 p-6 shadow-[0_24px_60px_-20px_rgba(17,20,22,0.16)] backdrop-blur-xl">
                       <div className="mb-4 flex items-center justify-between border-b border-forest/[0.06] pb-3.5">
                         <span className="eyebrow text-sage">
@@ -123,6 +191,7 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
                         </span>
                         <Link
                           href={link.href}
+                          onClick={handleClose}
                           className="inline-flex items-center gap-1 text-[13.5px] font-medium text-forest/70 transition hover:text-forest"
                         >
                           View all <IconArrowRight className="h-3.5 w-3.5" />
@@ -134,6 +203,7 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
                               <Link
                                 key={solution.slug}
                                 href={`/solutions/${solution.slug}`}
+                                onClick={handleClose}
                                 className="rounded-lg px-2.5 py-2 text-[14px] font-medium text-forest/80 transition hover:bg-bone hover:text-forest"
                               >
                                 {solution.name}
@@ -143,6 +213,7 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
                               <Link
                                 key={category.slug}
                                 href={`/products?category=${category.slug}`}
+                                onClick={handleClose}
                                 className="rounded-lg px-2.5 py-2 text-[14px] font-medium text-forest/80 transition hover:bg-bone hover:text-forest"
                               >
                                 {category.name}
@@ -153,6 +224,7 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
                         <span>Custom specification needed?</span>
                         <Link
                           href="/contact"
+                          onClick={handleClose}
                           className="font-medium text-forest transition hover:opacity-70"
                         >
                           Tell us your output →

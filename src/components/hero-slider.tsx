@@ -12,7 +12,7 @@ const slides = [
     title: "Soya Chunk & Nugget Plants",
     description:
       "Complete commercial plants and heavy-duty twin-screw extruders for textured soya chunks, bari, soya chaap, and protein nuggets. High-torque barrels, precision cutter heads, and controlled drying systems.",
-    image: "/images/hero_slider/Gemini_Generated_Image_681d7x681d7x681d-clean.png",
+    image: "/images/hero_slider/Gemini_Generated_Image_681d7x681d7x681d-clean.webp",
     alt: "A.S. Engineering Works commercial soya chunks and nugget processing plant extruder",
     href: "/solutions/soya-nuggets",
     cta: "Soya chunk plants",
@@ -23,7 +23,7 @@ const slides = [
     title: "Continuous Kurkure Extruders",
     description:
       "Heavy-duty rotary die friction extruders producing authentic irregular, crunchy curled kurkure collets. Matched with continuous roasting, frying and automated slurry flavouring systems.",
-    image: "/images/hero_slider/Gemini_Generated_Image_vduxz4vduxz4vdux-clean.png",
+    image: "/images/hero_slider/Gemini_Generated_Image_vduxz4vduxz4vdux-clean.webp",
     alt: "A.S. Engineering Works continuous kurkure and corn stick extruder machine",
     href: "/solutions/kurkure-corn-sticks",
     cta: "Kurkure extruders",
@@ -34,7 +34,7 @@ const slides = [
     title: "Snacks & Corn Puff Extruders",
     description:
       "High-yield food extruders with interchangeable precision dies for spherical cheese balls, tubular corn puffs, rings, twists, and kachri. Built for high expansion ratios and continuous output.",
-    image: "/images/hero_slider/Gemini_Generated_Image_nutrfonutrfonutr-clean.png",
+    image: "/images/hero_slider/Gemini_Generated_Image_nutrfonutrfonutr-clean.webp",
     alt: "A.S. Engineering Works commercial snacks and corn puff extruder machine",
     href: "/solutions/corn-puffs",
     cta: "Puff extruders",
@@ -45,7 +45,7 @@ const slides = [
     title: "Vacuum Pasta Extrusion Plants",
     description:
       "Heavy-duty vacuum mixing and extrusion plants producing smooth, bubble-free macaroni, penne, spirals, and vermicelli with precision brass dies and multi-tier static drying systems.",
-    image: "/images/hero_slider/Gemini_Generated_Image_w4my01w4my01w4my-clean.png",
+    image: "/images/hero_slider/Gemini_Generated_Image_w4my01w4my01w4my-clean.webp",
     alt: "A.S. Engineering Works industrial vacuum pasta and macaroni extruder plant",
     href: "/solutions/pasta-macaroni",
     cta: "Pasta plants",
@@ -56,7 +56,7 @@ const slides = [
     title: "Commercial Macaroni Plants",
     description:
       "Heavy-duty commercial macaroni extrusion plants producing smooth, uniform macaroni with stainless steel preconditioning, high-pressure extrusion barrels, and continuous drying.",
-    image: "/images/hero_slider/Gemini_Generated_Image_1v8m4n1v8m4n1v8m-clean.png",
+    image: "/images/hero_slider/Gemini_Generated_Image_1v8m4n1v8m4n1v8m-clean.webp",
     alt: "A.S. Engineering Works commercial macaroni making extruder plant",
     href: "/solutions/pasta-macaroni",
     cta: "Macaroni plants",

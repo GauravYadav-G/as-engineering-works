@@ -49,7 +49,7 @@ const stages = [
     name: "Drying",
     note: "Tray, static and continuous dryers for controlled drying.",
     image: "/images/machines/tray-dryer.jpg",
-    alt: "Representative image of a tray dryer",
+    alt: "A.S. Engineering Works continuous snack roaster and industrial drying plant",
     href: "/products?category=dryers-roasters",
   },
   {

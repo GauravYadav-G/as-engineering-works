@@ -9,8 +9,9 @@
   --color-sage: #6d757c;
   --color-brass: #1b4332;
   --color-brasslight: #c8b89e;
-  --color-bone: #f9f9f7;
-  --color-sand: #f0f0ec;
+  --color-bone: #f5f4f0;
+  --color-sand: #edece7;
+  --color-white: #ffffff;
   --color-clay: #9e4738;
 
   --font-sans: var(--font-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", ui-sans-serif, system-ui, sans-serif;
