@@ -123,7 +123,7 @@ export function HeroSlider() {
               src={item.image}
               alt={item.alt}
               fetchPriority={index === 0 ? "high" : "auto"}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover object-[center_58%]"
             />
           </Link>
         ) : null,
