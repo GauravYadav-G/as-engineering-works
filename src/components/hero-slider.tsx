@@ -70,6 +70,7 @@ export function HeroSlider() {
   const [seen, setSeen] = useState<number[]>([0, 1]);
   const [paused, setPaused] = useState(false);
   const regionRef = useRef<HTMLElement>(null);
+  const touchStartX = useRef(0);
 
   const show = useCallback((index: number) => {
     setSeen((current) => {
@@ -86,6 +87,22 @@ export function HeroSlider() {
   const next = useCallback(() => {
     show((active + 1) % slides.length);
   }, [active, show]);
+
+  /* Touch swipe for mobile */
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  }, []);
+
+  const handleTouchEnd = useCallback(
+    (e: React.TouchEvent) => {
+      const diff = touchStartX.current - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) next();
+        else prev();
+      }
+    },
+    [next, prev],
+  );
 
   useEffect(() => {
     if (paused) return;
@@ -106,6 +123,8 @@ export function HeroSlider() {
       onBlur={(event) => {
         if (!regionRef.current?.contains(event.relatedTarget as Node | null)) setPaused(false);
       }}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       {slides.map((item, index) =>
         seen.includes(index) ? (
@@ -134,7 +153,7 @@ export function HeroSlider() {
         type="button"
         onClick={prev}
         aria-label="Previous slide"
-        className="grid absolute left-3 sm:left-6 lg:left-8 top-1/2 -translate-y-1/2 z-20 h-10 w-10 sm:h-12 sm:w-12 place-items-center rounded-full border border-white/25 bg-black/35 text-white backdrop-blur-md transition-all duration-200 hover:scale-105 hover:bg-black/60 hover:border-white/50 active:scale-95 shadow-[0_4px_16px_rgba(0,0,0,0.35)]"
+        className="hidden sm:grid absolute left-6 lg:left-8 top-1/2 -translate-y-1/2 z-20 sm:h-12 sm:w-12 place-items-center rounded-full border border-white/25 bg-black/35 text-white backdrop-blur-md transition-all duration-200 hover:scale-105 hover:bg-black/60 hover:border-white/50 active:scale-95 shadow-[0_4px_16px_rgba(0,0,0,0.35)]"
       >
         <IconChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
       </button>
@@ -143,7 +162,7 @@ export function HeroSlider() {
         type="button"
         onClick={next}
         aria-label="Next slide"
-        className="grid absolute right-3 sm:right-6 lg:right-8 top-1/2 -translate-y-1/2 z-20 h-10 w-10 sm:h-12 sm:w-12 place-items-center rounded-full border border-white/25 bg-black/35 text-white backdrop-blur-md transition-all duration-200 hover:scale-105 hover:bg-black/60 hover:border-white/50 active:scale-95 shadow-[0_4px_16px_rgba(0,0,0,0.35)]"
+        className="hidden sm:grid absolute right-6 lg:right-8 top-1/2 -translate-y-1/2 z-20 sm:h-12 sm:w-12 place-items-center rounded-full border border-white/25 bg-black/35 text-white backdrop-blur-md transition-all duration-200 hover:scale-105 hover:bg-black/60 hover:border-white/50 active:scale-95 shadow-[0_4px_16px_rgba(0,0,0,0.35)]"
       >
         <IconChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
       </button>
