@@ -19,14 +19,14 @@ export function ProductCard({
       href={`/products/${product.slug}`}
       className="group flex h-full flex-col overflow-hidden rounded-xl border border-forest/[0.07] bg-white transition-all duration-300 hover:-translate-y-0.5 hover:border-forest/[0.16] hover:shadow-[0_24px_48px_-28px_rgba(17,20,22,0.18)]"
     >
-      <div className="relative aspect-[4/3] overflow-hidden bg-white p-4 flex items-center justify-center">
+      <div className="relative aspect-[4/3] overflow-hidden bg-white p-2 sm:p-2.5 flex items-center justify-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={product.image}
           alt={`${caption}: ${product.name}`}
           loading="lazy"
           decoding="async"
-          className="h-full w-full object-contain transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+          className="h-full w-full object-contain scale-[1.06] transition-transform duration-500 ease-out group-hover:scale-[1.10]"
         />
       </div>
 

@@ -97,11 +97,10 @@ export default async function SolutionDetailPage({
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={solution.image}
-                alt={`${solution.name} — illustrative image`}
+                alt={solution.name}
                 className="aspect-[5/4] w-full object-cover"
               />
             </div>
-            <p className="mt-3 font-mono text-[11.5px] text-sage/80">Illustrative image</p>
           </div>
         </div>
       </section>

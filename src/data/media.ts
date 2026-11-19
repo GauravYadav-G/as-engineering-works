@@ -22,7 +22,7 @@ const original = (filename: string, source: string): MediaAsset => ({
 const stock = (filename: string, id: number, credit: string): MediaAsset => ({
   path: `/images/applications/${filename}`,
   source: `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1500`,
-  credit: `Illustrative application photo · ${credit} / Pexels`,
+  credit: `Application photo · ${credit}`,
 });
 
 export const machineAssets: Record<string, MediaAsset> = {

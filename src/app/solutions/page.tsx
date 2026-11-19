@@ -50,7 +50,7 @@ export default function SolutionsPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/applications/seasoned-snacks.jpg"
-                alt="Illustrative seasoned corn stick snack application"
+                alt="Seasoned corn stick snack application"
                 className="h-full w-full object-cover"
               />
             </div>
@@ -58,7 +58,7 @@ export default function SolutionsPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/applications/pasta.jpg"
-                alt="Illustrative pasta application"
+                alt="Pasta application"
                 className="h-full w-full object-cover"
               />
             </div>
@@ -132,9 +132,6 @@ export default function SolutionsPage() {
               );
             })}
           </div>
-          <p className="mt-8 font-mono text-[10.5px] text-sage/75">
-            Snack and machine images are illustrative.
-          </p>
         </div>
       </section>
 

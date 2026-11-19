@@ -103,12 +103,12 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <section className="bg-white py-12 md:py-16">
         <div className="wrap grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16">
           <div>
-            <div className="flex items-center justify-center overflow-hidden rounded-2xl border border-forest/[0.07] bg-white p-6 md:p-8">
+            <div className="flex items-center justify-center overflow-hidden rounded-2xl border border-forest/[0.07] bg-white p-3.5 md:p-5">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={product.image}
                 alt={`${productImageCaption(product.slug)} for ${product.name}`}
-                className="aspect-[4/3] w-full object-contain"
+                className="aspect-[4/3] w-full object-contain scale-[1.04]"
               />
             </div>
 
@@ -279,7 +279,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={solution.image}
-                          alt={`${solution.name} — illustrative image`}
+                          alt={solution.name}
                           loading="lazy"
                           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                         />

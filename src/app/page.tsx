@@ -35,7 +35,7 @@ const lineHighlights = [
     title: "Soya chunk & nugget plants",
     description:
       "High-yield Textured Soya Protein (TSP) extruders and complete plants for soya bari, chunks, and chaap with high output and precision drying.",
-    image: "/images/machines/soya-extruder-plant.jpg",
+    image: "/images/pages-hero/Gemini_Generated_Image_l7ffr3l7ffr3l7ff.png",
     alt: "A.S. Engineering Works commercial soya chunk and nugget extruder plant in Noida",
     href: "/solutions/soya-nuggets",
     details: ["TSP extrusion", "2.5–3 ton/day", "Bari & chunks"],
@@ -45,7 +45,7 @@ const lineHighlights = [
     title: "Kurkure & corn stick lines",
     description:
       "Continuous rotary die friction extruders giving authentic irregular crunchy curls, with continuous roasting, frying and automated flavouring.",
-    image: "/images/machines/kurkure-extruder-hero.jpg",
+    image: "/images/pages-hero/Gemini_Generated_Image_m1jeo3m1jeo3m1je.png",
     alt: "A.S. Engineering Works continuous kurkure making machine and line",
     href: "/solutions/kurkure-corn-sticks",
     details: ["Kurkure extruders", "80–100 kg/hr", "Continuous seasoning"],
@@ -55,7 +55,7 @@ const lineHighlights = [
     title: "Corn puff & snacks puff lines",
     description:
       "High-speed snack extruders paired with roasting and flavour coating for cheese balls, round puffs, rings, twists, and kachri.",
-    image: "/images/machines/corn-puff-extruder-hero.jpg",
+    image: "/images/pages-hero/Gemini_Generated_Image_t2rw6dt2rw6dt2rw.png",
     alt: "A.S. Engineering Works industrial corn puff and snacks extruder machine",
     href: "/solutions/corn-puffs",
     details: ["Puff extruders", "100–250 kg/hr", "Cheese balls & rings"],
@@ -65,7 +65,7 @@ const lineHighlights = [
     title: "Macaroni & pasta plants",
     description:
       "Commercial vacuum mixing and extrusion plants producing smooth, bubble-free macaroni, penne, spirals, and vermicelli with brass dies.",
-    image: "/images/machines/pasta-macaroni-plant-hero.jpg",
+    image: "/images/pages-hero/Gemini_Generated_Image_nhg6psnhg6psnhg6.png",
     alt: "A.S. Engineering Works industrial vacuum pasta and macaroni extruder plant",
     href: "/solutions/pasta-macaroni",
     details: ["Vacuum extrusion", "Bronze & brass dies", "Multi-tier drying"],
@@ -242,7 +242,7 @@ export default async function HomePage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={solution.image}
-                    alt={`${solution.name} — illustrative image`}
+                    alt={solution.name}
                     loading="lazy"
                     className="aspect-[4/4.4] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                   />
