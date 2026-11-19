@@ -1,6 +1,3 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 import { Reveal } from "@/components/reveal";
@@ -74,21 +71,6 @@ const stages = [
 ] as const;
 
 export function ProcessRail() {
-  const [isHovered, setIsHovered] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.innerWidth < 1024) return;
-    const video = videoRef.current;
-    if (!video) return;
-    video.muted = true;
-    video.volume = 0;
-    const playPromise = video.play();
-    if (playPromise !== undefined) {
-      playPromise.catch(() => {});
-    }
-  }, []);
-
   return (
     <section aria-labelledby="process-rail-title" className="bg-white py-20 md:py-28">
       <div className="wrap">
@@ -110,80 +92,47 @@ export function ProcessRail() {
         </Reveal>
 
         <Reveal className="mt-12">
-          {/* Card rail container with video overlay */}
-          <div
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            className="group/rail relative rounded-2xl"
-          >
-            {/* The 8 Stages Cards */}
-            <ol className="hide-scrollbar flex snap-x snap-mandatory gap-3 overflow-x-auto pb-2 lg:gap-2.5 lg:overflow-visible">
-              {stages.map((stage) => (
-                <li
-                  key={stage.name}
-                  className="group shrink-0 basis-[74%] snap-start sm:basis-[42%] lg:flex-1 lg:basis-0 lg:transition-[flex] lg:duration-700 lg:ease-[cubic-bezier(0.22,1,0.36,1)] lg:hover:flex-[2.2] lg:focus-within:flex-[2.2]"
-                >
-                  <Link
-                    href={stage.href}
-                    className="relative block h-[430px] overflow-hidden rounded-2xl bg-sand lg:h-[540px]"
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={stage.image}
-                      alt={stage.alt}
-                      loading="lazy"
-                      decoding="async"
-                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.05]"
-                    />
-                    <div
-                      aria-hidden
-                      className="absolute inset-0 bg-gradient-to-t from-[#0c0f11]/90 via-[#0c0f11]/15 to-transparent"
-                    />
-                    <span className="tabular absolute top-5 left-5 font-mono text-[12.5px] font-medium tracking-[0.12em] text-white/90">
-                      {stage.number}
-                    </span>
-
-                    <div className="absolute inset-x-0 bottom-0 flex flex-col p-4 lg:p-5">
-                      <p className="order-2 mt-2.5 max-w-[280px] text-[14px] leading-[1.6] text-white/85 transition-all duration-500 ease-out lg:order-1 lg:mt-0 lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 lg:group-focus-within:translate-y-0 lg:group-focus-within:opacity-100">
-                        {stage.note}
-                      </p>
-                      <span className="order-3 mt-4 inline-flex items-center gap-1.5 text-[13px] font-medium text-white/95 transition-opacity duration-500 lg:order-1 lg:mt-0 lg:mb-4 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
-                        Explore stage <IconArrowUpRight className="h-3.5 w-3.5" />
-                      </span>
-                      <h3 className="order-1 text-[18px] leading-tight font-semibold tracking-[-0.015em] text-white transition-[font-size] duration-500 lg:order-2 lg:text-[17px] lg:group-hover:text-[21px]">
-                        {stage.name}
-                      </h3>
-                    </div>
-                  </Link>
-                </li>
-              ))}
-            </ol>
-
-            {/* Video Overlay: sits over the 8 cards until hovered (desktop only, hidden on mobile) */}
-            <div
-              aria-hidden={isHovered}
-              className={`hidden lg:block absolute inset-0 z-20 overflow-hidden rounded-2xl pointer-events-none transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-                isHovered
-                  ? "opacity-0 scale-[1.01]"
-                  : "opacity-100 scale-100 group-hover/rail:opacity-0 group-hover/rail:scale-[1.01] group-focus-within/rail:opacity-0"
-              }`}
-            >
-              <video
-                ref={videoRef}
-                src="/video/new.mp4"
-                poster="/video/snack-production-line-poster.jpg"
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="metadata"
-                className="h-full w-full object-cover"
+          <ol className="hide-scrollbar flex snap-x snap-mandatory gap-3 overflow-x-auto pb-2 lg:gap-2.5 lg:overflow-visible">
+            {stages.map((stage) => (
+              <li
+                key={stage.name}
+                className="group shrink-0 basis-[74%] snap-start sm:basis-[42%] lg:flex-1 lg:basis-0 lg:transition-[flex] lg:duration-700 lg:ease-[cubic-bezier(0.22,1,0.36,1)] lg:hover:flex-[2.2] lg:focus-within:flex-[2.2]"
               >
-                <source src="/video/new.mp4" type="video/mp4" />
-                <source src="/video/snack-production-line.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </div>
+                <Link
+                  href={stage.href}
+                  className="relative block h-[430px] overflow-hidden rounded-2xl bg-sand lg:h-[540px]"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={stage.image}
+                    alt={stage.alt}
+                    loading="lazy"
+                    decoding="async"
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.05]"
+                  />
+                  <div
+                    aria-hidden
+                    className="absolute inset-0 bg-gradient-to-t from-[#0c0f11]/90 via-[#0c0f11]/15 to-transparent"
+                  />
+                  <span className="tabular absolute top-5 left-5 font-mono text-[12.5px] font-medium tracking-[0.12em] text-white/90">
+                    {stage.number}
+                  </span>
+
+                  <div className="absolute inset-x-0 bottom-0 flex flex-col p-4 lg:p-5">
+                    <p className="order-2 mt-2.5 max-w-[280px] text-[14px] leading-[1.6] text-white/85 transition-all duration-500 ease-out lg:order-1 lg:mt-0 lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 lg:group-focus-within:translate-y-0 lg:group-focus-within:opacity-100">
+                      {stage.note}
+                    </p>
+                    <span className="order-3 mt-4 inline-flex items-center gap-1.5 text-[13px] font-medium text-white/95 transition-opacity duration-500 lg:order-1 lg:mt-0 lg:mb-4 lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-within:opacity-100">
+                      Explore stage <IconArrowUpRight className="h-3.5 w-3.5" />
+                    </span>
+                    <h3 className="order-1 text-[18px] leading-tight font-semibold tracking-[-0.015em] text-white transition-[font-size] duration-500 lg:order-2 lg:text-[17px] lg:group-hover:text-[21px]">
+                      {stage.name}
+                    </h3>
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ol>
         </Reveal>
       </div>
     </section>
