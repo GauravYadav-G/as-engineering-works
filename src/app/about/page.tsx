@@ -4,6 +4,7 @@ import Link from "next/link";
 import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
+import { FounderSpotlight } from "@/components/founder-spotlight";
 import { CompanyJourney } from "@/components/company-journey";
 import {
   IconArrowRight,
@@ -114,20 +115,21 @@ export default async function AboutPage() {
 
           <div className="space-y-6">
             <div>
-              <div className="overflow-hidden rounded-2xl border border-forest/[0.07] bg-sand">
+              <div className="overflow-hidden rounded-2xl border border-forest/[0.07] bg-sand shadow-2xs">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/real/akhtar-ali-khan-workshop.jpg"
-                  alt="Founder Mr. Akhtar Ali Khan at the A.S. Engineering Works workshop in Noida"
+                  src="/images/owner/founder-executive-office.webp"
+                  alt="Founder Mr. Akhtar Ali Khan at A.S. Engineering Works headquarters in Noida"
                   loading="lazy"
-                  className="aspect-[4/5] max-h-[520px] w-full object-cover object-top"
+                  className="aspect-[4/3] w-full object-cover object-center"
                 />
               </div>
-              <p className="mt-2.5 font-mono text-[11.5px] text-sage/80">
-                Founder Mr. Akhtar Ali Khan at A.S. Engineering Works workshop, Noida
-              </p>
+              <div className="mt-2.5 flex items-center justify-between text-[11.5px] font-mono text-sage">
+                <span>Founder Mr. Akhtar Ali Khan at Noida HQ</span>
+                <span className="text-moss font-medium">Est. 1984</span>
+              </div>
             </div>
-            <div className="rounded-2xl border border-forest/[0.07] bg-white p-7">
+            <div className="rounded-2xl border border-forest/[0.07] bg-white p-7 shadow-2xs">
               <p className="eyebrow text-sage">Vision</p>
               <p className="mt-3 text-[15px] leading-[1.8] text-forest/75">{site.vision}</p>
               <p className="eyebrow mt-7 text-sage">Mission</p>
@@ -136,6 +138,9 @@ export default async function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Founder Leadership & Visual Archive Spotlight */}
+      <FounderSpotlight />
 
       {/* 42+ Years Company Journey & Milestone Flowchart Diagram */}
       <CompanyJourney />
