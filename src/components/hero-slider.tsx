@@ -116,7 +116,7 @@ export function HeroSlider() {
       ref={regionRef}
       aria-label="Featured processing solutions"
       aria-roledescription="carousel"
-      className="relative isolate overflow-hidden bg-[#0c0f11] text-white w-full aspect-[4/3] sm:aspect-[16/9] lg:aspect-[47/22] max-h-[80vh]"
+      className="relative isolate overflow-hidden bg-[#0c0f11] text-white w-full aspect-[4/3] sm:aspect-[16/9] lg:aspect-[47/22] max-h-[84vh]"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
