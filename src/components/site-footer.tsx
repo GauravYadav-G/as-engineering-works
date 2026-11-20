@@ -137,7 +137,7 @@ export function SiteFooter({ categories }: { categories: FooterCategory[] }) {
               rel="noopener noreferrer"
               className="font-medium text-white/75 transition hover:text-white underline underline-offset-4 decoration-white/30 hover:decoration-white"
             >
-              Arka Technovation
+              Arka Technovation Private Limited
             </a>
           </p>
         </div>
