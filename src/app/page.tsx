@@ -191,28 +191,28 @@ export default async function HomePage() {
             <div className="col-span-2 overflow-hidden rounded-2xl bg-sand">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
+                src="/images/owner/founder-portrait.webp"
+                alt="Founder Mr. Akhtar Ali Khan, Managing Director of A.S. Engineering Works"
+                loading="lazy"
+                className="aspect-[16/10] w-full object-cover object-[center_20%]"
+              />
+            </div>
+            <div className="overflow-hidden rounded-xl bg-sand">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="/images/real/akhtar-ali-khan-workshop.jpg"
                 alt="Founder Mr. Akhtar Ali Khan at the A.S. Engineering Works workshop in Noida"
                 loading="lazy"
-                className="aspect-[16/10] w-full object-cover object-[center_28%]"
+                className="aspect-[4/3] w-full object-cover object-[center_20%]"
               />
             </div>
             <div className="overflow-hidden rounded-xl bg-sand">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/home/soya-chunks-production.jpg"
-                alt="High-capacity Textured Soya Protein (TSP) chunk processing"
+                src="/images/owner/founder-award.webp"
+                alt="Founder Mr. Akhtar Ali Khan with the All India Saifi Welfare Association Excellence Award"
                 loading="lazy"
-                className="aspect-[4/3] w-full object-cover"
-              />
-            </div>
-            <div className="overflow-hidden rounded-xl bg-sand">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/home/seasoning-drum-operation.jpg"
-                alt="Commercial stainless steel continuous seasoning and flavouring drum in operation"
-                loading="lazy"
-                className="aspect-[4/3] w-full object-cover"
+                className="aspect-[4/3] w-full object-cover object-center"
               />
             </div>
           </Reveal>
