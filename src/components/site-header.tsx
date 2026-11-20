@@ -113,7 +113,7 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
             : "border-forest/[0.06]"
         }`}
       >
-        <div className="wrap flex h-[80px] items-center justify-between gap-6 lg:h-[88px]">
+        <div className="wrap flex h-[80px] items-center justify-between gap-4 lg:h-[88px] lg:gap-6">
         <Link
           href="/"
           aria-label="A.S. Engineering Works home"
@@ -129,7 +129,7 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
             <span className="text-[16px] font-bold tracking-[-0.02em] text-forest sm:text-[18px] lg:text-[19.5px]">
               A.S. Engineering Works
             </span>
-            <span className="mt-1.5 font-mono text-[10px] font-medium tracking-[0.14em] text-sage uppercase sm:text-[11px]">
+            <span className="mt-1.5 hidden font-mono text-[10px] font-medium tracking-[0.14em] text-sage uppercase sm:inline sm:text-[11px]">
               Est. 1984 · Noida
             </span>
           </span>
@@ -238,10 +238,10 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
           })}
         </nav>
 
-        <div className="flex items-center gap-4">
+        <div className="flex shrink-0 items-center gap-4">
           <a
             href={site.contact.phoneHref}
-            className="hidden font-mono text-[13px] font-medium text-forest/65 transition hover:text-forest xl:inline-block"
+            className="hidden whitespace-nowrap font-mono text-[13px] font-medium text-forest/65 transition hover:text-forest xl:inline-block"
           >
             {site.contact.phone}
           </a>
