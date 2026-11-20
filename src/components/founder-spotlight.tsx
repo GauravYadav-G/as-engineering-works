@@ -31,14 +31,7 @@ export function FounderSpotlight() {
             {/* Left: Founder Quote & Credentials */}
             <div className="flex flex-col justify-between p-8 sm:p-10 lg:p-12">
               <div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-forest/10 bg-white px-3.5 py-1.5 shadow-2xs">
-                  <span className="h-2 w-2 rounded-full bg-moss" />
-                  <span className="font-mono text-[11px] font-medium tracking-[0.12em] text-forest uppercase">
-                    Founder &amp; Managing Director
-                  </span>
-                </div>
-
-                <h3 className="display mt-5 text-[clamp(1.8rem,3vw,2.5rem)] text-forest">
+                <h3 className="display text-[clamp(1.8rem,3vw,2.5rem)] text-forest">
                   Mr. Akhtar Ali Khan
                 </h3>
                 <p className="font-mono text-[12.5px] text-sage">
