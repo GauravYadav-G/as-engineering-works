@@ -48,18 +48,39 @@
   50% { opacity: 0.35; }
 }
 
+/* Hide scrollbar globally across all browsers (Chrome, Edge, Firefox, Safari) */
+* {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+*::-webkit-scrollbar,
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0px !important;
+  height: 0px !important;
+  background: transparent !important;
+}
+
+html,
+body {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none !important;
+  width: 0px !important;
+  height: 0px !important;
+  background: transparent !important;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
     font-size: 16.5px;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-  html::-webkit-scrollbar {
-    display: none;
-    width: 0;
-    height: 0;
   }
   body {
     @apply bg-bone text-forest antialiased;
@@ -67,13 +88,6 @@
     font-size: 1.05rem;
     letter-spacing: 0.005em;
     word-spacing: 0.03em;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-  body::-webkit-scrollbar {
-    display: none;
-    width: 0;
-    height: 0;
   }
   h1, h2, h3, h4 {
     font-family: var(--font-sans);
@@ -161,10 +175,13 @@
     text-shadow: 0 2px 24px rgba(0, 0, 0, 0.22);
   }
   .hide-scrollbar {
-    scrollbar-width: none;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
   }
   .hide-scrollbar::-webkit-scrollbar {
-    display: none;
+    display: none !important;
+    width: 0px !important;
+    height: 0px !important;
   }
   .tabular {
     font-variant-numeric: tabular-nums;
