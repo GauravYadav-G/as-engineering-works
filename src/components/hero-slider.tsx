@@ -112,11 +112,12 @@ export function HeroSlider() {
   }, [active, paused, show]);
 
   return (
+    <div className="bg-[#0c0f11] px-[1.2cm] py-[1.2cm]">
     <section
       ref={regionRef}
       aria-label="Featured processing solutions"
       aria-roledescription="carousel"
-      className="relative isolate overflow-hidden bg-[#0c0f11] text-white w-full aspect-[47/22] max-h-[75vh]"
+      className="relative isolate overflow-hidden bg-[#0c0f11] text-white w-full aspect-[47/22] max-h-[75vh] min-h-[340px] rounded-xl"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
@@ -167,5 +168,6 @@ export function HeroSlider() {
         <IconChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
       </button>
     </section>
+    </div>
   );
 }
