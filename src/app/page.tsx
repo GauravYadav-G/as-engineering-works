@@ -482,7 +482,7 @@ export default async function HomePage() {
               </Reveal>
             ))}
           </div>
-          <p className="mt-6 font-mono text-[11.5px] text-sage/80">
+          <p className="mt-6 font-mono text-[11.5px] text-forest/70">
             Representative machine illustrations shown. Ask us for current workshop photographs and video.
           </p>
         </div>

@@ -250,7 +250,7 @@ export function InquiryForm({
             {site.contact.email}
           </a>
         </div>
-        <p className={`text-[12px] leading-relaxed ${dark ? "text-white/45" : "text-sage/80"}`}>
+        <p className={`text-[12px] leading-relaxed ${dark ? "text-white/60" : "text-forest/70"}`}>
           Used only to respond to your enquiry. No newsletters, no third-party sharing.
         </p>
       </form>
